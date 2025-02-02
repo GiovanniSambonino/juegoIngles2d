@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://ci1b1c7km51ni"]
+
+[ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="1_7lm0h"]
+[ext_resource type="Script" path="res://Piezas/Letterbox.gd" id="1_bjjbr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2bxt"]
+size = Vector2(594, 472)
+
+[sub_resource type="Animation" id="Animation_mxfeq"]
+resource_name = "Hint"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Overlay:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0.886275, 0.815686, 0), Color(0, 0.886275, 0.815686, 1), Color(0, 0.886275, 0.815686, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_64oh7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Overlay:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.886275, 0.815686, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pymnt"]
+_data = {
+"Hint": SubResource("Animation_mxfeq"),
+"RESET": SubResource("Animation_64oh7")
+}
+
+[node name="Letterbox" type="Node2D"]
+script = ExtResource("1_bjjbr")
+
+[node name="FondoDeLetra" type="Sprite2D" parent="."]
+texture = ExtResource("1_7lm0h")
+
+[node name="Overlay" type="Sprite2D" parent="."]
+modulate = Color(0, 0.886275, 0.815686, 0)
+texture = ExtResource("1_7lm0h")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_e2bxt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_pymnt")
+}
+
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwcygk7ikgh65"]
+
+[ext_resource type="Script" path="res://Scripts/idiomas.gd" id="1_jl3e3"]
+[ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_f464e"]
+[ext_resource type="Texture2D" uid="uid://dtfvr6dmjys6b" path="res://Sprites/mini_games/Tablero_minigame.png" id="3_lhmas"]
+[ext_resource type="Texture2D" uid="uid://375c0bkcyxql" path="res://Sprites/buttons/btnIngles.png" id="6_m75w3"]
+[ext_resource type="Texture2D" uid="uid://bk5822h8xfi42" path="res://Sprites/buttons/btnEspaño.png" id="7_dykqo"]
+[ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="11_4m7sx"]
+[ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="12_jb7hy"]
+
+[node name="Menu_Juegos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jl3e3")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_f464e")]
+
+[node name="Tablero" type="Sprite2D" parent="."]
+position = Vector2(646, 493)
+scale = Vector2(0.219223, 0.219223)
+texture = ExtResource("3_lhmas")
+
+[node name="Hbox_botones_juegos" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 320.0
+offset_right = 4069.0
+offset_bottom = 1971.0
+scale = Vector2(0.22, 0.22)
+theme_override_constants/separation = 215
+alignment = 1
+
+[node name="btn_sound" parent="." instance=ExtResource("11_4m7sx")]
+layout_mode = 1
+offset_left = 1175.0
+offset_top = 42.0
+offset_right = 1175.64
+offset_bottom = 42.32
+
+[node name="btn_go_back" parent="." instance=ExtResource("12_jb7hy")]
+offset_top = 58.0
+offset_bottom = 98.0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 269.0
+offset_right = 1100.0
+offset_bottom = 478.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("6_m75w3")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 493.0
+offset_right = 1100.0
+offset_bottom = 702.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_dykqo")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texturebutton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texturebutton2_pressed"]

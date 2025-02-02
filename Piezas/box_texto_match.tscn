@@ -1,0 +1,268 @@
+[gd_scene load_steps=11 format=3 uid="uid://f8ju1ll5w53y"]
+
+[ext_resource type="Script" path="res://Piezas/box_texto_match.gd" id="1_lfryq"]
+[ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="1_nfdb7"]
+[ext_resource type="Theme" uid="uid://dbj5vbxx0tl3i" path="res://styles/style_buttons_match.tres" id="2_jcky5"]
+[ext_resource type="Texture2D" uid="uid://dtuf41hstb0wb" path="res://Sprites/images_games/match/backgroung_middle_clic.png" id="2_o6jti"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="5_6j3fx"]
+
+[sub_resource type="Animation" id="Animation_60cxl"]
+resource_name = "Pista"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.784314, 0.513726, 0.894118, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_t5gja"]
+resource_name = "RESET"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button/Fondo_clic:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button/Fondo_clic:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_olkvq"]
+resource_name = "match"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.396078, 1, 0.4, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button:mouse_default_cursor_shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button/Fondo_clic:visible")
+tracks/2/interp = 2
+tracks/2/loop_wrap = false
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button/Tabla:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.21565, 0.224193), Vector2(0.3, 0.31), Vector2(0.21565, 0.224193)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button/Fondo_clic:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.227236, 0.243363), Vector2(0.3, 0.321), Vector2(0.227236, 0.243363)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button/Label:theme_override_font_sizes/font_size")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [25, 30, 25]
+}
+
+[sub_resource type="Animation" id="Animation_dcv8p"]
+resource_name = "no_match"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.972549, 0, 0.0823529, 1), Color(0.972549, 0, 0.0823529, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button/Tabla:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.8001, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button/Fondo_clic:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button/Label:pivot_offset")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.1001, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button/Fondo_clic:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.9, 1.2, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button/Fondo_clic:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0vcc6"]
+_data = {
+"Pista": SubResource("Animation_60cxl"),
+"RESET": SubResource("Animation_t5gja"),
+"match": SubResource("Animation_olkvq"),
+"no_match": SubResource("Animation_dcv8p")
+}
+
+[node name="Box_texto_match" type="Node2D"]
+skew = 0.0750492
+script = ExtResource("1_lfryq")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 759.0
+offset_top = 286.0
+offset_right = 1059.0
+offset_bottom = 351.0
+theme = ExtResource("2_jcky5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Tabla" type="Sprite2D" parent="Button"]
+position = Vector2(149, 33)
+scale = Vector2(0.21565, 0.224193)
+skew = -0.0628319
+texture = ExtResource("1_nfdb7")
+
+[node name="Fondo_clic" type="Sprite2D" parent="Button"]
+visible = false
+position = Vector2(148, 32.5)
+scale = Vector2(0.227236, 0.243363)
+skew = -0.0645772
+texture = ExtResource("2_o6jti")
+
+[node name="Label" type="Label" parent="Button"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 300.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_6j3fx")
+theme_override_font_sizes/font_size = 25
+text = "a"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 162
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0vcc6")
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,221 @@
+[gd_scene load_steps=11 format=3 uid="uid://soivbvg68l7y"]
+
+[ext_resource type="Script" path="res://Piezas/box_imagen_match.gd" id="1_8lgex"]
+[ext_resource type="Texture2D" uid="uid://bas6u4uhmiosh" path="res://Sprites/images_games/match/background_image.png" id="1_j4ife"]
+[ext_resource type="Theme" uid="uid://dbj5vbxx0tl3i" path="res://styles/style_buttons_match.tres" id="2_cyfnn"]
+[ext_resource type="Texture2D" uid="uid://dtuf41hstb0wb" path="res://Sprites/images_games/match/backgroung_middle_clic.png" id="2_wwj7w"]
+[ext_resource type="Texture2D" uid="uid://cf3ky0cshnsn1" path="res://Sprites/images_games/match/easy/Iguana.png" id="3_e7rir"]
+
+[sub_resource type="Animation" id="Animation_gdnrn"]
+resource_name = "Correct"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.396078, 1, 0.4, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button:mouse_default_cursor_shape")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_rnf3s"]
+resource_name = "No_match"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.972549, 0, 0.0823529, 1), Color(0.972549, 0, 0.0823529, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button/Fondo:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.5001, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button/Fondo_clic:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button/imagen:offset")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.4001, 0.5, 0.6, 0.6001, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(0, 0), Vector2(-10, 0), Vector2(0, 0), Vector2(0, 0), Vector2(-10, 0), Vector2(0, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button/Fondo_clic:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button/Fondo_clic:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.9, 1.2, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_k01e5"]
+resource_name = "Pista"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.784314, 0.513726, 0.894118, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5bj66"]
+resource_name = "RESET"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button/Fondo_clic:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button/Fondo_clic:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_imyb0"]
+_data = {
+"Match": SubResource("Animation_gdnrn"),
+"No_match": SubResource("Animation_rnf3s"),
+"Pista": SubResource("Animation_k01e5"),
+"RESET": SubResource("Animation_5bj66")
+}
+
+[node name="Box_imagen_match" type="Node2D"]
+position = Vector2(486, 319)
+script = ExtResource("1_8lgex")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -124.0
+offset_top = -67.0
+offset_right = 124.0
+offset_bottom = 67.0
+theme = ExtResource("2_cyfnn")
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="Sprite2D" parent="Button"]
+position = Vector2(124, 67)
+scale = Vector2(0.195906, 0.195906)
+texture = ExtResource("1_j4ife")
+
+[node name="Fondo_clic" type="Sprite2D" parent="Button"]
+visible = false
+position = Vector2(124.5, 66.5)
+scale = Vector2(0.189297, 0.553097)
+texture = ExtResource("2_wwj7w")
+
+[node name="imagen" type="Sprite2D" parent="Button"]
+position = Vector2(124, 66)
+scale = Vector2(0.0567091, 0.0567091)
+texture = ExtResource("3_e7rir")
+
+[node name="AnimationImage" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_imyb0")
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

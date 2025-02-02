@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1drlxu7mn1l7"]
+
+[ext_resource type="Texture2D" uid="uid://bde8k4syuslim" path="res://Sprites/global/SelDificultadMatch.png" id="1_8qjlw"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(638.918, 454.5)
+scale = Vector2(0.213499, 0.213499)
+texture = ExtResource("1_8qjlw")
+region_rect = Rect2(1500, 1500, 1500, 1500)

@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dbj5vbxx0tl3i"]
+
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="1_mwg6s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bmudv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_co4d8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gmi08"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7qfev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6k02c"]
+
+[resource]
+Button/fonts/font = ExtResource("1_mwg6s")
+Button/styles/disabled = SubResource("StyleBoxEmpty_bmudv")
+Button/styles/focus = SubResource("StyleBoxTexture_co4d8")
+Button/styles/hover = SubResource("StyleBoxEmpty_gmi08")
+Button/styles/normal = SubResource("StyleBoxEmpty_7qfev")
+Button/styles/pressed = SubResource("StyleBoxEmpty_6k02c")

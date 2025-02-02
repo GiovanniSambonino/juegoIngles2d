@@ -1,0 +1,219 @@
+[gd_scene load_steps=15 format=3 uid="uid://cu0dpyjickxqh"]
+
+[ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="1_mnt6j"]
+[ext_resource type="Script" path="res://Scripts/Global/PantallaPuntajes.gd" id="1_rtl8m"]
+[ext_resource type="Texture2D" uid="uid://bqk1d4psul3o6" path="res://Sprites/global/Fondo_mesa_juego.png" id="2_cnaa0"]
+[ext_resource type="Theme" uid="uid://s5bs26vdrwjc" path="res://styles/UnirFacil1_Style_Words.tres" id="3_313r5"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="4_an7tm"]
+[ext_resource type="Texture2D" uid="uid://cnankw7ub7ikf" path="res://Sprites/mini_games/ContainerLetraFrases.png" id="5_o5mnc"]
+[ext_resource type="Texture2D" uid="uid://basjxg7xw0kpa" path="res://Sprites/TableroInfoPuntajes.png" id="7_77o4p"]
+[ext_resource type="Texture2D" uid="uid://tspo2dpljifg" path="res://Sprites/global/barraPuntaje.png" id="7_tr22k"]
+[ext_resource type="Texture2D" uid="uid://b5a6s0vkmbud8" path="res://Sprites/buttons/seguirPuntaje.png" id="8_dttvj"]
+[ext_resource type="Texture2D" uid="uid://bhe6k2m5irfb7" path="res://Sprites/buttons/seguirPuntajeHover.png" id="9_6g8l0"]
+[ext_resource type="Texture2D" uid="uid://cbsgw3yum2qos" path="res://Sprites/buttons/Boton_Salir.png" id="12_vwvlu"]
+[ext_resource type="Texture2D" uid="uid://b4fkf3jss7us" path="res://Sprites/buttons/btn_salir_hover.png" id="13_gi4ve"]
+
+[sub_resource type="Theme" id="Theme_abnul"]
+default_font = ExtResource("4_an7tm")
+
+[sub_resource type="Theme" id="Theme_y5qo0"]
+default_font = ExtResource("4_an7tm")
+
+[node name="PuntajesPuzzle" type="Node2D"]
+script = ExtResource("1_rtl8m")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_mnt6j")]
+
+[node name="Fondo_mesa_juego" type="Sprite2D" parent="."]
+position = Vector2(650, 447)
+scale = Vector2(0.214403, 0.21336)
+texture = ExtResource("2_cnaa0")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 127.0
+offset_top = 378.0
+offset_right = 313.0
+offset_bottom = 418.0
+theme = ExtResource("3_313r5")
+theme_override_font_sizes/font_size = 40
+text = "Velocidad"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 129.0
+offset_top = 493.0
+offset_right = 310.0
+offset_bottom = 548.0
+theme = SubResource("Theme_abnul")
+theme_override_font_sizes/font_size = 40
+text = "Precisión"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 149.0
+offset_top = 641.0
+offset_right = 287.0
+offset_bottom = 681.0
+theme = SubResource("Theme_y5qo0")
+theme_override_font_sizes/font_size = 40
+text = "Niveles"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 62.0
+offset_top = 196.0
+offset_right = 1239.0
+offset_bottom = 236.0
+theme = ExtResource("3_313r5")
+theme_override_font_sizes/font_size = 40
+text = "Total"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(654, 281)
+scale = Vector2(0.565657, 0.169662)
+texture = ExtResource("5_o5mnc")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(213.792, 152.235)
+scale = Vector2(0.298779, 0.298779)
+texture = ExtResource("7_77o4p")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(1004, 391)
+scale = Vector2(0.284512, 0.116543)
+texture = ExtResource("5_o5mnc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(1008, 521)
+scale = Vector2(0.284512, 0.116543)
+texture = ExtResource("5_o5mnc")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(1008, 657)
+scale = Vector2(0.284512, 0.116543)
+texture = ExtResource("5_o5mnc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+
+[node name="BarraVelocidad" type="Sprite2D" parent="."]
+position = Vector2(618.5, 401)
+scale = Vector2(0.256488, 0.285467)
+texture = ExtResource("7_tr22k")
+
+[node name="BarraPrecision" type="Sprite2D" parent="."]
+position = Vector2(562, 529)
+scale = Vector2(0.207612, 0.285467)
+texture = ExtResource("7_tr22k")
+
+[node name="BarraNiveles" type="Sprite2D" parent="."]
+position = Vector2(562, 665)
+scale = Vector2(0.207612, 0.285467)
+texture = ExtResource("7_tr22k")
+
+[node name="PuntajeTotal" type="Label" parent="."]
+offset_left = 67.0
+offset_top = 257.0
+offset_right = 1244.0
+offset_bottom = 314.0
+theme = ExtResource("3_313r5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SiguienteButton" type="TextureButton" parent="."]
+offset_left = 1093.0
+offset_top = 743.0
+offset_right = 1175.0
+offset_bottom = 818.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_dttvj")
+texture_hover = ExtResource("9_6g8l0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RetrocederButton" type="TextureButton" parent="."]
+offset_left = 205.0
+offset_top = 743.0
+offset_right = 288.0
+offset_bottom = 818.0
+scale = Vector2(-1, 1)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_dttvj")
+texture_hover = ExtResource("9_6g8l0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SalirButton" type="TextureButton" parent="."]
+offset_left = 1116.0
+offset_top = 78.0
+offset_right = 1198.0
+offset_bottom = 153.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_vwvlu")
+texture_hover = ExtResource("13_gi4ve")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="VelocidadPuntaje" type="Label" parent="."]
+offset_left = 926.0
+offset_top = 368.0
+offset_right = 1076.0
+offset_bottom = 425.0
+theme = ExtResource("3_313r5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PrecisionPuntaje" type="Label" parent="."]
+offset_left = 932.0
+offset_top = 495.0
+offset_right = 1082.0
+offset_bottom = 552.0
+theme = ExtResource("3_313r5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NivelesPuntaje" type="Label" parent="."]
+offset_left = 931.0
+offset_top = 630.0
+offset_right = 1081.0
+offset_bottom = 687.0
+theme = ExtResource("3_313r5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MinijuegoNombre" type="Label" parent="."]
+offset_left = 118.0
+offset_top = 89.0
+offset_right = 307.0
+offset_bottom = 142.0
+theme = ExtResource("3_313r5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Puzzle"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label14" type="Label" parent="."]
+offset_left = 115.0
+offset_top = 166.0
+offset_right = 305.0
+offset_bottom = 219.0
+theme = ExtResource("3_313r5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Scores"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="SiguienteButton" to="." method="_on_siguiente_button_pressed"]
+[connection signal="pressed" from="RetrocederButton" to="." method="_on_retroceder_button_pressed"]
+[connection signal="pressed" from="SalirButton" to="." method="_on_salir_button_pressed"]

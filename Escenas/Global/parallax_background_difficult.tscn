@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://eru4eluqm35p"]
+
+[ext_resource type="Texture2D" uid="uid://dmum3iu2x4ibi" path="res://Sprites/global/Pantalla Select difficulty de order it.png" id="1_qtpse"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(638.918, 454.5)
+scale = Vector2(0.213499, 0.213499)
+texture = ExtResource("1_qtpse")
+region_rect = Rect2(1500, 1500, 1500, 1500)

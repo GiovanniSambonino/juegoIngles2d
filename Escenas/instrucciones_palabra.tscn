@@ -1,0 +1,156 @@
+[gd_scene load_steps=11 format=3 uid="uid://b86ewj2wptytq"]
+
+[ext_resource type="Script" path="res://Scripts/instrucciones_palabra.gd" id="1_067yw"]
+[ext_resource type="PackedScene" uid="uid://dglbcxrsa3qv3" path="res://Piezas/ColorRectDifuminado.tscn" id="2_0fek6"]
+[ext_resource type="Texture2D" uid="uid://dokc10h74d3rc" path="res://Sprites/images_games/order/letrero phrases (order it).png" id="3_4xch7"]
+[ext_resource type="FontFile" uid="uid://by6docfjh045t" path="res://Fonts/Retropix-Regular.ttf" id="4_bv4tm"]
+[ext_resource type="Theme" uid="uid://da4xw33242vln" path="res://styles/btn_instruccionesSiguiente.tres" id="5_r1uop"]
+[ext_resource type="VideoStream" path="res://Videos/videoInstruccionesPalabra.ogv" id="6_v2ntc"]
+[ext_resource type="AudioStream" uid="uid://dsff4jokaafnm" path="res://Sonido/cancion1.mp3" id="7_q75av"]
+
+[sub_resource type="Animation" id="Animation_cpjhj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_81pe7"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p5py1"]
+_data = {
+"RESET": SubResource("Animation_cpjhj"),
+"blur": SubResource("Animation_81pe7")
+}
+
+[node name="InstruccionesPalabra" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_067yw")
+metadata/_edit_vertical_guides_ = [1276.0, 636.0]
+metadata/_edit_horizontal_guides_ = [906.0]
+
+[node name="ColorRect2" parent="." instance=ExtResource("2_0fek6")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -644.5
+offset_top = -397.0
+offset_right = 535.5
+offset_bottom = 373.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_4xch7")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 11.0
+offset_right = 813.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_bv4tm")
+theme_override_font_sizes/font_size = 60
+text = "ORDER IT"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+offset_left = 393.0
+offset_top = 142.0
+offset_right = 1080.0
+offset_bottom = 196.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_bv4tm")
+theme_override_font_sizes/normal_font_size = 31
+text = "Welcome to the order it adventure kids!"
+fit_content = true
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 722.0
+offset_right = 833.0
+offset_bottom = 802.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("5_r1uop")
+text = "START"
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 211.0
+offset_right = 1029.0
+offset_bottom = 608.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TextureRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("6_v2ntc")
+volume_db = -16.86
+expand = true
+loop = true
+
+[node name="Line2D" type="Line2D" parent="TextureRect/Panel"]
+points = PackedVector2Array(-3, -4, -3, 401, 676, 401, 676, -4)
+closed = true
+default_color = Color(0.807843, 0.635294, 0.439216, 1)
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_p5py1")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_q75av")
+volume_db = -19.81
+autoplay = true
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

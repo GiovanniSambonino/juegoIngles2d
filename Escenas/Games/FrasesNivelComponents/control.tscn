@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpqsopytr7u48"]
+
+[ext_resource type="Texture2D" uid="uid://1bcbeis5xil6" path="res://Sprites/images_games/order/Interactivo letra (vacio).png" id="1_lqpwu"]
+[ext_resource type="Script" path="res://Escenas/Games/FrasesNivelComponents/TextureRect.gd" id="2_87tss"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 420.0
+offset_bottom = 40.0
+texture = ExtResource("1_lqpwu")
+expand_mode = 1
+script = ExtResource("2_87tss")
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 115.0
+offset_right = 437.0
+offset_bottom = 155.0
+expand_mode = 1
+script = ExtResource("2_87tss")
+
+[node name="Panel" type="Panel" parent="TextureRect2"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2

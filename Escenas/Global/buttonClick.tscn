@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cabrkyy8b8c4v"]
+
+[ext_resource type="Script" path="res://Escenas/Global/buttonClick.gd" id="1_vnre5"]
+[ext_resource type="AudioStream" uid="uid://b1f88sl70rgrl" path="res://Sonido/ui-click-43196.mp3" id="2_br0l1"]
+
+[node name="ButtonClick" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vnre5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_br0l1")

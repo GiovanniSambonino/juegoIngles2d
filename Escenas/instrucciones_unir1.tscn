@@ -1,0 +1,218 @@
+[gd_scene load_steps=11 format=3 uid="uid://c5r7rj5hmgqc5"]
+
+[ext_resource type="Script" path="res://Scripts/instrucciones_palabra.gd" id="1_5j4xw"]
+[ext_resource type="Shader" path="res://styles/juego_finalizado_menu.gdshader" id="2_m1g2y"]
+[ext_resource type="Texture2D" uid="uid://cio5bi6scfmqp" path="res://Sprites/unir_instrucciones_cuadro.png" id="3_khs63"]
+[ext_resource type="Theme" uid="uid://6v3wmvwfohbw" path="res://styles/instrucciones_continuar.tres" id="4_vl7fc"]
+[ext_resource type="VideoStream" path="res://styles/Lorem-ipsum-video-Dummy-video-for-your-website.ogv" id="5_p8klx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y25dw"]
+shader = ExtResource("2_m1g2y")
+shader_parameter/lod = 0.0
+
+[sub_resource type="FontFile" id="FontFile_jjief"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/25/0 = Vector2(0, 0)
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/30/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/25/0 = Vector2(0, 0)
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/20/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/25/0 = Vector2(0, 0)
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/15/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/25/0 = Vector2(0, 0)
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/25/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/25/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/25/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/25/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/25/0/kerning_overrides/25/0 = Vector2(0, 0)
+
+[sub_resource type="Animation" id="Animation_cpjhj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_81pe7"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.574]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p5py1"]
+_data = {
+"RESET": SubResource("Animation_cpjhj"),
+"blur": SubResource("Animation_81pe7")
+}
+
+[node name="InstruccionesUnir" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5j4xw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_y25dw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.5
+offset_top = -336.5
+offset_right = 250.5
+offset_bottom = 336.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_khs63")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.5
+offset_top = -78.5
+offset_right = 146.5
+offset_bottom = -10.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_jjief")
+theme_override_font_sizes/normal_font_size = 25
+text = "Welcome to the matching adventure game!"
+fit_content = true
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 572.0
+offset_right = 310.0
+offset_bottom = 633.0
+theme = ExtResource("4_vl7fc")
+theme_override_font_sizes/font_size = 25
+text = "START"
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 339.0
+offset_right = 428.0
+offset_bottom = 552.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TextureRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("5_p8klx")
+volume_db = -16.86
+expand = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_p5py1")
+}
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

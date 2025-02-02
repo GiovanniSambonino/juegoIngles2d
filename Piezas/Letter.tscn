@@ -1,0 +1,200 @@
+[gd_scene load_steps=12 format=3 uid="uid://dj6ij2dh6vwpr"]
+
+[ext_resource type="Texture2D" uid="uid://1bcbeis5xil6" path="res://Sprites/images_games/order/Interactivo letra (vacio).png" id="1_cam2k"]
+[ext_resource type="Script" path="res://Piezas/Letter.gd" id="1_k68xw"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="2_cqkuq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1rv6w"]
+font = ExtResource("2_cqkuq")
+font_size = 250
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wn6io"]
+size = Vector2(458, 316)
+
+[sub_resource type="Animation" id="Animation_d5m34"]
+resource_name = "Correcto"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InteractivoLetra(vacio):modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.988766, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractivoLetra(vacio):scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_t4a2n"]
+resource_name = "Hint"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InteractivoLetra(vacio):modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.894118, 0.976471, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hcf3e"]
+resource_name = "Incorrecto"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InteractivoLetra(vacio):modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.984314, 0.0509804, 0, 1), Color(0.984314, 0.0509804, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractivoLetra(vacio):offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_n2m34"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InteractivoLetra(vacio):modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractivoLetra(vacio):offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("InteractivoLetra(vacio):scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("InteractivoLetra(vacio)/InteractivoLetra(vacio)2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lvm4f"]
+resource_name = "newRound"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InteractivoLetra(vacio)/InteractivoLetra(vacio)2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.298039, 0.462745, 0.819608, 0), Color(0.298039, 0.462745, 0.819608, 0.74902)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r3xoe"]
+_data = {
+"Correcto": SubResource("Animation_d5m34"),
+"Hint": SubResource("Animation_t4a2n"),
+"Incorrecto": SubResource("Animation_hcf3e"),
+"RESET": SubResource("Animation_n2m34"),
+"newRound": SubResource("Animation_lvm4f")
+}
+
+[node name="Letter" type="Node2D"]
+script = ExtResource("1_k68xw")
+
+[node name="InteractivoLetra(vacio)" type="Sprite2D" parent="."]
+texture = ExtResource("1_cam2k")
+
+[node name="Label" type="Label" parent="InteractivoLetra(vacio)"]
+offset_left = -73.0
+offset_top = -91.0
+offset_right = 83.0
+offset_bottom = 160.0
+text = "A"
+label_settings = SubResource("LabelSettings_1rv6w")
+
+[node name="InteractivoLetra(vacio)2" type="Sprite2D" parent="InteractivoLetra(vacio)"]
+modulate = Color(1, 1, 1, 0)
+clip_children = 2
+texture = ExtResource("1_cam2k")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -226.0
+offset_top = -156.0
+offset_right = 234.0
+offset_bottom = 164.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_wn6io")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_r3xoe")
+}
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

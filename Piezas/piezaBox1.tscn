@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0n52w01vfldv"]
+
+[ext_resource type="Script" path="res://Piezas/piezaBox.gd" id="1_xd2yu"]
+[ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="2_7w4jd"]
+
+[sub_resource type="Animation" id="Animation_th3fk"]
+resource_name = "Pista"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pista:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1.1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.921569, 0.694118, 0, 0), Color(0.921569, 0.694118, 0.0352941, 0.894118), Color(0.921569, 0.694118, 0.0352941, 0.329412), Color(0.921569, 0.694118, 0.0352941, 0.894118), Color(0.921569, 0.694118, 0.0352941, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_8ghs2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pista:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.921569, 0.694118, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fxwwt"]
+_data = {
+"Pista": SubResource("Animation_th3fk"),
+"RESET": SubResource("Animation_8ghs2")
+}
+
+[node name="piezaBox" type="Node2D"]
+script = ExtResource("1_xd2yu")
+
+[node name="SpritePieza" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(71.5, 0)
+scale = Vector2(2.15657, 1)
+texture = ExtResource("2_7w4jd")
+
+[node name="Pista2" type="Polygon2D" parent="."]
+visible = false
+color = Color(0.921569, 0.694118, 0, 0)
+polygon = PackedVector2Array(715, 242.5, -555, 242.5, -555, 66.5, -584, 66.5, -584, 88.5, -671, 88.5, -671, 66.5, -693, 66.5, -693, 43.5, -715, 43.5, -715, -43.5, -693, -43.5, -693, -66.5, -671, -66.5, -671, -89.5, -584, -89.5, -584, -66.5, -555, -66.5, -555, -242.5, 715, -242.5)
+uv = PackedVector2Array(1430, 485, 160, 485, 160, 309, 131, 309, 131, 331, 44, 331, 44, 309, 22, 309, 22, 286, 0, 286, 0, 199, 22, 199, 22, 176, 44, 176, 44, 153, 131, 153, 131, 176, 160, 176, 160, 0, 1430, 0)
+polygons = [PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)]
+
+[node name="Line2D" type="Line2D" parent="Pista2"]
+default_color = Color(0, 0, 0, 1)
+
+[node name="Pista" type="Polygon2D" parent="."]
+color = Color(0.921569, 0.694118, 0, 0)
+polygon = PackedVector2Array(715, 242.5, -555, 242.5, -555, 66.5, -584, 66.5, -584, 88.5, -671, 88.5, -671, 66.5, -693, 66.5, -693, 43.5, -715, 43.5, -715, -43.5, -693, -43.5, -693, -66.5, -671, -66.5, -671, -89.5, -584, -89.5, -584, -66.5, -555, -66.5, -555, -242.5, 715, -242.5)
+uv = PackedVector2Array(1430, 485, 160, 485, 160, 309, 131, 309, 131, 331, 44, 331, 44, 309, 22, 309, 22, 286, 0, 286, 0, 199, 22, 199, 22, 176, 44, 176, 44, 153, 131, 153, 131, 176, 160, 176, 160, 0, 1430, 0)
+polygons = [PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-5, -2)
+polygon = PackedVector2Array(623, 246, -555, 242.5, -555, 66.5, -584, 66.5, -583, 69, -667, 73, -671, 66.5, -671, -57, -577, -64, -578, -60, -560, -69, -555, -242.5, 622, -244, 618, -120, 478, -117, 474, 4, 475, 160, 620, 168)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fxwwt")
+}
+
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]

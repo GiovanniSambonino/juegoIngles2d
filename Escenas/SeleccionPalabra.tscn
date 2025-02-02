@@ -1,0 +1,264 @@
+[gd_scene load_steps=18 format=3 uid="uid://cjvvwysvskvjm"]
+
+[ext_resource type="Script" path="res://Scripts/SeleccionPalabra.gd" id="1_myd3f"]
+[ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_g61kd"]
+[ext_resource type="Texture2D" uid="uid://lprcmn3axhu2" path="res://Sprites/istockphoto-1133408808-612x612-removebg-preview 1.png" id="2_ywlt7"]
+[ext_resource type="Texture2D" uid="uid://c862v6ar4xge" path="res://Sprites/fondo-de-papel-del-vintage-aislado-128788522-transformed__1_-removebg-preview 1.png" id="3_24ns3"]
+[ext_resource type="Texture2D" uid="uid://biihx571xca82" path="res://Sprites/flechas__1_-removebg-preview 1.png" id="4_yxe20"]
+[ext_resource type="Texture2D" uid="uid://bddosvbos1aqv" path="res://Sprites/Rectangle 16.png" id="5_1yedy"]
+[ext_resource type="Texture2D" uid="uid://cpgtso7quhpj8" path="res://Sprites/pngtree-padlocks-or-lock-open-and-closed-icons-isolated-transparant-png-image_5213443.png" id="6_vwxae"]
+[ext_resource type="Script" path="res://Scripts/AnimationPlayer.gd" id="7_p8e1s"]
+[ext_resource type="Script" path="res://Scripts/Button4.gd" id="8_c8e4v"]
+[ext_resource type="Script" path="res://Scripts/AnimationPlayer1.gd" id="9_m4jys"]
+[ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="12_txr5q"]
+[ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="15_s3kn3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rm4gd"]
+font_size = 172
+
+[sub_resource type="Animation" id="Animation_aggsv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../Button4/Sprite2D:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lrwm3"]
+resource_name = "Unlock"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(0, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(28, 0), Vector2(28, -55.19)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.0313726)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3t862"]
+_data = {
+"RESET": SubResource("Animation_aggsv"),
+"Unlock": SubResource("Animation_lrwm3")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_hiw6i"]
+font_size = 50
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node2D3" type="Node2D"]
+script = ExtResource("1_myd3f")
+metadata/_edit_vertical_guides_ = [605.0, 1061.0]
+metadata/_edit_horizontal_guides_ = [-100.0, 115.0, 663.0]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_g61kd")]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Cartelera" type="Sprite2D" parent="Node2D"]
+position = Vector2(640, 360)
+scale = Vector2(0.89, 0.89)
+texture = ExtResource("2_ywlt7")
+
+[node name="Fondo-de-papel-del-vintage-aislado-128788522-transformed1-removebg-preview1" type="Sprite2D" parent="."]
+position = Vector2(650, 389)
+scale = Vector2(0.811321, 0.971897)
+texture = ExtResource("3_24ns3")
+
+[node name="Flecha derecha" type="Sprite2D" parent="."]
+position = Vector2(1024, 389)
+scale = Vector2(0.78, 0.78)
+texture = ExtResource("4_yxe20")
+
+[node name="Flecha izquierda" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.411765)
+position = Vector2(276, 389)
+scale = Vector2(0.78, 0.78)
+texture = ExtResource("4_yxe20")
+flip_h = true
+
+[node name="Rectangle16" type="Sprite2D" parent="."]
+position = Vector2(850, 389)
+scale = Vector2(1.19715, 1.19715)
+texture = ExtResource("5_1yedy")
+
+[node name="Rectangle17" type="Sprite2D" parent="."]
+position = Vector2(650, 389)
+scale = Vector2(1.19715, 1.19715)
+texture = ExtResource("5_1yedy")
+
+[node name="Rectangle18" type="Sprite2D" parent="."]
+position = Vector2(450, 389)
+scale = Vector2(1.19715, 1.19715)
+texture = ExtResource("5_1yedy")
+
+[node name="Nivel1" type="Label" parent="."]
+offset_left = 397.0
+offset_top = 267.0
+offset_right = 495.0
+offset_bottom = 502.0
+text = "1"
+label_settings = SubResource("LabelSettings_rm4gd")
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Nivel2" type="Label" parent="."]
+offset_left = 797.0
+offset_top = 269.0
+offset_right = 895.0
+offset_bottom = 504.0
+text = "3
+"
+label_settings = SubResource("LabelSettings_rm4gd")
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Nivel3" type="Label" parent="."]
+offset_left = 594.0
+offset_top = 269.0
+offset_right = 692.0
+offset_bottom = 504.0
+text = "2
+"
+label_settings = SubResource("LabelSettings_rm4gd")
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 359.0
+offset_top = 314.0
+offset_right = 544.0
+offset_bottom = 463.0
+flat = true
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 558.0
+offset_top = 315.0
+offset_right = 742.0
+offset_bottom = 463.0
+flat = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="Button3"]
+position = Vector2(78, 60)
+scale = Vector2(0.622222, 0.622222)
+texture = ExtResource("6_vwxae")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Button3/Sprite2D3"]
+libraries = {
+"": SubResource("AnimationLibrary_3t862")
+}
+script = ExtResource("7_p8e1s")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 758.0
+offset_top = 315.0
+offset_right = 941.0
+offset_bottom = 464.0
+flat = true
+script = ExtResource("8_c8e4v")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button4"]
+position = Vector2(78, 63)
+scale = Vector2(0.622222, 0.622222)
+texture = ExtResource("6_vwxae")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Button4/Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_3t862")
+}
+script = ExtResource("9_m4jys")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 485.0
+offset_top = 24.0
+offset_right = 817.0
+offset_bottom = 165.0
+text = "SELECCIONAR
+NIVEL"
+label_settings = SubResource("LabelSettings_hiw6i")
+horizontal_alignment = 1
+
+[node name="btn_sound" parent="." instance=ExtResource("15_s3kn3")]
+offset_left = 1171.0
+offset_top = 632.0
+offset_right = 1171.64
+offset_bottom = 632.32
+
+[node name="btn_go_back" parent="." instance=ExtResource("12_txr5q")]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="Button3/Sprite2D3/AnimationPlayer" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="Button4/Sprite2D/AnimationPlayer" method="_on_button_4_pressed"]

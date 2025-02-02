@@ -1,0 +1,121 @@
+[gd_scene load_steps=12 format=3 uid="uid://4axweujk3q73"]
+
+[ext_resource type="Script" path="res://Scripts/Puntaje.gd" id="1_da5bc"]
+[ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="2_2sjkm"]
+[ext_resource type="Texture2D" uid="uid://dt4d5ponwsp7v" path="res://Sprites/LetreroPuntaje.png" id="3_yvoiu"]
+[ext_resource type="Texture2D" uid="uid://btk1xkyf2fyr8" path="res://Sprites/buttons/Boton_Next.png" id="5_mfcgm"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="6_63w4k"]
+[ext_resource type="Texture2D" uid="uid://dysynh8dy4kgi" path="res://Sprites/global/texto felicitaciones.png" id="6_li3sf"]
+[ext_resource type="AudioStream" uid="uid://bfv3xkxn5hs8y" path="res://Sonido/subidaPuntaje.mp3" id="8_spwxl"]
+[ext_resource type="Texture2D" uid="uid://b6adqoc1dhqe5" path="res://Sprites/Hojas en letrero.png" id="9_v2qdo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_htnof"]
+font = ExtResource("6_63w4k")
+font_size = 46
+font_color = Color(0.568627, 0.282353, 0.152941, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ljllh"]
+font = ExtResource("6_63w4k")
+font_size = 46
+font_color = Color(0.239216, 0.682353, 0.101961, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dxgvb"]
+font = ExtResource("6_63w4k")
+font_size = 46
+font_color = Color(0.239216, 0.682353, 0.101961, 1)
+
+[node name="PuntajeScreen" type="Node2D"]
+script = ExtResource("1_da5bc")
+metadata/_edit_vertical_guides_ = [640.0, 883.0, 170.0, 907.0, 219.0]
+metadata/_edit_horizontal_guides_ = [416.0, 489.0, 567.0]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(638.222, 453.457)
+scale = Vector2(0.212259, 0.211176)
+texture = ExtResource("2_2sjkm")
+metadata/_edit_lock_ = true
+
+[node name="Node2D2" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D2"]
+position = Vector2(639, 470)
+scale = Vector2(0.349277, 0.30591)
+texture = ExtResource("3_yvoiu")
+metadata/_edit_lock_ = true
+
+[node name="HojasEnLetrero" type="Sprite2D" parent="Node2D2/Sprite2D"]
+position = Vector2(-4.32434, -12.9528)
+scale = Vector2(0.902171, 1.10958)
+texture = ExtResource("9_v2qdo")
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 550.0
+offset_top = 619.0
+offset_right = 730.0
+offset_bottom = 697.0
+mouse_default_cursor_shape = 2
+icon = ExtResource("5_mfcgm")
+flat = true
+expand_icon = true
+metadata/_edit_lock_ = true
+
+[node name="TextoFelicitaciones" type="Sprite2D" parent="."]
+position = Vector2(640, 303)
+scale = Vector2(0.316147, 0.404145)
+texture = ExtResource("6_li3sf")
+metadata/_edit_lock_ = true
+
+[node name="Puntaje" type="Label" parent="."]
+offset_left = 858.0
+offset_top = 381.0
+offset_right = 910.0
+offset_bottom = 428.0
+text = "00"
+label_settings = SubResource("LabelSettings_htnof")
+
+[node name="Puntaje2" type="Label" parent="."]
+offset_left = 830.0
+offset_top = 454.0
+offset_right = 885.0
+offset_bottom = 501.0
+text = "+0"
+label_settings = SubResource("LabelSettings_ljllh")
+
+[node name="Puntaje3" type="Label" parent="."]
+offset_left = 830.0
+offset_top = 533.0
+offset_right = 885.0
+offset_bottom = 580.0
+text = "+0"
+label_settings = SubResource("LabelSettings_dxgvb")
+
+[node name="Perfecto" type="Label" parent="."]
+offset_left = 303.0
+offset_top = 532.0
+offset_right = 355.0
+offset_bottom = 579.0
+text = "Perfecto"
+label_settings = SubResource("LabelSettings_htnof")
+
+[node name="Bonus de velocidad" type="Label" parent="."]
+offset_left = 305.0
+offset_top = 454.0
+offset_right = 733.0
+offset_bottom = 501.0
+text = "Muy veloz"
+label_settings = SubResource("LabelSettings_htnof")
+
+[node name="Tu puntaje" type="Label" parent="."]
+offset_left = 304.0
+offset_top = 381.0
+offset_right = 732.0
+offset_bottom = 428.0
+text = "Tu puntaje"
+label_settings = SubResource("LabelSettings_htnof")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_spwxl")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,53 @@
+{
+	"easy": {
+		"iguana": "res://Sprites/images_games/match/easy/Iguana.png",
+		"squirrel": "res://Sprites/images_games/match/easy/Squirrel.png",
+		"woodpecker": "res://Sprites/images_games/match/easy/Woodpecker.png",
+		"ant eater": "res://Sprites/images_games/match/easy/Ant-eater.png",
+		"baltimore oriole": "res://Sprites/images_games/match/easy/Baltimore oriole.png",
+		"cricket": "res://Sprites/images_games/match/easy/Cricket.png",
+		"gray-backed hawk": "res://Sprites/images_games/match/easy/Gray-backed Hawk.png",
+		"great white heron": "res://Sprites/images_games/match/easy/Great white heron.png",
+		"howler monkey": "res://Sprites/images_games/match/easy/Howler monkey.png",
+		"red-crowned parrot": "res://Sprites/images_games/match/easy/Red-crowned parrot.png",
+		"sloth": "res://Sprites/images_games/match/easy/Sloth.png",
+		"turquoise butterfly": "res://Sprites/images_games/match/easy/Turquoise Butterfly.png"
+	},
+	"medium": {
+		"armadillo": "res://Sprites/images_games/match/medium/Armadillo.png",
+		"beaver": "res://Sprites/images_games/match/medium/Beaver.png",
+		"cheetah": "res://Sprites/images_games/match/medium/Cheetah.png",
+		"dingo": "res://Sprites/images_games/match/medium/Dingo.png",
+		"emu": "res://Sprites/images_games/match/medium/Emu.png",
+		"gazelle": "res://Sprites/images_games/match/medium/Gazelle.png",
+		"hedgehog": "res://Sprites/images_games/match/medium/Hedgehog.png",
+		"ibex": "res://Sprites/images_games/match/medium/Ibex.png",
+		"jackal": "res://Sprites/images_games/match/medium/Jackal.png",
+		"kookaburra": "res://Sprites/images_games/match/medium/Kookaburra.png",
+		"meerkat": "res://Sprites/images_games/match/medium/Meerkat.png",
+		"narwhal": "res://Sprites/images_games/match/medium/Narwhal.png",
+		"ocelot": "res://Sprites/images_games/match/medium/Ocelot.png",
+		"pangolin": "res://Sprites/images_games/match/medium/Pangolin.png",
+		"quokka": "res://Sprites/images_games/match/medium/Quokka.png"
+	},
+	"hard": {
+		"aye-aye": "res://Sprites/images_games/match/hard/Aye-aye.png",
+		"blobfish": "res://Sprites/images_games/match/hard/Blobfish.png",
+		"capybara": "res://Sprites/images_games/match/hard/Capybara.png",
+		"dhole": "res://Sprites/images_games/match/hard/Dhole.png",
+		"fossa": "res://Sprites/images_games/match/hard/Fossa.png",
+		"gerenuk": "res://Sprites/images_games/match/hard/Gerenuk.png",
+		"hoatzin": "res://Sprites/images_games/match/hard/Hoatzin.png",
+		"indian star tortoise": "res://Sprites/images_games/match/hard/Indian Star Tortoise.png",
+		"jerboa": "res://Sprites/images_games/match/hard/Jerboa.png",
+		"kiwi": "res://Sprites/images_games/match/hard/Kiwi.png",
+		"markhor": "res://Sprites/images_games/match/hard/Markhor.png",
+		"okapi": "res://Sprites/images_games/match/hard/Okapi.png",
+		"platypus": "res://Sprites/images_games/match/hard/Platypus.png",
+		"quagga": "res://Sprites/images_games/match/hard/Quagga.png",
+		"saiga": "res://Sprites/images_games/match/hard/Saiga.png",
+		"takin": "res://Sprites/images_games/match/hard/Takin.png",
+		"vaquita": "res://Sprites/images_games/match/hard/Vaquita.png",
+		"yeti crab": "res://Sprites/images_games/match/hard/Yeti Crab.png"
+	}
+}

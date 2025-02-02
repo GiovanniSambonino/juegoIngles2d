@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3 uid="uid://cjy4mupg1qrvg"]
+
+[ext_resource type="Texture2D" uid="uid://c223cjx8lrdmg" path="res://Sprites/global/letreroTiempoAcabado.png" id="1_u4735"]
+[ext_resource type="Script" path="res://Scripts/NivelFinalizado.gd" id="1_udopp"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="2_xp65q"]
+[ext_resource type="Texture2D" uid="uid://b5kpayhm76rhk" path="res://Sprites/buttons/nivelesBoton.png" id="3_ugoti"]
+[ext_resource type="Texture2D" uid="uid://cs343emd8sdo3" path="res://Sprites/buttons/nivelesBotonHover.png" id="4_lcxj2"]
+[ext_resource type="Texture2D" uid="uid://cdix7j275cuds" path="res://Sprites/buttons/reiniciarBoton.png" id="5_cpt3h"]
+[ext_resource type="Texture2D" uid="uid://b4fora6tpewjo" path="res://Sprites/buttons/reiniciarBotonHover.png" id="6_6qn0d"]
+[ext_resource type="Texture2D" uid="uid://c8mm5ehk2d8x3" path="res://Sprites/buttons/casaBoton.png" id="7_asnoh"]
+[ext_resource type="Texture2D" uid="uid://bku037klxs8o4" path="res://Sprites/buttons/casaBotonHover.png" id="8_key0e"]
+
+[node name="NivelFinalizado" type="Node2D"]
+script = ExtResource("1_udopp")
+
+[node name="Tablero" type="Sprite2D" parent="."]
+position = Vector2(639.676, 409.5)
+scale = Vector2(0.330443, 0.330443)
+texture = ExtResource("1_u4735")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 253.0
+offset_top = 287.0
+offset_right = 1041.0
+offset_bottom = 370.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_xp65q")
+theme_override_font_sizes/font_size = 50
+text = "Ya no hay tiempo!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 255.0
+offset_top = 365.0
+offset_right = 1039.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_xp65q")
+theme_override_font_sizes/font_size = 45
+text = "Intentar de nuevo?"
+horizontal_alignment = 1
+
+[node name="NivelesButton" type="TextureButton" parent="."]
+process_mode = 3
+offset_left = 331.0
+offset_top = 462.0
+offset_right = 470.0
+offset_bottom = 591.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_ugoti")
+texture_hover = ExtResource("4_lcxj2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ReiniciarButton" type="TextureButton" parent="."]
+process_mode = 3
+offset_left = 569.0
+offset_top = 459.0
+offset_right = 711.0
+offset_bottom = 591.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_cpt3h")
+texture_hover = ExtResource("6_6qn0d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CasaButton" type="TextureButton" parent="."]
+process_mode = 3
+offset_left = 809.0
+offset_top = 459.0
+offset_right = 950.0
+offset_bottom = 590.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_asnoh")
+texture_hover = ExtResource("8_key0e")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="NivelesButton" to="." method="_on_niveles_button_pressed"]
+[connection signal="pressed" from="ReiniciarButton" to="." method="_on_reiniciar_button_pressed"]
+[connection signal="pressed" from="CasaButton" to="." method="_on_casa_button_pressed"]

@@ -1,0 +1,95 @@
+[gd_scene load_steps=13 format=3 uid="uid://cu1nuxh8st3ux"]
+
+[ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="1_ae3ik"]
+[ext_resource type="Script" path="res://Scripts/menu_juegos.gd" id="1_wwi27"]
+[ext_resource type="Texture2D" uid="uid://dtfvr6dmjys6b" path="res://Sprites/mini_games/Tablero_minigame.png" id="3_prnin"]
+[ext_resource type="Texture2D" uid="uid://b6i60n65brh3n" path="res://Sprites/mini_games/Letrero_minigame.png" id="4_41r5y"]
+[ext_resource type="Texture2D" uid="uid://cufijlsaxqdx8" path="res://Sprites/mini_games/Dibujo puzzles.png" id="5_1oynu"]
+[ext_resource type="Texture2D" uid="uid://cxrqvvuddwr7o" path="res://Sprites/mini_games/Boton Puzzles.png" id="6_5mxid"]
+[ext_resource type="Texture2D" uid="uid://cguy374ehh0lq" path="res://Sprites/mini_games/Dibujo match it.png" id="7_ai6fw"]
+[ext_resource type="Texture2D" uid="uid://bwkababwghvx" path="res://Sprites/mini_games/Boton Match it.png" id="8_40w6x"]
+[ext_resource type="Texture2D" uid="uid://cdlq28w1l3pmc" path="res://Sprites/mini_games/Dibujo Order it.png" id="9_yvfam"]
+[ext_resource type="Texture2D" uid="uid://dytluhvtfl6pu" path="res://Sprites/mini_games/Boton Order it.png" id="10_yd6ht"]
+[ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="11_13b7x"]
+[ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="11_qllet"]
+
+[node name="Menu_Juegos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wwi27")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_ae3ik")]
+
+[node name="Tablero" type="Sprite2D" parent="."]
+position = Vector2(646, 493)
+scale = Vector2(0.219223, 0.219223)
+texture = ExtResource("3_prnin")
+
+[node name="Letrero" type="Sprite2D" parent="."]
+position = Vector2(632, 192)
+scale = Vector2(0.219223, 0.219223)
+texture = ExtResource("4_41r5y")
+
+[node name="Hbox_botones_juegos" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 320.0
+offset_right = 4069.0
+offset_bottom = 1971.0
+scale = Vector2(0.22, 0.22)
+theme_override_constants/separation = 215
+alignment = 1
+
+[node name="btn_puzzle" type="TextureButton" parent="Hbox_botones_juegos"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_1oynu")
+stretch_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Hbox_botones_juegos/btn_puzzle"]
+position = Vector2(572, 1334)
+texture = ExtResource("6_5mxid")
+
+[node name="btn_match" type="TextureButton" parent="Hbox_botones_juegos"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_ai6fw")
+stretch_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Hbox_botones_juegos/btn_match"]
+position = Vector2(568.435, 1339.13)
+texture = ExtResource("8_40w6x")
+
+[node name="btn_order" type="TextureButton" parent="Hbox_botones_juegos"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_yvfam")
+
+[node name="Sprite2D" type="Sprite2D" parent="Hbox_botones_juegos/btn_order"]
+position = Vector2(592.652, 1339.13)
+texture = ExtResource("10_yd6ht")
+
+[node name="btn_sound" parent="." instance=ExtResource("11_13b7x")]
+layout_mode = 1
+offset_left = 1175.0
+offset_top = 42.0
+offset_right = 1175.64
+offset_bottom = 42.32
+
+[node name="btn_go_back" parent="." instance=ExtResource("11_qllet")]
+offset_top = 58.0
+offset_bottom = 98.0
+
+[connection signal="pressed" from="Hbox_botones_juegos/btn_puzzle" to="." method="_on_btn_puzzle_pressed"]
+[connection signal="pressed" from="Hbox_botones_juegos/btn_match" to="." method="_on_btn_match_pressed"]
+[connection signal="pressed" from="Hbox_botones_juegos/btn_order" to="." method="_on_btn_order_pressed"]

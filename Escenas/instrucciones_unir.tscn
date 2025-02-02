@@ -1,0 +1,158 @@
+[gd_scene load_steps=11 format=3 uid="uid://cgkovomtm6rsg"]
+
+[ext_resource type="Script" path="res://Scripts/instrucciones_palabra.gd" id="1_5j4xw"]
+[ext_resource type="PackedScene" uid="uid://dglbcxrsa3qv3" path="res://Piezas/ColorRectDifuminado.tscn" id="2_4r4am"]
+[ext_resource type="Texture2D" uid="uid://n5hcgce8nh04" path="res://Sprites/tableroInstruccionesMatch.png" id="3_ocuql"]
+[ext_resource type="FontFile" uid="uid://by6docfjh045t" path="res://Fonts/Retropix-Regular.ttf" id="4_hhx10"]
+[ext_resource type="Theme" uid="uid://da4xw33242vln" path="res://styles/btn_instruccionesSiguiente.tres" id="5_y14f2"]
+[ext_resource type="VideoStream" path="res://Videos/video_instrucciones_match_it.ogv" id="6_afl05"]
+[ext_resource type="AudioStream" uid="uid://dsff4jokaafnm" path="res://Sonido/cancion1.mp3" id="7_ulwdw"]
+
+[sub_resource type="Animation" id="Animation_cpjhj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_81pe7"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p5py1"]
+_data = {
+"RESET": SubResource("Animation_cpjhj"),
+"blur": SubResource("Animation_81pe7")
+}
+
+[node name="InstruccionesUnir" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5j4xw")
+
+[node name="ColorRect2" parent="." instance=ExtResource("2_4r4am")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -504.5
+offset_top = -357.0
+offset_right = 567.5
+offset_bottom = 413.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ocuql")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 11.0
+offset_right = 621.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_hhx10")
+theme_override_font_sizes/font_size = 60
+text = "MATCH IT"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+offset_left = 185.0
+offset_top = 134.0
+offset_right = 872.0
+offset_bottom = 188.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_hhx10")
+theme_override_font_sizes/normal_font_size = 31
+text = "Welcome to the match it adventure kids!"
+fit_content = true
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 690.0
+offset_right = 641.0
+offset_bottom = 770.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("5_y14f2")
+text = "START"
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 203.0
+offset_right = 837.0
+offset_bottom = 600.0
+scale = Vector2(0.95, 0.95)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TextureRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 36.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.95, 0.95)
+stream = ExtResource("6_afl05")
+volume_db = -80.0
+expand = true
+loop = true
+
+[node name="Line2D" type="Line2D" parent="TextureRect/Panel"]
+points = PackedVector2Array(-3, -4, -3, 401, 676, 401, 676, -4)
+closed = true
+default_color = Color(0.807843, 0.635294, 0.439216, 1)
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_p5py1")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_ulwdw")
+volume_db = -19.81
+autoplay = true
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

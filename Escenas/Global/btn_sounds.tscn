@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://xwnqhcqrd6mc"]
+
+[ext_resource type="Script" path="res://Scripts/btn_sounds.gd" id="1_umtdx"]
+[ext_resource type="Texture2D" uid="uid://caqo2b3df0hvu" path="res://Sprites/buttons/Boton_Musica.png" id="2_pckem"]
+[ext_resource type="Texture2D" uid="uid://cjyptrtk6fkkl" path="res://Sprites/buttons/Boton_Silencio.png" id="3_o4reb"]
+[ext_resource type="Texture2D" uid="uid://bphpit0ity5cd" path="res://Sprites/buttons/Boton_Musica_hover.png" id="4_kdrfx"]
+
+[node name="btn_sound" type="Control"]
+layout_mode = 3
+anchor_right = 0.037
+anchor_bottom = 0.069
+offset_right = 0.639999
+offset_bottom = 0.319996
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_umtdx")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.22, 0.22)
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("2_pckem")
+texture_pressed = ExtResource("3_o4reb")
+texture_hover = ExtResource("4_kdrfx")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://cffwkn8ue835u"]
+
+[ext_resource type="Script" path="res://Scripts/FrasesNivel.gd" id="1_ukesw"]
+[ext_resource type="PackedScene" uid="uid://c6vh7gkg27w0a" path="res://Escenas/parallax_backgroundMenu.tscn" id="2_h8lco"]
+[ext_resource type="PackedScene" uid="uid://dr445orecfavc" path="res://Escenas/Global/box_inside_game_f.tscn" id="4_a4a0i"]
+[ext_resource type="PackedScene" uid="uid://dyhyi34qkkc8g" path="res://Escenas/instrucciones_frases.tscn" id="7_gei6u"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ukesw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.122, 0.8, 0.459, 0)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_h8lco")]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="InstruccionesFrases" parent="CanvasLayer2" instance=ExtResource("7_gei6u")]
+mouse_filter = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(40, 100)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 566.0
+offset_right = 66.0
+offset_bottom = 677.0
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box_inside_game" parent="." instance=ExtResource("4_a4a0i")]
+
+[node name="DisordenateHBoxContainer" type="HBoxContainer" parent="Box_inside_game"]
+offset_left = -883.0
+offset_top = 520.0
+offset_right = 293.0
+offset_bottom = 631.0
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="OrdenateHBoxContainer" type="HBoxContainer" parent="Box_inside_game"]
+offset_left = -879.0
+offset_top = 662.0
+offset_right = 298.0
+offset_bottom = 779.0
+theme_override_constants/separation = 25
+alignment = 1

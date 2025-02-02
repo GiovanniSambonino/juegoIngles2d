@@ -1,0 +1,181 @@
+[gd_scene load_steps=16 format=3 uid="uid://cmfuormlq61ke"]
+
+[ext_resource type="Script" path="res://Scripts/frasesNivel_2.gd" id="1_jflwo"]
+[ext_resource type="PackedScene" uid="uid://dyhyi34qkkc8g" path="res://Escenas/instrucciones_frases.tscn" id="2_tcw35"]
+[ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_cwelv"]
+[ext_resource type="PackedScene" uid="uid://dr445orecfavc" path="res://Escenas/Global/box_inside_game_f.tscn" id="4_d5hto"]
+[ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_45vlk"]
+[ext_resource type="Texture2D" uid="uid://8r4ho23wivj1" path="res://Sprites/images_games/order/Ave.png" id="6_v2vfa"]
+[ext_resource type="Texture2D" uid="uid://c3uifa2tgytbe" path="res://Sprites/mini_games/tableroPuzzle.png" id="7_14nfn"]
+[ext_resource type="PackedScene" uid="uid://bgribmoxwwcdd" path="res://Piezas/piezaBox.tscn" id="8_cgv3h"]
+[ext_resource type="PackedScene" uid="uid://d0n52w01vfldv" path="res://Piezas/piezaBox1.tscn" id="9_hm3s8"]
+[ext_resource type="PackedScene" uid="uid://dx37iwurtxyud" path="res://Piezas/piezaBox2.tscn" id="10_fll2e"]
+[ext_resource type="PackedScene" uid="uid://1fgrvi3d8xdc" path="res://Piezas/piezaPuzzle.tscn" id="11_atbfx"]
+
+[sub_resource type="Animation" id="Animation_4b8yg"]
+resource_name = "Gana"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cadenas/Pieza0:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.2, 1.5, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3), Vector2(0.2, 0.2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cadenas/Pieza1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.2, 1.5, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3), Vector2(0.2, 0.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cadenas/Pieza2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.2, 1.5, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3), Vector2(0.2, 0.2)]
+}
+
+[sub_resource type="Animation" id="Animation_jcy4g"]
+resource_name = "PistaPieza"
+
+[sub_resource type="Animation" id="Animation_kijen"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cadenas/Pieza0:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.2, 0.2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cadenas/Pieza1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.2, 0.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cadenas/Pieza2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.2, 0.2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_batyl"]
+_data = {
+"Gana": SubResource("Animation_4b8yg"),
+"PistaPieza": SubResource("Animation_jcy4g"),
+"RESET": SubResource("Animation_kijen")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jflwo")
+metadata/_edit_horizontal_guides_ = [-100.0]
+metadata/_edit_vertical_guides_ = [300.0]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="InstruccionesFrases" parent="CanvasLayer2" instance=ExtResource("2_tcw35")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(636.987, 454.85)
+scale = Vector2(0.211671, 0.211671)
+texture = ExtResource("3_cwelv")
+
+[node name="Box_inside_game" parent="." instance=ExtResource("4_d5hto")]
+position = Vector2(928, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_45vlk")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(647.239, 339.125)
+scale = Vector2(0.2238, 0.2238)
+texture = ExtResource("6_v2vfa")
+
+[node name="Ordenada" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Ordenada"]
+position = Vector2(623, 760)
+scale = Vector2(0.256701, 0.227204)
+texture = ExtResource("7_14nfn")
+
+[node name="piezaBox0" parent="Ordenada" instance=ExtResource("10_fll2e")]
+position = Vector2(236, 761)
+scale = Vector2(0.2, 0.2)
+letter = "She"
+
+[node name="piezaBox1" parent="Ordenada" instance=ExtResource("8_cgv3h")]
+position = Vector2(478, 761)
+scale = Vector2(0.2, 0.2)
+letter = "She"
+
+[node name="piezaBox2" parent="Ordenada" instance=ExtResource("9_hm3s8")]
+position = Vector2(726, 761)
+scale = Vector2(0.2, 0.2)
+
+[node name="piezaBox3" parent="Ordenada" instance=ExtResource("9_hm3s8")]
+position = Vector2(979, 761)
+scale = Vector2(0.227, 0.2)
+
+[node name="Cadenas" type="Node2D" parent="."]
+
+[node name="Pieza0" parent="Cadenas" instance=ExtResource("11_atbfx")]
+position = Vector2(182, 621)
+scale = Vector2(0.2, 0.2)
+letter = "She"
+
+[node name="Pieza1" parent="Cadenas" instance=ExtResource("11_atbfx")]
+position = Vector2(470, 621)
+scale = Vector2(0.2, 0.2)
+
+[node name="Pieza2" parent="Cadenas" instance=ExtResource("11_atbfx")]
+position = Vector2(762, 621)
+scale = Vector2(0.2, 0.2)
+
+[node name="Pieza3" parent="Cadenas" instance=ExtResource("11_atbfx")]
+position = Vector2(1061, 621)
+scale = Vector2(0.2, 0.2)
+letter = "She"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_batyl")
+}

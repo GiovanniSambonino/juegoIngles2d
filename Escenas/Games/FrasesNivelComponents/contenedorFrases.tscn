@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfhjulflbpc6q"]
+
+[ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="1_iq7hg"]
+[ext_resource type="Theme" uid="uid://cxi7jjbs0r1ro" path="res://styles/FrasesNivelStyleButton.tres" id="2_ncr6y"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(157, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(14, 3.5)
+scale = Vector2(0.244009, 0.0856)
+texture = ExtResource("1_iq7hg")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -32.0
+offset_top = -18.0
+offset_right = 30.0
+offset_bottom = 14.0
+theme = ExtResource("2_ncr6y")
+text = "aaaa"
+metadata/_edit_use_anchors_ = true

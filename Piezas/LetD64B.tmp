@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj6ij2dh6vwpr"]
+
+[ext_resource type="Texture2D" uid="uid://1bcbeis5xil6" path="res://Sprites/images_games/order/Interactivo letra (vacio).png" id="1_cam2k"]
+[ext_resource type="Script" path="res://Piezas/Letter.gd" id="1_k68xw"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="2_cqkuq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1rv6w"]
+font = ExtResource("2_cqkuq")
+font_size = 250
+font_color = Color(0, 0, 0, 1)
+
+[node name="Letter" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_k68xw")
+
+[node name="InteractivoLetra(vacio)" type="Sprite2D" parent="."]
+texture = ExtResource("1_cam2k")
+
+[node name="Label" type="Label" parent="InteractivoLetra(vacio)"]
+offset_left = -73.0
+offset_top = -91.0
+offset_right = 83.0
+offset_bottom = 160.0
+text = "A"
+label_settings = SubResource("LabelSettings_1rv6w")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -226.0
+offset_top = -156.0
+offset_right = 234.0
+offset_bottom = 164.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

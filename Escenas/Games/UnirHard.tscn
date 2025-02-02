@@ -1,0 +1,311 @@
+[gd_scene load_steps=19 format=3 uid="uid://08isbhoijbyg"]
+
+[ext_resource type="Script" path="res://Scripts/Games/UnirHard.gd" id="1_r5v1u"]
+[ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_yn52r"]
+[ext_resource type="PackedScene" uid="uid://c2f2v2csh2ruc" path="res://Escenas/Global/box_inside_game_ha.tscn" id="3_f00o5"]
+[ext_resource type="Script" path="res://Scripts/box_inside_game_ha.gd" id="4_wrjh8"]
+[ext_resource type="PackedScene" uid="uid://cgkovomtm6rsg" path="res://Escenas/instrucciones_unir.tscn" id="5_rk11i"]
+[ext_resource type="PackedScene" uid="uid://soivbvg68l7y" path="res://Piezas/box_imagen_match.tscn" id="6_t26k2"]
+[ext_resource type="PackedScene" uid="uid://f8ju1ll5w53y" path="res://Piezas/box_texto_match.tscn" id="7_epfks"]
+[ext_resource type="Texture2D" uid="uid://b4dcgfxuhgvxa" path="res://Sprites/images_games/match/Correct.png" id="8_du652"]
+[ext_resource type="Texture2D" uid="uid://ngsyantlb00d" path="res://Sprites/images_games/match/Incorrect.png" id="9_587ye"]
+[ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="10_umuip"]
+[ext_resource type="Shader" path="res://Escenas/Games/UnirFacil1.gdshader" id="11_kvxj7"]
+[ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="12_to0bw"]
+[ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="13_gual3"]
+
+[sub_resource type="Animation" id="Animation_8d3fg"]
+resource_name = "Win"
+length = 1.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Win:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4, 1.7, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0.0156863), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Win:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Win/Correct:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Win/Correct:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.182776, 0.182776), Vector2(0.283, 0.283), Vector2(0.182776, 0.182776)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Win/Correct2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.5, 0.5001, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Win/Correct2:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.5, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.182776, 0.182776), Vector2(0.283, 0.283), Vector2(0.182776, 0.182776)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Win/Correct3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Win/Correct3:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1, 1.3, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.182776, 0.182776), Vector2(0.283, 0.283), Vector2(0.182776, 0.182776)]
+}
+
+[sub_resource type="Animation" id="Animation_vrr4w"]
+resource_name = "correct"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Correct:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Correct:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Correct:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.226744, 0.226744), Vector2(0.327, 0.327), Vector2(0.226744, 0.226744)]
+}
+
+[sub_resource type="Animation" id="Animation_anl4b"]
+resource_name = "incorrect"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Incorrect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.4, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Incorrect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Incorrect:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.9001, 1, 1.1, 1.2, 1.3, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-40, 0), Vector2(40, 0), Vector2(-40, 0), Vector2(40, 0), Vector2(-40, 0), Vector2(40, 0), Vector2(-40, 0), Vector2(40, 0), Vector2(-40, 0), Vector2(0, 0), Vector2(40, 0), Vector2(-40, 0), Vector2(40, 0), Vector2(-40, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k84qp"]
+_data = {
+"Win": SubResource("Animation_8d3fg"),
+"correct": SubResource("Animation_vrr4w"),
+"incorrect": SubResource("Animation_anl4b")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_12p7x"]
+shader = ExtResource("11_kvxj7")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_r5v1u")
+metadata/_edit_vertical_guides_ = [636.0, 1061.0]
+metadata/_edit_horizontal_guides_ = [-100.0, 115.0, 663.0]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_yn52r")]
+
+[node name="Box_inside_game" parent="." instance=ExtResource("3_f00o5")]
+script = ExtResource("4_wrjh8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InstruccionesUnir" parent="CanvasLayer" instance=ExtResource("5_rk11i")]
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 4.0
+offset_bottom = 8.0
+
+[node name="Box_imagen_match" parent="." instance=ExtResource("6_t26k2")]
+position = Vector2(451, 319)
+
+[node name="Box_imagen_match2" parent="." instance=ExtResource("6_t26k2")]
+position = Vector2(451, 500)
+
+[node name="Box_imagen_match3" parent="." instance=ExtResource("6_t26k2")]
+position = Vector2(451, 682)
+
+[node name="Box_texto_match" parent="." instance=ExtResource("7_epfks")]
+position = Vector2(49, 0)
+
+[node name="Box_texto_match2" parent="." instance=ExtResource("7_epfks")]
+position = Vector2(49, 180)
+
+[node name="Box_texto_match3" parent="." instance=ExtResource("7_epfks")]
+position = Vector2(49, 360)
+
+[node name="Correct" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(690, 494)
+scale = Vector2(0.226744, 0.226744)
+texture = ExtResource("8_du652")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k84qp")
+}
+
+[node name="Incorrect" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(687, 505)
+scale = Vector2(0.239417, 0.239417)
+texture = ExtResource("9_587ye")
+
+[node name="Win" type="Node2D" parent="."]
+
+[node name="Correct" type="Sprite2D" parent="Win"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(682, 328)
+scale = Vector2(0.182776, 0.182776)
+texture = ExtResource("8_du652")
+
+[node name="Correct2" type="Sprite2D" parent="Win"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(682, 511)
+scale = Vector2(0.182776, 0.182776)
+texture = ExtResource("8_du652")
+
+[node name="Correct3" type="Sprite2D" parent="Win"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(682, 686)
+scale = Vector2(0.182776, 0.182776)
+texture = ExtResource("8_du652")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(687, 505)
+scale = Vector2(0.239417, 0.239417)
+stream = ExtResource("10_umuip")
+volume_db = -1.0
+
+[node name="HintsPanel" type="Panel" parent="."]
+material = SubResource("ShaderMaterial_12p7x")
+offset_left = 355.0
+offset_top = 834.0
+offset_right = 955.0
+offset_bottom = 904.0
+
+[node name="Tabla" type="Sprite2D" parent="HintsPanel"]
+position = Vector2(299.578, 33)
+scale = Vector2(0.430608, 0.224193)
+skew = -0.062832
+texture = ExtResource("12_to0bw")
+
+[node name="Label" type="Label" parent="HintsPanel"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 590.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_gual3")
+theme_override_font_sizes/font_size = 25
+text = "3 Hints Remaining"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 162

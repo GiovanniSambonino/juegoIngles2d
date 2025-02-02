@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://tm4eivwr2yxl"]
+
+[ext_resource type="Script" path="res://Scripts/Puntaje.gd" id="1_da5bc"]
+[ext_resource type="Texture2D" uid="uid://bjc011wiwmvcv" path="res://Sprites/Background_game.jpg" id="2_ojmb7"]
+[ext_resource type="Texture2D" uid="uid://bas00bqtiqmmo" path="res://Sprites/image-removebg-preview (10) 1.png" id="3_qkbjd"]
+[ext_resource type="Texture2D" uid="uid://danwt1cf3htgu" path="res://Sprites/¡FELICITACIONES!.png" id="4_v746f"]
+[ext_resource type="Texture2D" uid="uid://di6qittmq80sk" path="res://Sprites/TU PUNTAJE.png" id="5_3rix0"]
+[ext_resource type="Texture2D" uid="uid://b5ojys7ju74js" path="res://Sprites/btn_next.png" id="6_lg74n"]
+[ext_resource type="Texture2D" uid="uid://b2u8d484wygk8" path="res://Sprites/Group 233.png" id="7_vony0"]
+
+[sub_resource type="SystemFont" id="SystemFont_mtyrk"]
+font_names = PackedStringArray("Tw Cen MT")
+
+[sub_resource type="LabelSettings" id="LabelSettings_p3bng"]
+font = SubResource("SystemFont_mtyrk")
+font_size = 100
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_da5bc")
+metadata/_edit_horizontal_guides_ = [-100.0]
+metadata/_edit_vertical_guides_ = [640.0]
+
+[node name="Node2D2" type="Node2D" parent="."]
+
+[node name="Fondo" type="Sprite2D" parent="Node2D2"]
+position = Vector2(637, 374)
+scale = Vector2(0.89477, 0.836735)
+texture = ExtResource("2_ojmb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.91147, 0.760766)
+texture = ExtResource("3_qkbjd")
+metadata/_edit_lock_ = true
+
+[node name="¡felicitaciones!" type="Sprite2D" parent="."]
+position = Vector2(655, 104)
+texture = ExtResource("4_v746f")
+
+[node name="TuPuntaje" type="Sprite2D" parent="."]
+position = Vector2(652, 211)
+texture = ExtResource("5_3rix0")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 508.0
+offset_top = 260.0
+offset_right = 774.0
+offset_bottom = 377.0
+text = "0
+"
+label_settings = SubResource("LabelSettings_p3bng")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1097.0
+offset_top = 582.0
+offset_right = 1187.0
+offset_bottom = 668.0
+
+[node name="BtnNext" type="Sprite2D" parent="Button"]
+position = Vector2(46.625, 44.625)
+scale = Vector2(0.771052, 0.760101)
+texture = ExtResource("6_lg74n")
+
+[node name="Group233" type="Sprite2D" parent="."]
+position = Vector2(639, 497)
+texture = ExtResource("7_vony0")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
