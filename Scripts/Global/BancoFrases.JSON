@@ -1,0 +1,805 @@
+{
+  "exercises": [
+	{
+	  "id": 1,
+	  "image": "futbol1",
+	  "esp": {
+		"easy": [
+		  "Él juega fútbol muy bien",
+		  "Él patea muy fuerte"
+		],
+		"medium": [
+		  "Él juega al fútbol muy bien con pasion",
+		  "Él juega al fútbol con pasión y fuerza"
+		],
+		"hard": [
+		  "Él juega al fútbol con sus amigos en el parque grande",
+		  "Él corre rápido y anota un gol con gran entusiasmo"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He plays", "football", "very well"],
+		  ["He hits", "the ball", "very hard"]
+		],
+		"medium": [
+		  ["He plays", "football", "very well", "with passion"],
+		  ["He plays", "football", "with passion", "and energy"]
+		],
+		"hard": [
+		  ["He plays", "football with", "his friends", "in park", "runs fast", "scores goal"],
+		  ["He runs", "very fast", "kicks ball", "and scores", "with joy", "big goal"]
+		]
+	  }
+	},
+	{
+	  "id": 2,
+	  "image": "leehoja",
+	  "esp": {
+		"easy": [
+		  "Yo leo la hoja",
+		  "Él lee la hoja"
+		],
+		"medium": [
+		  "Yo leo el libro todos los dias en casa",
+		  "Yo leo la pagina todos los dias en casa"
+		],
+		"hard": [
+		  "Yo leo un libro interesante en la biblioteca con calma",
+		  "La historia es emocionante y me enseña muchas cosas"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["I read", "the", "paper"],
+		  ["He reads", "the", "paper"]
+		],
+		"medium": [
+		  ["I read", "the book", "every day", "at home"],
+		  ["I read", "the page", "every day", "at house"]
+		],
+		"hard": [
+		  ["I read", "a book", "in library", "with calm", "it teaches", "many things"],
+		  ["The story", "is fun", "and exciting", "I learn", "new things", "every day"]
+		]
+	  }
+	},
+	{
+	  "id": 3,
+	  "image": "barre",
+	  "esp": {
+		"easy": [
+		  "Ella barre el piso",
+		  "Ella limpia la casa"
+		],
+		"medium": [
+		  "Ella barre el piso con fuerza",
+		  "Ella barre el piso de la sala y la cocina"
+		],
+		"hard": [
+		  "Ella barre el piso con fuerza en toda la casa cada día",
+		  "Primero limpia la sala y después el comedor con cuidado"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "sweeps", "the floor"],
+		  ["She", "cleans", "the house"]
+		],
+		"medium": [
+		  ["She sweeps", "the floor", "with force", "and broom"],
+		  ["She sweeps", "the floor", "living room", "and kitchen"]
+		],
+		"hard": [
+		  ["She sweeps", "the floor", "in house", "with broom", "very clean", "everywhere neat"],
+		  ["She starts", "in living", "room and", "cleans dining", "room after", "very tidy"]
+		]
+	  }
+	},
+	{
+	  "id": 4,
+	  "image": "cantan",
+	  "esp": {
+		"easy": [
+		  "Ellos cantan una canción",
+		  "Nosotros cantamos juntos"
+		],
+		"medium": [
+		  "Ellos cantan una canción alegre",
+		  "Ellos cantan una canción juntos en el coro"
+		],
+		"hard": [
+		  "Ellos cantan una canción alegre en la escuela por la tarde",
+		  "La música es divertida y todos cantan con mucha energía"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["They", "sing", "a song"],
+		  ["We", "sing", "together"]
+		],
+		"medium": [
+		  ["They sing", "a song", "with joy", "in chorus"],
+		  ["They sing", "a song", "together happy", "in choir"]
+		],
+		"hard": [
+		  ["They sing", "a song", "at school", "in afternoon", "music fun", "everyone sings"],
+		  ["The music", "is great", "and happy", "they sing", "with joy", "all together"]
+		]
+	  }
+	},
+	{
+	  "id": 5,
+	  "image": "compu",
+	  "esp": {
+		"easy": [
+		  "Él trabaja en su computadora",
+		  "Él trabaja en la oficina"
+		],
+		"medium": [
+		  "Él trabaja en su computadora todo el dia en casa",
+		  "Él trabaja en su computadora en casa y oficina"
+		],
+		"hard": [
+		  "Él trabaja en su computadora para terminar un gran proyecto",
+		  "Escribe códigos importantes con paciencia y concentración"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He works", "on his", "computer"],
+		  ["He works", "at the", "office"]
+		],
+		"medium": [
+		  ["He works", "on computer", "all day", "at home"],
+		  ["He works", "on computer", "in house", "and office"]
+		],
+		"hard": [
+		  ["He works", "on computer", "all day", "writing code", "big project", "with focus"],
+		  ["He writes", "new code", "and solves", "big problems", "works hard", "very skilled"]
+		]
+	  }
+	},
+	{
+	  "id": 6,
+	  "image": "golf",
+	  "esp": {
+		"easy": [
+		  "Te gusta jugar golf",
+		  "A él le encanta jugar golf"
+		],
+		"medium": [
+		  "Te gusta jugar golf en el parque",
+		  "Te gusta jugar golf los fines de semana en familia"
+		],
+		"hard": [
+		  "Te gusta jugar golf con tus amigos en el parque los sábados",
+		  "Practicas los tiros y disfrutas competir con los demás"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["You", "like to", "play golf"],
+		  ["He loves", "to play", "golf"]
+		],
+		"medium": [
+		  ["You like", "playing golf", "in park", "on weekend"],
+		  ["You like", "playing golf", "in family", "on Sundays"]
+		],
+		"hard": [
+		  ["You play", "golf with", "your friends", "in park", "on weekend", "have fun"],
+		  ["You practice", "your swings", "and compete", "with others", "on Saturday", "great time"]
+		]
+	  }
+	},
+	{
+	  "id": 7,
+	  "image": "juegaperro",
+	  "esp": {
+		"easy": [
+		  "Yo juego con mi perro",
+		  "Él juega con su perro"
+		],
+		"medium": [
+		  "Yo juego con mi perro felizmente",
+		  "Yo juego con mi perro en el jardín cada tarde"
+		],
+		"hard": [
+		  "Yo juego con mi perro felizmente en el jardín después de clase",
+		  "Le lanzo la pelota y él la trae corriendo muy contento"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["I play", "with", "my dog"],
+		  ["He plays", "with", "his dog"]
+		],
+		"medium": [
+		  ["I play", "with dog", "in yard", "every day"],
+		  ["I play", "with dog", "in garden", "each afternoon"]
+		],
+		"hard": [
+		  ["I play", "with dog", "in garden", "after school", "throw ball", "he fetches"],
+		  ["The dog", "is happy", "he runs", "very fast", "brings ball", "back to me"]
+		]
+	  }
+	},
+	{
+	  "id": 8,
+	  "image": "mates",
+	  "esp": {
+		"easy": [
+		  "Mario enseña matemáticas",
+		  "Él está enseñando matemáticas"
+		],
+		"medium": [
+		  "Mario enseña matemáticas con entusiasmo",
+		  "Mario enseña matemáticas a estudiantes cada día"
+		],
+		"hard": [
+		  "Mario enseña matemáticas a los estudiantes en la escuela grande",
+		  "Explica problemas difíciles y ayuda a todos con paciencia"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["Mario", "teaches", "math"],
+		  ["He is", "teaching", "math"]
+		],
+		"medium": [
+		  ["Mario teaches", "mathematics well", "with love", "every day"],
+		  ["Mario teaches", "math daily", "to students", "with care"]
+		],
+		"hard": [
+		  ["Mario teaches", "math in", "big school", "to students", "every day", "helps them"],
+		  ["He explains", "hard problems", "very clearly", "students learn", "and enjoy", "his class"]
+		]
+	  }
+	},
+	{
+	  "id": 9,
+	  "image": "pasea",
+	  "esp": {
+		"easy": [
+		  "El hombre está paseando a su perro",
+		  "Él pasea a su perro"
+		],
+		"medium": [
+		  "El hombre pasea a su perro felizmente",
+		  "El hombre pasea a su perro en el parque todos los días"
+		],
+		"hard": [
+		  "El hombre pasea a su perro en el parque todas las mañanas",
+		  "Camina lentamente mientras el perro corre feliz a su lado"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["The man", "is walking", "his dog"],
+		  ["He", "walks his", "dog"]
+		],
+		"medium": [
+		  ["Man walks", "his dog", "in park", "every day"],
+		  ["Man walks", "his dog", "in park", "happy walks"]
+		],
+		"hard": [
+		  ["Man walks", "his dog", "in park", "every morning", "dog runs", "very happy"],
+		  ["The dog", "is playful", "he barks", "and wags", "his tail", "great walk"]
+		]
+	  }
+	},
+	{
+	  "id": 10,
+	  "image": "pesca",
+	  "esp": {
+		"easy": [
+		  "Él está pescando varios peces",
+		  "A él le gusta pescar"
+		],
+		"medium": [
+		  "Él está pescando peces grandes en el río",
+		  "Él está pescando peces grandes cada fin de semana"
+		],
+		"hard": [
+		  "Él está pescando peces grandes en el río tranquilo del bosque",
+		  "Usa una caña de pescar y espera con calma todo el día"
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He is", "catching", "some fish"],
+		  ["He", "likes to", "fish"]
+		],
+		"medium": [
+		  ["He fishes", "big fish", "in river", "on weekends"],
+		  ["He fishes", "big fish", "every week", "with patience"]
+		],
+		"hard": [
+		  ["He fishes", "big fish", "in river", "in forest", "waits calm", "catches fish"],
+		  ["The river", "is quiet", "he waits", "all day", "catches fish", "and smiles"]
+		]
+	  }
+	},
+	{
+	  "id": 11,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Él lee un cuento.",
+		  "Él se sumerge en un cuento corto."
+		],
+		"medium": [
+		  "Él lee un cuento antes de ir a dormir.",
+		  "Antes de acostarse, él disfruta de un cuento."
+		],
+		"hard": [
+		  "Cada noche, él lee un cuento antes de dormir.",
+		  "Él se sumerge en un cuento cada noche antes de dormir."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He", "reads", "a story."],
+		  ["He", "enjoys", "a tale."]
+		],
+		"medium": [
+		  ["He reads", "a story", "before", "sleeping."],
+		  ["Before bed,", "he", "enjoys", "a tale."]
+		],
+		"hard": [
+		  ["Every night,", "he", "reads", "a story", "before", "sleeping."],
+		  ["He", "immerses himself", "in", "a story", "each night", "before sleeping."]
+		]
+	  }
+	},
+	{
+	  "id": 12,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella guarda sus juguetes.",
+		  "Ella recoge y organiza sus juguetes."
+		],
+		"medium": [
+		  "Ella recoge sus juguetes después de jugar.",
+		  "Tras jugar, ella guarda sus juguetes."
+		],
+		"hard": [
+		  "Después de jugar, ella recoge cuidadosamente sus juguetes.",
+		  "Ella organiza sus juguetes de forma meticulosa al terminar de jugar."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "puts away", "her toys."],
+		  ["She", "organizes", "her toys."]
+		],
+		"medium": [
+		  ["After playing,", "she", "gathers", "her toys."],
+		  ["She collects", "her toys", "after", "playtime."]
+		],
+		"hard": [
+		  ["After playtime,", "she", "meticulously", "gathers", "her", "toys."],
+		  ["She", "carefully", "organizes", "her", "toys", "after playing."]
+		]
+	  }
+	},
+	{
+	  "id": 13,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ellos hacen tarea.",
+		  "Ellos completan su tarea diaria."
+		],
+		"medium": [
+		  "Ellos realizan su tarea de matemáticas.",
+		  "Ellos resuelven su tarea de matemáticas."
+		],
+		"hard": [
+		  "Cada día, ellos realizan su tarea de matemáticas.",
+		  "Diariamente, ellos completan su tarea de matemáticas."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["They", "do", "homework."],
+		  ["They", "complete", "assignments."]
+		],
+		"medium": [
+		  ["They", "do", "math", "homework."],
+		  ["They", "work on", "math", "assignments."]
+		],
+		"hard": [
+		  ["Every day,", "they", "consistently", "do", "math", "homework."],
+		  ["Daily,", "they", "complete", "their", "math", "assignments."]
+		]
+	  }
+	},
+	{
+	  "id": 14,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella riega las plantas.",
+		  "Ella da agua a las plantas."
+		],
+		"medium": [
+		  "Ella riega las plantas del jardín.",
+		  "En el jardín, ella riega las plantas."
+		],
+		"hard": [
+		  "Cada mañana, ella riega las plantas del jardín.",
+		  "Por la mañana, ella cuida regando las plantas del jardín."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "waters", "the plants."],
+		  ["She", "irrigates", "the plants."]
+		],
+		"medium": [
+		  ["She waters", "the", "garden", "plants."],
+		  ["In the garden,", "she", "waters", "plants."]
+		],
+		"hard": [
+		  ["Every morning,", "she", "waters", "the", "garden", "plants."],
+		  ["In the morning,", "she", "carefully", "waters", "the", "garden plants."]
+		]
+	  }
+	},
+	{
+	  "id": 15,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Él prepara el desayuno.",
+		  "Él cocina el desayuno."
+		],
+		"medium": [
+		  "Él ayuda a preparar el desayuno.",
+		  "Él colabora en la preparación del desayuno."
+		],
+		"hard": [
+		  "Él colabora preparando el desayuno para su familia.",
+		  "Él asiste en la preparación del desayuno familiar."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He", "prepares", "breakfast."],
+		  ["He", "cooks", "breakfast."]
+		],
+		"medium": [
+		  ["He", "helps", "prepare", "breakfast."],
+		  ["He", "assists", "in", "breakfast-making."]
+		],
+		"hard": [
+		  ["He", "helps", "prepare", "breakfast", "for", "his family."],
+		  ["He", "contributes", "to", "making", "a family", "breakfast."]
+		]
+	  }
+	},
+	{
+	  "id": 16,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella practica la guitarra.",
+		  "Ella ensaya con la guitarra."
+		],
+		"medium": [
+		  "Ella practica tocar la guitarra.",
+		  "Ella se ejercita tocando la guitarra."
+		],
+		"hard": [
+		  "Después de la escuela, ella practica tocar la guitarra.",
+		  "Ella ensaya la guitarra después de clases."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "practices", "the guitar."],
+		  ["She", "rehearses", "on the guitar."]
+		],
+		"medium": [
+		  ["She", "practices", "playing", "the guitar."],
+		  ["She", "works on", "her", "guitar skills."]
+		],
+		"hard": [
+		  ["After school,", "she", "practices", "playing", "the", "guitar."],
+		  ["She", "rehearses", "on the", "guitar", "after", "classes."]
+		]
+	  }
+	},
+	{
+	  "id": 17,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Él organiza su mochila.",
+		  "Él arregla su mochila."
+		],
+		"medium": [
+		  "Él ordena su mochila.",
+		  "Él acomoda los objetos en su mochila."
+		],
+		"hard": [
+		  "Antes de ir al colegio, él organiza su mochila.",
+		  "Él arregla su mochila cuidadosamente antes de la escuela."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He", "organizes", "his backpack."],
+		  ["He", "arranges", "his backpack."]
+		],
+		"medium": [
+		  ["He", "tidies", "his", "backpack."],
+		  ["He", "puts items", "in", "his backpack."]
+		],
+		"hard": [
+		  ["Before school,", "he", "organizes", "his", "backpack", "before leaving."],
+		  ["He", "carefully", "arranges", "his", "backpack", "before school."]
+		]
+	  }
+	},
+	{
+	  "id": 18,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella dibuja y colorea.",
+		  "Ella crea dibujos y los colorea."
+		],
+		"medium": [
+		  "Ella dibuja y colorea en su cuaderno.",
+		  "En su cuaderno, ella hace dibujos y los colorea."
+		],
+		"hard": [
+		  "Ella utiliza su cuaderno de arte para dibujar y colorear.",
+		  "En su cuaderno de arte, ella dibuja y aplica colores vibrantes."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "draws", "and colors."],
+		  ["She", "illustrates", "with colors."]
+		],
+		"medium": [
+		  ["She", "draws and colors", "in", "her notebook."],
+		  ["In her notebook,", "she", "draws", "and colors."]
+		],
+		"hard": [
+		  ["Using her", "art notebook,", "she draws", "and", "colors", "beautifully."],
+		  ["In her", "art notebook,", "she", "sketches", "and applies", "vibrant colors."]
+		]
+	  }
+	},
+	{
+	  "id": 19,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Él aprende palabras en inglés.",
+		  "Él estudia palabras en inglés."
+		],
+		"medium": [
+		  "Él amplía su vocabulario en inglés.",
+		  "Él aprende palabras nuevas en inglés."
+		],
+		"hard": [
+		  "Con la ayuda de su maestra, él aprende nuevas palabras en inglés.",
+		  "Él adquiere nuevas palabras en inglés guiado por su maestra."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He", "learns", "English words."],
+		  ["He", "studies", "English terms."]
+		],
+		"medium": [
+		  ["He", "expands", "his", "English vocabulary."],
+		  ["He", "learns", "new", "English words."]
+		],
+		"hard": [
+		  ["With his", "teacher's", "help,", "he learns", "new English", "words."],
+		  ["He", "acquires", "new", "English", "words", "through guidance."]
+		]
+	  }
+	},
+	{
+	  "id": 20,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella camina con su perro.",
+		  "Ella pasea a su perro."
+		],
+		"medium": [
+		  "Ella camina al parque con su perro.",
+		  "Lleva a su perro al parque caminando."
+		],
+		"hard": [
+		  "Después de clases, ella camina al parque con su perro.",
+		  "Al terminar las clases, ella pasea a su perro hasta el parque."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "walks", "with her dog."],
+		  ["She", "strolls", "with her dog."]
+		],
+		"medium": [
+		  ["She", "walks to", "the park", "with her dog."],
+		  ["She", "takes", "her dog", "to the park."]
+		],
+		"hard": [
+		  ["After class,", "she", "walks", "to the park", "with", "her dog."],
+		  ["Post classes,", "she", "strolls", "to the park", "with", "her dog."]
+		]
+	  }
+	},
+	{
+	  "id": 21,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Él escucha historias.",
+		  "Él presta atención a las historias."
+		],
+		"medium": [
+		  "Él escucha las historias de su abuelo.",
+		  "Con interés, él atiende las historias de su abuelo."
+		],
+		"hard": [
+		  "Él escucha atentamente las historias que narra su abuelo.",
+		  "Con gran atención, él sigue las historias contadas por su abuelo."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He", "listens", "to stories."],
+		  ["He", "pays attention", "to tales."]
+		],
+		"medium": [
+		  ["He", "listens to", "his grandfather's", "stories."],
+		  ["With interest,", "he", "hears", "his grandfather's tales."]
+		],
+		"hard": [
+		  ["He listens", "attentively", "to the", "stories", "his grandfather", "tells."],
+		  ["With careful attention,", "he", "absorbs", "his grandfather's", "narrated", "tales."]
+		]
+	  }
+	},
+	{
+	  "id": 22,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella construye torres.",
+		  "Ella edifica torres de bloques."
+		],
+		"medium": [
+		  "Ella construye torres con bloques.",
+		  "Usando bloques, ella levanta torres."
+		],
+		"hard": [
+		  "Ella construye impresionantes torres con bloques de construcción.",
+		  "Con bloques de construcción, ella erige torres altas."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "builds", "towers."],
+		  ["She", "constructs", "towers."]
+		],
+		"medium": [
+		  ["She", "builds", "towers", "with blocks."],
+		  ["Using blocks,", "she", "raises", "towers."]
+		],
+		"hard": [
+		  ["She", "builds", "impressive", "towers", "with", "building blocks."],
+		  ["With", "building", " blocks,", "she erects", "tall towers", "gracefully."]
+		]
+	  }
+	},
+	{
+	  "id": 23,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Él lava los platos.",
+		  "Él limpia los platos."
+		],
+		"medium": [
+		  "Él ayuda a lavar los platos.",
+		  "Él colabora lavando los platos."
+		],
+		"hard": [
+		  "Después de la cena, él ayuda a lavar los platos.",
+		  "Él colabora en lavar los platos tras la cena."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["He", "washes", "the dishes."],
+		  ["He", "cleans", "the dishes."]
+		],
+		"medium": [
+		  ["He", "helps", "wash", "the dishes."],
+		  ["He", "assists", "in", "dishwashing."]
+		],
+		"hard": [
+		  ["After", "dinner,", "he helps", "wash", "the", "dishes."],
+		  ["He", "contributes", "to", "washing", "the dishes", "after dinner."]
+		]
+	  }
+	},
+	{
+	  "id": 24,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ella investiga planetas.",
+		  "Ella explora información sobre planetas."
+		],
+		"medium": [
+		  "Ella estudia los planetas.",
+		  "Ella investiga sobre los planetas."
+		],
+		"hard": [
+		  "Para su proyecto escolar, ella investiga sobre los planetas.",
+		  "Ella recopila datos sobre los planetas para su proyecto escolar."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["She", "researches", "planets."],
+		  ["She", "explores", "planets."]
+		],
+		"medium": [
+		  ["She", "studies", "the", "planets."],
+		  ["She", "investigates", "the", "planets."]
+		],
+		"hard": [
+		  ["For her", " school project,", "she", "researches", "the planets", "diligently."],
+		  ["She", "gathers", "data", "on", "planets for", "her project."]
+		]
+	  }
+	},
+	{
+	  "id": 25,
+	  "image": "default",
+	  "esp": {
+		"easy": [
+		  "Ellos cantan canciones.",
+		  "Ellos interpretan melodías."
+		],
+		"medium": [
+		  "Ellos cantan canciones educativas.",
+		  "Ellos entonan canciones con mensajes educativos."
+		],
+		"hard": [
+		  "Durante el recreo, ellos cantan canciones educativas.",
+		  "Ellos interpretan canciones educativas en el recreo."
+		]
+	  },
+	  "eng": {
+		"easy": [
+		  ["They", "sing", "songs."],
+		  ["They", "perform", "melodies."]
+		],
+		"medium": [
+		  ["They", "sing", "educational", "songs."],
+		  ["They", "chant", "educational", "songs."]
+		],
+		"hard": [
+		  ["During", "recess,", "they sing", "educational", "songs", "joyfully."],
+		  ["They", "perform", "educational", "songs", "at", "recess."]
+		]
+	  }
+	}
+  ]
+}
+ 

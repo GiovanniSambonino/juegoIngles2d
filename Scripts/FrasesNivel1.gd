@@ -35,7 +35,9 @@ var palabrasEsp = BancoFrases.palabrasEsp
 var cadenas = BancoFrases.cadenas
 var cadenasOrdenadas = BancoFrases.cadenasOrdenadas
 var images = BancoFrases.images
-var indicesImages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+var indicesImages = []
+
+
 var indiceNivel = -1
 var indiceImagen = 0
 var indiceCadena = 0
@@ -50,6 +52,8 @@ var tiempoCronometro = 120
 
 # Muestra instrucciones, actualiza titulos e instancia variables. Empieza ronda
 func _ready():
+	for i in range(BancoFrases.exercises.size()): 
+		indicesImages.append(i)  
 	Score.perfectBonus = 0
 	instance = pantallaVictoria.instantiate()
 	instantiated = true
