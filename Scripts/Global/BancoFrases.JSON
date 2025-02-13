@@ -322,7 +322,7 @@
 	},
 	{
 	  "id": 11,
-	  "image": "default",
+	  "image": "LEER_LIBRO",
 	  "esp": {
 		"easy": [
 		  "Él lee un cuento.",
@@ -354,7 +354,7 @@
 	},
 	{
 	  "id": 12,
-	  "image": "default",
+	  "image": "JUGUETES",
 	  "esp": {
 		"easy": [
 		  "Ella guarda sus juguetes.",
@@ -386,7 +386,7 @@
 	},
 	{
 	  "id": 13,
-	  "image": "default",
+	  "image": "CLASE",
 	  "esp": {
 		"easy": [
 		  "Ellos hacen tarea.",
@@ -418,7 +418,7 @@
 	},
 	{
 	  "id": 14,
-	  "image": "default",
+	  "image": "PLANTAS",
 	  "esp": {
 		"easy": [
 		  "Ella riega las plantas.",
@@ -450,7 +450,7 @@
 	},
 	{
 	  "id": 15,
-	  "image": "default",
+	  "image": "COCINAR",
 	  "esp": {
 		"easy": [
 		  "Él prepara el desayuno.",
@@ -482,7 +482,7 @@
 	},
 	{
 	  "id": 16,
-	  "image": "default",
+	  "image": "GUITARRA",
 	  "esp": {
 		"easy": [
 		  "Ella practica la guitarra.",
@@ -514,7 +514,7 @@
 	},
 	{
 	  "id": 17,
-	  "image": "default",
+	  "image": "MOCHILA",
 	  "esp": {
 		"easy": [
 		  "Él organiza su mochila.",
@@ -546,7 +546,7 @@
 	},
 	{
 	  "id": 18,
-	  "image": "default",
+	  "image": "DIBUJAR",
 	  "esp": {
 		"easy": [
 		  "Ella dibuja y colorea.",
@@ -578,7 +578,7 @@
 	},
 	{
 	  "id": 19,
-	  "image": "default",
+	  "image": "PALABRAS",
 	  "esp": {
 		"easy": [
 		  "Él aprende palabras en inglés.",
@@ -610,7 +610,7 @@
 	},
 	{
 	  "id": 20,
-	  "image": "default",
+	  "image": "PASAR_PERRO",
 	  "esp": {
 		"easy": [
 		  "Ella camina con su perro.",
@@ -674,7 +674,7 @@
 	},
 	{
 	  "id": 22,
-	  "image": "default",
+	  "image": "JUGAR",
 	  "esp": {
 		"easy": [
 		  "Ella construye torres.",
@@ -706,7 +706,7 @@
 	},
 	{
 	  "id": 23,
-	  "image": "default",
+	  "image": "LAVAR",
 	  "esp": {
 		"easy": [
 		  "Él lava los platos.",
@@ -738,7 +738,7 @@
 	},
 	{
 	  "id": 24,
-	  "image": "default",
+	  "image": "UNIVERSO",
 	  "esp": {
 		"easy": [
 		  "Ella investiga planetas.",
@@ -770,7 +770,7 @@
 	},
 	{
 	  "id": 25,
-	  "image": "default",
+	  "image": "CANTAR",
 	  "esp": {
 		"easy": [
 		  "Ellos cantan canciones.",

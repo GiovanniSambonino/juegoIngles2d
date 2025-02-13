@@ -54,6 +54,7 @@ var tiempoCronometro = 120
 func _ready():
 	for i in range(BancoFrases.exercises.size()): 
 		indicesImages.append(i)  
+		
 	Score.perfectBonus = 0
 	instance = pantallaVictoria.instantiate()
 	instantiated = true
