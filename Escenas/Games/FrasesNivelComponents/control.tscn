@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpqsopytr7u48"]
 
 [ext_resource type="Texture2D" uid="uid://1bcbeis5xil6" path="res://Sprites/images_games/order/Interactivo letra (vacio).png" id="1_lqpwu"]
-[ext_resource type="Script" path="res://Escenas/Games/FrasesNivelComponents/TextureRect.gd" id="2_87tss"]
+[ext_resource type="Script" uid="uid://vunl23bavxfv" path="res://Escenas/Games/FrasesNivelComponents/TextureRect.gd" id="2_87tss"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

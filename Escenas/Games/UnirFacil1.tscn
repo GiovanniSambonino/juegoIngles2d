@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://c84ia55lv0wfk"]
 
-[ext_resource type="Script" path="res://Scripts/Games/Unir.gd" id="1_ufw03"]
+[ext_resource type="Script" uid="uid://ocqjvuo5gmao" path="res://Scripts/Games/Unir.gd" id="1_ufw03"]
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_nv8xs"]
 [ext_resource type="PackedScene" uid="uid://cgkovomtm6rsg" path="res://Escenas/instrucciones_unir.tscn" id="4_5rrej"]
 [ext_resource type="PackedScene" uid="uid://soivbvg68l7y" path="res://Piezas/box_imagen_match.tscn" id="5_pu0rm"]
@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b4dcgfxuhgvxa" path="res://Sprites/images_games/match/Correct.png" id="7_ykav8"]
 [ext_resource type="Texture2D" uid="uid://ngsyantlb00d" path="res://Sprites/images_games/match/Incorrect.png" id="8_v53kj"]
 [ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="9_qahem"]
-[ext_resource type="Shader" path="res://Escenas/Games/UnirFacil1.gdshader" id="10_n6b68"]
+[ext_resource type="Shader" uid="uid://6d3fvgkatbrj" path="res://Escenas/Games/UnirFacil1.gdshader" id="10_n6b68"]
 [ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="11_ttvvu"]
 [ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="12_b2pt3"]
 
@@ -195,9 +195,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k84qp"]
 _data = {
-"Win": SubResource("Animation_8d3fg"),
-"correct": SubResource("Animation_vrr4w"),
-"incorrect": SubResource("Animation_anl4b")
+&"Win": SubResource("Animation_8d3fg"),
+&"correct": SubResource("Animation_vrr4w"),
+&"incorrect": SubResource("Animation_anl4b")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v8i7e"]

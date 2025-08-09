@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://uia4crt5loqg"]
 
-[ext_resource type="Script" path="res://Scripts/frasesNivel_3.gd" id="1_p2rt8"]
+[ext_resource type="Script" uid="uid://bn0727rlbg44m" path="res://Scripts/frasesNivel_3.gd" id="1_p2rt8"]
 [ext_resource type="PackedScene" uid="uid://dyhyi34qkkc8g" path="res://Escenas/instrucciones_frases.tscn" id="2_0ix8t"]
 [ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_s7m0s"]
 [ext_resource type="PackedScene" uid="uid://dr445orecfavc" path="res://Escenas/Global/box_inside_game_f.tscn" id="4_0lnte"]
@@ -24,9 +24,9 @@ length = 0.001
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_batyl"]
 _data = {
-"Gana": SubResource("Animation_4b8yg"),
-"PistaPieza": SubResource("Animation_jcy4g"),
-"RESET": SubResource("Animation_kijen")
+&"Gana": SubResource("Animation_4b8yg"),
+&"PistaPieza": SubResource("Animation_jcy4g"),
+&"RESET": SubResource("Animation_kijen")
 }
 
 [node name="Node2D" type="Node2D"]

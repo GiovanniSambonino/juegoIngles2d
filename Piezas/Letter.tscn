@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://dj6ij2dh6vwpr"]
 
 [ext_resource type="Texture2D" uid="uid://1bcbeis5xil6" path="res://Sprites/images_games/order/Interactivo letra (vacio).png" id="1_cam2k"]
-[ext_resource type="Script" path="res://Piezas/Letter.gd" id="1_k68xw"]
+[ext_resource type="Script" uid="uid://wig11720mlic" path="res://Piezas/Letter.gd" id="1_k68xw"]
 [ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="2_cqkuq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1rv6w"]
@@ -151,11 +151,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r3xoe"]
 _data = {
-"Correcto": SubResource("Animation_d5m34"),
-"Hint": SubResource("Animation_t4a2n"),
-"Incorrecto": SubResource("Animation_hcf3e"),
-"RESET": SubResource("Animation_n2m34"),
-"newRound": SubResource("Animation_lvm4f")
+&"Correcto": SubResource("Animation_d5m34"),
+&"Hint": SubResource("Animation_t4a2n"),
+&"Incorrecto": SubResource("Animation_hcf3e"),
+&"RESET": SubResource("Animation_n2m34"),
+&"newRound": SubResource("Animation_lvm4f")
 }
 
 [node name="Letter" type="Node2D"]

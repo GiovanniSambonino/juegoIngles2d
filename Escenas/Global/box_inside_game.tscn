@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://tbbkdsxy01pi"]
 
-[ext_resource type="Script" path="res://Scripts/box_inside_game.gd" id="1_ggi3j"]
+[ext_resource type="Script" uid="uid://bv2pnw1dmljd0" path="res://Scripts/box_inside_game.gd" id="1_ggi3j"]
 [ext_resource type="Theme" uid="uid://lcgg2qybthjn" path="res://styles/box_inside_game_text.tres" id="2_ik7mp"]
 [ext_resource type="Texture2D" uid="uid://cfhe2tmg4745g" path="res://Sprites/mini_games/TableroInfo.png" id="5_wvib8"]
 [ext_resource type="Texture2D" uid="uid://cbsgw3yum2qos" path="res://Sprites/buttons/Boton_Salir.png" id="6_jumv7"]

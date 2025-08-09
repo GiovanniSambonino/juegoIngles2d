@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://xwnqhcqrd6mc"]
 
-[ext_resource type="Script" path="res://Scripts/btn_sounds.gd" id="1_umtdx"]
+[ext_resource type="Script" uid="uid://c00r7wi55a4js" path="res://Scripts/btn_sounds.gd" id="1_umtdx"]
 [ext_resource type="Texture2D" uid="uid://caqo2b3df0hvu" path="res://Sprites/buttons/Boton_Musica.png" id="2_pckem"]
 [ext_resource type="Texture2D" uid="uid://cjyptrtk6fkkl" path="res://Sprites/buttons/Boton_Silencio.png" id="3_o4reb"]
 [ext_resource type="Texture2D" uid="uid://bphpit0ity5cd" path="res://Sprites/buttons/Boton_Musica_hover.png" id="4_kdrfx"]

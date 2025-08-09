@@ -1,16 +1,16 @@
 [gd_scene load_steps=19 format=3 uid="uid://l1ldt5rqjg8w"]
 
-[ext_resource type="Script" path="res://Scripts/Games/UnirMedium.gd" id="1_yaqrq"]
+[ext_resource type="Script" uid="uid://bgo7thj18rn6x" path="res://Scripts/Games/UnirMedium.gd" id="1_yaqrq"]
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_cpg8y"]
 [ext_resource type="PackedScene" uid="uid://5pmgy527gf05" path="res://Escenas/Global/box_inside_game_med.tscn" id="3_7juyh"]
 [ext_resource type="PackedScene" uid="uid://cgkovomtm6rsg" path="res://Escenas/instrucciones_unir.tscn" id="4_8j85i"]
-[ext_resource type="Script" path="res://Scripts/box_inside_game_med.gd" id="4_050b4"]
+[ext_resource type="Script" uid="uid://c0yqls2y0jg8u" path="res://Scripts/box_inside_game_med.gd" id="4_050b4"]
 [ext_resource type="PackedScene" uid="uid://soivbvg68l7y" path="res://Piezas/box_imagen_match.tscn" id="5_6w8sq"]
 [ext_resource type="PackedScene" uid="uid://f8ju1ll5w53y" path="res://Piezas/box_texto_match.tscn" id="6_xfe5o"]
 [ext_resource type="Texture2D" uid="uid://b4dcgfxuhgvxa" path="res://Sprites/images_games/match/Correct.png" id="7_7fbgh"]
 [ext_resource type="Texture2D" uid="uid://ngsyantlb00d" path="res://Sprites/images_games/match/Incorrect.png" id="8_rtphw"]
 [ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="9_aj5qt"]
-[ext_resource type="Shader" path="res://Escenas/Games/UnirFacil1.gdshader" id="11_dil34"]
+[ext_resource type="Shader" uid="uid://6d3fvgkatbrj" path="res://Escenas/Games/UnirFacil1.gdshader" id="11_dil34"]
 [ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="12_0k6ms"]
 [ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="13_vhwxx"]
 
@@ -196,9 +196,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k84qp"]
 _data = {
-"Win": SubResource("Animation_8d3fg"),
-"correct": SubResource("Animation_vrr4w"),
-"incorrect": SubResource("Animation_anl4b")
+&"Win": SubResource("Animation_8d3fg"),
+&"correct": SubResource("Animation_vrr4w"),
+&"incorrect": SubResource("Animation_anl4b")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_63hxt"]

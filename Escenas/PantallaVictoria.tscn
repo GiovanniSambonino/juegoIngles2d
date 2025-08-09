@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://7461s6b7i4a2"]
 
-[ext_resource type="Script" path="res://Scripts/PantallaVictoria.gd" id="1_kc0jg"]
+[ext_resource type="Script" uid="uid://3n5yfyu6qa4b" path="res://Scripts/PantallaVictoria.gd" id="1_kc0jg"]
 [ext_resource type="Texture2D" uid="uid://ccts7ok7r1xkk" path="res://Sprites/Tablero congratulation.png" id="2_2tqnl"]
 [ext_resource type="Texture2D" uid="uid://btk1xkyf2fyr8" path="res://Sprites/buttons/Boton_Next.png" id="3_gqmdn"]
 [ext_resource type="Texture2D" uid="uid://iio813jyiney" path="res://Sprites/Copa de felicitaciones.png" id="4_l8abr"]

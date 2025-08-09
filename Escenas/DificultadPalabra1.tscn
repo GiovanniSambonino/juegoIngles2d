@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://b7b6lpl8pnuro"]
 
-[ext_resource type="Script" path="res://Scripts/DificultadPalabra.gd" id="1_4w5kx"]
+[ext_resource type="Script" uid="uid://dnojyjejh5pqy" path="res://Scripts/DificultadPalabra.gd" id="1_4w5kx"]
 [ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="1_simt8"]
 [ext_resource type="Texture2D" uid="uid://cn0bvm36rr6rs" path="res://Sprites/global/Letrero select difficulty order it.png" id="2_3sr3a"]
 [ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="2_8usbs"]
@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://c3ulja3u3g3nj" path="res://Sprites/buttons/Boton_difficult.png" id="6_y16qi"]
 [ext_resource type="Texture2D" uid="uid://cpgtso7quhpj8" path="res://Sprites/pngtree-padlocks-or-lock-open-and-closed-icons-isolated-transparant-png-image_5213443.png" id="7_8uica"]
 [ext_resource type="Texture2D" uid="uid://cducf1nb8ngtb" path="res://Sprites/buttons/boton_medium_hover.png" id="8_3nkfr"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer1.gd" id="8_jehwx"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer.gd" id="9_w6nfa"]
+[ext_resource type="Script" uid="uid://ch1elwjjyojaw" path="res://Scripts/AnimationPlayer1.gd" id="8_jehwx"]
+[ext_resource type="Script" uid="uid://csfyjf2bny35e" path="res://Scripts/AnimationPlayer.gd" id="9_w6nfa"]
 [ext_resource type="Texture2D" uid="uid://bmskod04qg6fv" path="res://Sprites/buttons/Boton_difficult_hover.png" id="10_uit7o"]
 
 [sub_resource type="Animation" id="Animation_aggsv"]
@@ -94,8 +94,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3t862"]
 _data = {
-"RESET": SubResource("Animation_aggsv"),
-"Unlock": SubResource("Animation_lrwm3")
+&"RESET": SubResource("Animation_aggsv"),
+&"Unlock": SubResource("Animation_lrwm3")
 }
 
 [node name="Node2D" type="Node2D"]

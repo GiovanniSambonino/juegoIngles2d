@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://dyhyi34qkkc8g"]
 
-[ext_resource type="Script" path="res://Scripts/instrucciones_palabra.gd" id="1_y2ban"]
+[ext_resource type="Script" uid="uid://slbugs8qt4ac" path="res://Scripts/instrucciones_palabra.gd" id="1_y2ban"]
 [ext_resource type="PackedScene" uid="uid://dglbcxrsa3qv3" path="res://Piezas/ColorRectDifuminado.tscn" id="2_g45qk"]
 [ext_resource type="Texture2D" uid="uid://yloqygiy6yno" path="res://Sprites/tableroInstruccionesPuzzle.png" id="3_2tgfi"]
 [ext_resource type="FontFile" uid="uid://by6docfjh045t" path="res://Fonts/Retropix-Regular.ttf" id="4_nfqst"]
 [ext_resource type="Theme" uid="uid://da4xw33242vln" path="res://styles/btn_instruccionesSiguiente.tres" id="5_n4u3m"]
-[ext_resource type="VideoStream" path="res://Videos/videoInstruccionesFrases.ogv" id="6_tbhvq"]
+[ext_resource type="VideoStream" uid="uid://c33l7ue3yvdch" path="res://Videos/videoInstruccionesFrases.ogv" id="6_tbhvq"]
 [ext_resource type="AudioStream" uid="uid://dsff4jokaafnm" path="res://Sonido/cancion1.mp3" id="7_r0jlj"]
 
 [sub_resource type="Animation" id="Animation_cpjhj"]
@@ -41,8 +41,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p5py1"]
 _data = {
-"RESET": SubResource("Animation_cpjhj"),
-"blur": SubResource("Animation_81pe7")
+&"RESET": SubResource("Animation_cpjhj"),
+&"blur": SubResource("Animation_81pe7")
 }
 
 [node name="InstruccionesFrases" type="Control"]

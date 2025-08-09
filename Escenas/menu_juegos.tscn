@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://cu1nuxh8st3ux"]
 
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="1_ae3ik"]
-[ext_resource type="Script" path="res://Scripts/menu_juegos.gd" id="1_wwi27"]
+[ext_resource type="Script" uid="uid://co0qo3mgilg4o" path="res://Scripts/menu_juegos.gd" id="1_wwi27"]
 [ext_resource type="Texture2D" uid="uid://dtfvr6dmjys6b" path="res://Sprites/mini_games/Tablero_minigame.png" id="3_prnin"]
 [ext_resource type="Texture2D" uid="uid://b6i60n65brh3n" path="res://Sprites/mini_games/Letrero_minigame.png" id="4_41r5y"]
 [ext_resource type="Texture2D" uid="uid://cufijlsaxqdx8" path="res://Sprites/mini_games/Dibujo puzzles.png" id="5_1oynu"]

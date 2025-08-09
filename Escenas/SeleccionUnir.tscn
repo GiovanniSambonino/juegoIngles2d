@@ -1,15 +1,15 @@
 [gd_scene load_steps=18 format=3 uid="uid://4ns5wnuood0h"]
 
-[ext_resource type="Script" path="res://Scripts/SeleccionUnir.gd" id="1_0w1p1"]
+[ext_resource type="Script" uid="uid://8o2c8up8w8ng" path="res://Scripts/SeleccionUnir.gd" id="1_0w1p1"]
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_8lmo1"]
 [ext_resource type="Texture2D" uid="uid://lprcmn3axhu2" path="res://Sprites/istockphoto-1133408808-612x612-removebg-preview 1.png" id="2_bg0i7"]
 [ext_resource type="Texture2D" uid="uid://c862v6ar4xge" path="res://Sprites/fondo-de-papel-del-vintage-aislado-128788522-transformed__1_-removebg-preview 1.png" id="3_ucbew"]
 [ext_resource type="Texture2D" uid="uid://biihx571xca82" path="res://Sprites/flechas__1_-removebg-preview 1.png" id="4_w0mdf"]
 [ext_resource type="Texture2D" uid="uid://bddosvbos1aqv" path="res://Sprites/Rectangle 16.png" id="5_lefym"]
 [ext_resource type="Texture2D" uid="uid://cpgtso7quhpj8" path="res://Sprites/pngtree-padlocks-or-lock-open-and-closed-icons-isolated-transparant-png-image_5213443.png" id="6_30mdm"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer.gd" id="7_gdny3"]
-[ext_resource type="Script" path="res://Scripts/Button4.gd" id="8_jwgyq"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer1.gd" id="9_fisei"]
+[ext_resource type="Script" uid="uid://csfyjf2bny35e" path="res://Scripts/AnimationPlayer.gd" id="7_gdny3"]
+[ext_resource type="Script" uid="uid://bbubosf51fs78" path="res://Scripts/Button4.gd" id="8_jwgyq"]
+[ext_resource type="Script" uid="uid://ch1elwjjyojaw" path="res://Scripts/AnimationPlayer1.gd" id="9_fisei"]
 [ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="12_ux4ia"]
 [ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="15_gkfp3"]
 
@@ -108,8 +108,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3t862"]
 _data = {
-"RESET": SubResource("Animation_aggsv"),
-"Unlock": SubResource("Animation_lrwm3")
+&"RESET": SubResource("Animation_aggsv"),
+&"Unlock": SubResource("Animation_lrwm3")
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_hiw6i"]

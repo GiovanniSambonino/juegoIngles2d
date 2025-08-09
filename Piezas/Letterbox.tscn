@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://ci1b1c7km51ni"]
 
 [ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="1_7lm0h"]
-[ext_resource type="Script" path="res://Piezas/Letterbox.gd" id="1_bjjbr"]
+[ext_resource type="Script" uid="uid://chf0qm20baw1e" path="res://Piezas/Letterbox.gd" id="1_bjjbr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2bxt"]
 size = Vector2(594, 472)
@@ -39,8 +39,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pymnt"]
 _data = {
-"Hint": SubResource("Animation_mxfeq"),
-"RESET": SubResource("Animation_64oh7")
+&"Hint": SubResource("Animation_mxfeq"),
+&"RESET": SubResource("Animation_64oh7")
 }
 
 [node name="Letterbox" type="Node2D"]

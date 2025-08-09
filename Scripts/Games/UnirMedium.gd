@@ -245,8 +245,10 @@ func reset_compoments():
 func ronda_win():
 	# Disable hint functionality during animation
 	$Box_inside_game2/btns_inside_box_game/btn_instructions.disabled = true
+	$Box_inside_game.timer.stop()
 	await animation_win()
-	cargar_ronda()
+	await cargar_ronda()
+	$Box_inside_game.timer.start()
 	# Re-enable hint functionality after new round is loaded
 	$Box_inside_game2/btns_inside_box_game/btn_instructions.disabled = false
 	

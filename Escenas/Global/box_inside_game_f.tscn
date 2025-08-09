@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://dr445orecfavc"]
 
-[ext_resource type="Script" path="res://Scripts/box_inside_game_f.gd" id="1_n32vc"]
+[ext_resource type="Script" uid="uid://c1lb7dgdd5vx1" path="res://Scripts/box_inside_game_f.gd" id="1_n32vc"]
 [ext_resource type="Texture2D" uid="uid://bqk1d4psul3o6" path="res://Sprites/global/Fondo_mesa_juego.png" id="2_gmnlc"]
 [ext_resource type="Texture2D" uid="uid://bknjy17d3aemu" path="res://Sprites/mini_games/CronometroContainer.png" id="3_2r5pb"]
 [ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="3_gjulp"]
