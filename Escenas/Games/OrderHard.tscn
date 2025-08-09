@@ -1,23 +1,23 @@
-[gd_scene load_steps=22 format=3 uid="uid://ceb5bp0c88f5p"]
+[gd_scene load_steps=22 format=3 uid="uid://bkdkp600xvmg"]
 
-[ext_resource type="Script" uid="uid://cgtytxml8hc5s" path="res://Scripts/Games/OrderEasy.gd" id="1_7688g"]
-[ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_glekj"]
-[ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_mwiv4"]
-[ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_ranxd"]
-[ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_tg4qo"]
-[ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="6_3xxap"]
-[ext_resource type="Texture2D" uid="uid://8r4ho23wivj1" path="res://Sprites/images_games/order/Ave.png" id="6_kfe06"]
-[ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="7_7asfs"]
-[ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="8_p0hl2"]
-[ext_resource type="Texture2D" uid="uid://cjttlkm233dmy" path="res://Sprites/images_games/puzzle/cantan.png" id="8_svp3l"]
-[ext_resource type="Texture2D" uid="uid://bguh1fkcnrphy" path="res://Sprites/images_games/puzzle/futbol1.png" id="9_jkmci"]
-[ext_resource type="PackedScene" uid="uid://dj6ij2dh6vwpr" path="res://Piezas/Letter.tscn" id="9_vr83x"]
-[ext_resource type="Texture2D" uid="uid://fm5joy81l1fl" path="res://Sprites/images_games/match/easy/Gray-backed Hawk.png" id="10_54bjq"]
-[ext_resource type="Texture2D" uid="uid://oroqqab8ssm2" path="res://Sprites/images_games/puzzle/pesca.png" id="11_injhi"]
-[ext_resource type="Texture2D" uid="uid://cls84hicrs5v7" path="res://Sprites/images_games/puzzle/pasea.png" id="12_xpsly"]
-[ext_resource type="Texture2D" uid="uid://uh587wuff74p" path="res://Sprites/images_games/puzzle/mates.png" id="13_gr80p"]
-[ext_resource type="Texture2D" uid="uid://cod86qaomvebo" path="res://Sprites/images_games/puzzle/leehoja.png" id="14_ip3l1"]
-[ext_resource type="Texture2D" uid="uid://cj72j4fidywfr" path="res://Sprites/images_games/puzzle/juegaperro.png" id="15_vwyv0"]
+[ext_resource type="Script" uid="uid://cgtytxml8hc5s" path="res://Scripts/Games/OrderEasy.gd" id="1_5pc5a"]
+[ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_yivyy"]
+[ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_h2img"]
+[ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_rkwnu"]
+[ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_451e0"]
+[ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="6_wr8kn"]
+[ext_resource type="Texture2D" uid="uid://8r4ho23wivj1" path="res://Sprites/images_games/order/Ave.png" id="7_cpnsa"]
+[ext_resource type="Texture2D" uid="uid://cjttlkm233dmy" path="res://Sprites/images_games/puzzle/cantan.png" id="8_bmjed"]
+[ext_resource type="Texture2D" uid="uid://bguh1fkcnrphy" path="res://Sprites/images_games/puzzle/futbol1.png" id="9_omox6"]
+[ext_resource type="Texture2D" uid="uid://fm5joy81l1fl" path="res://Sprites/images_games/match/easy/Gray-backed Hawk.png" id="10_hsp1p"]
+[ext_resource type="Texture2D" uid="uid://oroqqab8ssm2" path="res://Sprites/images_games/puzzle/pesca.png" id="11_hpoec"]
+[ext_resource type="Texture2D" uid="uid://cls84hicrs5v7" path="res://Sprites/images_games/puzzle/pasea.png" id="12_safu2"]
+[ext_resource type="Texture2D" uid="uid://uh587wuff74p" path="res://Sprites/images_games/puzzle/mates.png" id="13_splh0"]
+[ext_resource type="Texture2D" uid="uid://cod86qaomvebo" path="res://Sprites/images_games/puzzle/leehoja.png" id="14_x26yj"]
+[ext_resource type="Texture2D" uid="uid://cj72j4fidywfr" path="res://Sprites/images_games/puzzle/juegaperro.png" id="15_8dkq8"]
+[ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="16_p70ma"]
+[ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="17_lcltp"]
+[ext_resource type="PackedScene" uid="uid://dj6ij2dh6vwpr" path="res://Piezas/Letter.tscn" id="18_h5ne1"]
 
 [sub_resource type="Animation" id="Animation_4b8yg"]
 resource_name = "Gana"
@@ -224,31 +224,31 @@ _data = {
 }
 
 [node name="Node2D2" type="Node2D"]
-script = ExtResource("1_7688g")
+script = ExtResource("1_5pc5a")
 metadata/_edit_horizontal_guides_ = [-100.0]
 metadata/_edit_vertical_guides_ = [300.0, 637.0]
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
-[node name="InstruccionesPalabra" parent="CanvasLayer2" instance=ExtResource("2_glekj")]
+[node name="InstruccionesPalabra" parent="CanvasLayer2" instance=ExtResource("2_yivyy")]
 metadata/_edit_vertical_guides_ = [672.0, 1276.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(636.987, 454.85)
 scale = Vector2(0.211671, 0.211671)
-texture = ExtResource("3_mwiv4")
+texture = ExtResource("3_h2img")
 
-[node name="Box_inside_game" parent="." instance=ExtResource("4_ranxd")]
+[node name="Box_inside_game" parent="." instance=ExtResource("4_rkwnu")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_tg4qo")
+stream = ExtResource("5_451e0")
 
 [node name="ImagenJuegoVacio" type="Sprite2D" parent="."]
 position = Vector2(648.072, 337.75)
 scale = Vector2(0.2236, 0.2236)
-texture = ExtResource("6_3xxap")
+texture = ExtResource("6_wr8kn")
 
 [node name="Imagenes" type="Node2D" parent="."]
 
@@ -257,120 +257,120 @@ visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.239, 339.125)
 scale = Vector2(0.2238, 0.2238)
-texture = ExtResource("6_kfe06")
+texture = ExtResource("7_cpnsa")
 
 [node name="Cantar" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(647, 338.75)
 scale = Vector2(0.0486826, 0.0478974)
-texture = ExtResource("8_svp3l")
+texture = ExtResource("8_bmjed")
 
 [node name="Pelota" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(649.5, 340)
 scale = Vector2(0.220695, 0.22271)
-texture = ExtResource("9_jkmci")
+texture = ExtResource("9_omox6")
 
 [node name="Gavilán" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(642.5, 337.315)
 scale = Vector2(0.157407, 0.142741)
-texture = ExtResource("10_54bjq")
+texture = ExtResource("10_hsp1p")
 
 [node name="Pescar" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.157, 334.501)
 scale = Vector2(0.0426934, 0.0426934)
-texture = ExtResource("11_injhi")
+texture = ExtResource("11_hpoec")
 
 [node name="Caminar" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(651.477, 336.8)
 scale = Vector2(0.367886, 0.367886)
-texture = ExtResource("12_xpsly")
+texture = ExtResource("12_safu2")
 
 [node name="Matemáticas" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(646.034, 337.92)
 scale = Vector2(0.261786, 0.261786)
-texture = ExtResource("13_gr80p")
+texture = ExtResource("13_splh0")
 
 [node name="Leer" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.111, 336.788)
 scale = Vector2(0.0485389, 0.0485389)
-texture = ExtResource("14_ip3l1")
+texture = ExtResource("14_x26yj")
 
 [node name="Jugar" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
 scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_vwyv0")
+texture = ExtResource("15_8dkq8")
 
 [node name="Desordenada" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Desordenada"]
 position = Vector2(350, 650)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("7_7asfs")
+texture = ExtResource("16_p70ma")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Desordenada"]
 position = Vector2(550, 650)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("7_7asfs")
+texture = ExtResource("16_p70ma")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Desordenada"]
 position = Vector2(750, 650)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("7_7asfs")
+texture = ExtResource("16_p70ma")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Desordenada"]
 position = Vector2(950, 650)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("7_7asfs")
+texture = ExtResource("16_p70ma")
 
 [node name="Ordenada" type="Node2D" parent="."]
 
-[node name="Letterbox5" parent="Ordenada" instance=ExtResource("8_p0hl2")]
+[node name="Letterbox5" parent="Ordenada" instance=ExtResource("17_lcltp")]
 position = Vector2(350, 785)
 scale = Vector2(0.25, 0.25)
 letter = "B"
 
-[node name="Letterbox6" parent="Ordenada" instance=ExtResource("8_p0hl2")]
+[node name="Letterbox6" parent="Ordenada" instance=ExtResource("17_lcltp")]
 position = Vector2(550, 785)
 scale = Vector2(0.25, 0.25)
 letter = "I"
 
-[node name="Letterbox7" parent="Ordenada" instance=ExtResource("8_p0hl2")]
+[node name="Letterbox7" parent="Ordenada" instance=ExtResource("17_lcltp")]
 position = Vector2(750, 785)
 scale = Vector2(0.25, 0.25)
 letter = "R"
 
-[node name="Letterbox8" parent="Ordenada" instance=ExtResource("8_p0hl2")]
+[node name="Letterbox8" parent="Ordenada" instance=ExtResource("17_lcltp")]
 position = Vector2(950, 785)
 scale = Vector2(0.25, 0.25)
 letter = "D"
 
 [node name="Letras" type="Node2D" parent="."]
 
-[node name="Letter" parent="Letras" instance=ExtResource("9_vr83x")]
+[node name="Letter" parent="Letras" instance=ExtResource("18_h5ne1")]
 position = Vector2(350, 650)
 scale = Vector2(0.27, 0.27)
 
-[node name="Letter2" parent="Letras" instance=ExtResource("9_vr83x")]
+[node name="Letter2" parent="Letras" instance=ExtResource("18_h5ne1")]
 position = Vector2(550, 650)
 scale = Vector2(0.27, 0.27)
 
-[node name="Letter4" parent="Letras" instance=ExtResource("9_vr83x")]
+[node name="Letter4" parent="Letras" instance=ExtResource("18_h5ne1")]
 position = Vector2(950, 650)
 scale = Vector2(0.27, 0.27)
 
-[node name="Letter3" parent="Letras" instance=ExtResource("9_vr83x")]
+[node name="Letter3" parent="Letras" instance=ExtResource("18_h5ne1")]
 position = Vector2(750, 650)
 scale = Vector2(0.27, 0.27)
 

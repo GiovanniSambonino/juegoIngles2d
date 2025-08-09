@@ -97,10 +97,10 @@ func _on_texture_button_pressed():
 func _on_texture_button_2_pressed():
 	ButtonClick.button_click()
 	Score.actualDifficult = Score.difficult["medium"]
-	get_tree().change_scene_to_file("res://Escenas/Games/OrderEasy1.tscn")
+	get_tree().change_scene_to_file("res://Escenas/Games/OrderMedium.tscn")
 
 
 func _on_texture_button_3_pressed():
 	ButtonClick.button_click()
 	Score.actualDifficult = Score.difficult["hard"]
-	get_tree().change_scene_to_file("res://Escenas/Games/OrderEasy1.tscn")
+	get_tree().change_scene_to_file("res://Escenas/Games/OrderHard.tscn")

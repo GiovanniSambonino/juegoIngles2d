@@ -306,7 +306,7 @@ scale = Vector2(0.27, 0.27)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_batyl")
+&"": SubResource("AnimationLibrary_batyl")
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
