@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://cmlaodufhypvh"]
 
-[ext_resource type="Script" uid="uid://cgtytxml8hc5s" path="res://Scripts/Games/OrderEasy.gd" id="1_w8jnx"]
+[ext_resource type="Script" uid="uid://cemomyyqgmmvt" path="res://Scripts/Games/OrderMedium.gd" id="1_w8jnx"]
 [ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_v3j2o"]
 [ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_qfako"]
 [ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_rifbn"]
@@ -252,60 +252,81 @@ texture = ExtResource("6_0yi2d")
 
 [node name="Imagenes" type="Node2D" parent="."]
 
-[node name="Ave" type="Sprite2D" parent="Imagenes"]
+[node name="Casa" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.239, 339.125)
 scale = Vector2(0.2238, 0.2238)
 texture = ExtResource("7_2cg7t")
 
-[node name="Cantar" type="Sprite2D" parent="Imagenes"]
+[node name="Libro" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(647, 338.75)
 scale = Vector2(0.0486826, 0.0478974)
 texture = ExtResource("8_r5o6p")
 
-[node name="Pelota" type="Sprite2D" parent="Imagenes"]
+[node name="Mesa" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(649.5, 340)
 scale = Vector2(0.220695, 0.22271)
 texture = ExtResource("9_y3lkv")
 
-[node name="Gavilán" type="Sprite2D" parent="Imagenes"]
+[node name="Tierra" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(642.5, 337.315)
 scale = Vector2(0.157407, 0.142741)
 texture = ExtResource("10_ud26b")
 
-[node name="Pescar" type="Sprite2D" parent="Imagenes"]
+[node name="Playa" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.157, 334.501)
 scale = Vector2(0.0426934, 0.0426934)
 texture = ExtResource("11_hs2vc")
 
-[node name="Caminar" type="Sprite2D" parent="Imagenes"]
+[node name="Fuego" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(651.477, 336.8)
 scale = Vector2(0.367886, 0.367886)
 texture = ExtResource("12_quceq")
 
-[node name="Matemáticas" type="Sprite2D" parent="Imagenes"]
+[node name="Noche" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(646.034, 337.92)
 scale = Vector2(0.261786, 0.261786)
 texture = ExtResource("13_tsjm4")
 
-[node name="Leer" type="Sprite2D" parent="Imagenes"]
+[node name="Miel" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.111, 336.788)
 scale = Vector2(0.0485389, 0.0485389)
 texture = ExtResource("14_ijnw4")
 
-[node name="Jugar" type="Sprite2D" parent="Imagenes"]
+[node name="Dulce" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.368244, 0.368244)
+texture = ExtResource("15_lsxb5")
+
+[node name="Feliz" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.368244, 0.368244)
+texture = ExtResource("15_lsxb5")
+
+[node name="Mundo" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.368244, 0.368244)
+texture = ExtResource("15_lsxb5")
+
+[node name="Papel" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
@@ -315,63 +336,77 @@ texture = ExtResource("15_lsxb5")
 [node name="Desordenada" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Desordenada"]
-position = Vector2(350, 650)
+position = Vector2(258, 650)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("16_f4pwe")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Desordenada"]
-position = Vector2(550, 650)
+position = Vector2(458, 650)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("16_f4pwe")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Desordenada"]
-position = Vector2(750, 650)
+position = Vector2(658, 650)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("16_f4pwe")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Desordenada"]
-position = Vector2(950, 650)
+position = Vector2(858, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_f4pwe")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Desordenada"]
+position = Vector2(1058, 650)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("16_f4pwe")
 
 [node name="Ordenada" type="Node2D" parent="."]
 
 [node name="Letterbox5" parent="Ordenada" instance=ExtResource("17_0wgu3")]
-position = Vector2(350, 785)
+position = Vector2(258, 785)
 scale = Vector2(0.25, 0.25)
 letter = "B"
 
 [node name="Letterbox6" parent="Ordenada" instance=ExtResource("17_0wgu3")]
-position = Vector2(550, 785)
+position = Vector2(458, 785)
 scale = Vector2(0.25, 0.25)
 letter = "I"
 
 [node name="Letterbox7" parent="Ordenada" instance=ExtResource("17_0wgu3")]
-position = Vector2(750, 785)
+position = Vector2(658, 785)
 scale = Vector2(0.25, 0.25)
 letter = "R"
 
 [node name="Letterbox8" parent="Ordenada" instance=ExtResource("17_0wgu3")]
-position = Vector2(950, 785)
+position = Vector2(858, 785)
+scale = Vector2(0.25, 0.25)
+letter = "D"
+
+[node name="Letterbox9" parent="Ordenada" instance=ExtResource("17_0wgu3")]
+position = Vector2(1058, 785)
 scale = Vector2(0.25, 0.25)
 letter = "D"
 
 [node name="Letras" type="Node2D" parent="."]
 
 [node name="Letter" parent="Letras" instance=ExtResource("18_ecqvq")]
-position = Vector2(350, 650)
+position = Vector2(258, 650)
 scale = Vector2(0.27, 0.27)
 
 [node name="Letter2" parent="Letras" instance=ExtResource("18_ecqvq")]
-position = Vector2(550, 650)
+position = Vector2(458, 650)
 scale = Vector2(0.27, 0.27)
 
 [node name="Letter4" parent="Letras" instance=ExtResource("18_ecqvq")]
-position = Vector2(950, 650)
+position = Vector2(658, 650)
 scale = Vector2(0.27, 0.27)
 
 [node name="Letter3" parent="Letras" instance=ExtResource("18_ecqvq")]
-position = Vector2(750, 650)
+position = Vector2(858, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter5" parent="Letras" instance=ExtResource("18_ecqvq")]
+position = Vector2(1058, 650)
 scale = Vector2(0.27, 0.27)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

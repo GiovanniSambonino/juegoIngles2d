@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://uia4crt5loqg"]
+[gd_scene load_steps=19 format=3 uid="uid://uia4crt5loqg"]
 
 [ext_resource type="Script" uid="uid://bn0727rlbg44m" path="res://Scripts/Games/frasesNivel_3.gd" id="1_p2rt8"]
 [ext_resource type="PackedScene" uid="uid://dyhyi34qkkc8g" path="res://Escenas/instrucciones_frases.tscn" id="2_0ix8t"]
@@ -11,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://bgribmoxwwcdd" path="res://Piezas/piezaBox.tscn" id="9_wplbh"]
 [ext_resource type="PackedScene" uid="uid://d0n52w01vfldv" path="res://Piezas/piezaBox1.tscn" id="10_27xgc"]
 [ext_resource type="PackedScene" uid="uid://1fgrvi3d8xdc" path="res://Piezas/piezaPuzzle.tscn" id="11_gik0y"]
+[ext_resource type="Texture2D" uid="uid://vl88irjd5hc3" path="res://Sprites/mini_games/slot1puzzle.png" id="11_p5f16"]
+[ext_resource type="Texture2D" uid="uid://cdigcu7q28olo" path="res://Sprites/mini_games/slot2puzzle.png" id="12_23uet"]
+[ext_resource type="Texture2D" uid="uid://d1db81slshop6" path="res://Sprites/mini_games/slot3puzzle.png" id="13_vpiwg"]
 
 [sub_resource type="Animation" id="Animation_4b8yg"]
 resource_name = "Gana"
@@ -91,6 +94,36 @@ scale = Vector2(0.15, 0.15)
 position = Vector2(1095, 793)
 scale = Vector2(0.15, 0.15)
 
+[node name="SpriteSlot1" type="Sprite2D" parent="Ordenada"]
+position = Vector2(153.415, 791.9)
+scale = Vector2(0.85, 0.61)
+texture = ExtResource("11_p5f16")
+
+[node name="SpriteSlot2" type="Sprite2D" parent="Ordenada"]
+position = Vector2(357.415, 791.9)
+scale = Vector2(0.76, 0.61)
+texture = ExtResource("12_23uet")
+
+[node name="SpriteSlot3" type="Sprite2D" parent="Ordenada"]
+position = Vector2(548, 792)
+scale = Vector2(0.74, 0.61)
+texture = ExtResource("12_23uet")
+
+[node name="SpriteSlot4" type="Sprite2D" parent="Ordenada"]
+position = Vector2(734, 792)
+scale = Vector2(0.72, 0.61)
+texture = ExtResource("12_23uet")
+
+[node name="SpriteSlot5" type="Sprite2D" parent="Ordenada"]
+position = Vector2(916, 792)
+scale = Vector2(0.71, 0.61)
+texture = ExtResource("12_23uet")
+
+[node name="SpriteSlot6" type="Sprite2D" parent="Ordenada"]
+position = Vector2(1109, 792)
+scale = Vector2(0.81, 0.61)
+texture = ExtResource("13_vpiwg")
+
 [node name="Cadenas" type="Node2D" parent="."]
 
 [node name="Pieza0" parent="Cadenas" instance=ExtResource("11_gik0y")]
@@ -123,5 +156,5 @@ letter = "She"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_batyl")
+&"": SubResource("AnimationLibrary_batyl")
 }

@@ -276,8 +276,9 @@ func _dar_pista():
 					
 func nuevaRonda():
 	palabraAnterior=palabraES
-
+	
 	palabras.erase(palabraES)
+	$Box_inside_game.timer.stop()
 	$Letras/Letter.resetVars()
 	$Letras/Letter2.resetVars()
 	$Letras/Letter3.resetVars()
@@ -292,7 +293,8 @@ func nuevaRonda():
 	$Letras/Letter4.resetPos()
 	rondaActual+=1
 	emit_signal("update_level", str(rondaActual)+"/4")
-	setLetters()
+	await setLetters()
+	$Box_inside_game.timer.start()
 	
 
 func actualizar_velocidad():

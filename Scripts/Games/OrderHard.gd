@@ -24,15 +24,12 @@ var palabras = {
 	"Jardín": "GARDEN", 
 	"Cocina": "KITCHEN",
 	"Animal": "ANIMAL", 
-	"Música": "MUSICS", 
-	"Cielo": "HEAVEN", 
-	"Camino": "STREET", 
+	"Cantante": "SINGER", 
+	"Calle": "STREET", 
 	"Oficina": "OFFICE",
 	"Centro": "CENTER",
 	"Bosque": "FOREST",
-	"Ciudad": "CITIES",
-	"Tiempo": "SEASON",
-	"Montaña": "SUMMIT"
+	"Ciudades": "CITIES",
 }
 
 @export var palabra ="SCHOOL"

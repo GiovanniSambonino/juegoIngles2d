@@ -21,11 +21,11 @@ var palabras = {
 	"Casa": "HOUSE", 
 	"Libro": "BOOKS", 
 	"Mesa": "TABLE", 
-	"Flor": "PLANT", 
+	"Tierra": "EARTH", 
 	"Playa": "BEACH",
 	"Fuego": "FLAME", 
 	"Noche": "NIGHT", 
-	"Verde": "GREEN", 
+	"Miel": "HONEY",
 	"Dulce": "SWEET", 
 	"Feliz": "HAPPY",
 	"Mundo": "WORLD",
@@ -278,7 +278,7 @@ func _dar_pista():
 func nuevaRonda():
 	palabraAnterior=palabraES
 	palabras.erase(palabraES)
-	
+	$Box_inside_game.timer.stop()
 	# Reset all 5 letters
 	$Letras/Letter.resetVars()
 	$Letras/Letter2.resetVars()
@@ -302,7 +302,8 @@ func nuevaRonda():
 	
 	rondaActual+=1
 	emit_signal("update_level", str(rondaActual)+"/4")
-	setLetters()
+	await setLetters()
+	$Box_inside_game.timer.start()
 
 func actualizar_velocidad():
 	var tiempoFinal = $Box_inside_game.time_seconds
