@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cmlaodufhypvh"]
+[gd_scene load_steps=24 format=3 uid="uid://cmlaodufhypvh"]
 
 [ext_resource type="Script" uid="uid://cemomyyqgmmvt" path="res://Scripts/Games/OrderMedium.gd" id="1_w8jnx"]
 [ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_v3j2o"]
@@ -6,17 +6,19 @@
 [ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_rifbn"]
 [ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_ettkf"]
 [ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="6_0yi2d"]
-[ext_resource type="Texture2D" uid="uid://8r4ho23wivj1" path="res://Sprites/images_games/order/Ave.png" id="7_2cg7t"]
-[ext_resource type="Texture2D" uid="uid://cjttlkm233dmy" path="res://Sprites/images_games/puzzle/cantan.png" id="8_r5o6p"]
-[ext_resource type="Texture2D" uid="uid://bguh1fkcnrphy" path="res://Sprites/images_games/puzzle/futbol1.png" id="9_y3lkv"]
-[ext_resource type="Texture2D" uid="uid://fm5joy81l1fl" path="res://Sprites/images_games/match/easy/Gray-backed Hawk.png" id="10_ud26b"]
-[ext_resource type="Texture2D" uid="uid://oroqqab8ssm2" path="res://Sprites/images_games/puzzle/pesca.png" id="11_hs2vc"]
-[ext_resource type="Texture2D" uid="uid://cls84hicrs5v7" path="res://Sprites/images_games/puzzle/pasea.png" id="12_quceq"]
-[ext_resource type="Texture2D" uid="uid://uh587wuff74p" path="res://Sprites/images_games/puzzle/mates.png" id="13_tsjm4"]
-[ext_resource type="Texture2D" uid="uid://cod86qaomvebo" path="res://Sprites/images_games/puzzle/leehoja.png" id="14_ijnw4"]
-[ext_resource type="Texture2D" uid="uid://cj72j4fidywfr" path="res://Sprites/images_games/puzzle/juegaperro.png" id="15_lsxb5"]
+[ext_resource type="Texture2D" uid="uid://bd53hua6ht04p" path="res://Sprites/images_games/order/Medium/barrio-edificios-arquitectura-forma-casa-png_53876-801494-removebg-preview.png" id="7_8n7hv"]
+[ext_resource type="Texture2D" uid="uid://dmqdy8qtkbkhs" path="res://Sprites/images_games/order/Medium/collaborepix-no-aplica-medicamentos-origen-animal-ni-productos-origen-animal_1038602-1077-removebg-preview.png" id="8_6d6r4"]
+[ext_resource type="Texture2D" uid="uid://cyogsughqw6mo" path="res://Sprites/images_games/order/Medium/ChatGPT_Image_15_ago_2025__10_38_09-removebg-preview.png" id="9_18px7"]
+[ext_resource type="Texture2D" uid="uid://b83cttrvw4lj8" path="res://Sprites/images_games/order/Medium/GST JOS 468-22.jpg" id="10_54u1x"]
+[ext_resource type="Texture2D" uid="uid://dme4sg1mq6fub" path="res://Sprites/images_games/order/Medium/7246619-removebg-preview.png" id="11_v1dmq"]
+[ext_resource type="Texture2D" uid="uid://o332hi7dm355" path="res://Sprites/images_games/order/Medium/1601.m00.i104.n024.S.c12.286495379_Flame_with_smoke_animation_frames_in_pixel_art_style-removebg-preview.png" id="12_30imc"]
+[ext_resource type="Texture2D" uid="uid://b67m1054r3iey" path="res://Sprites/images_games/order/Medium/ilustracion-paisaje-fluvial-estilo-pixel-art_23-2151793114.jpg" id="13_w1wwo"]
+[ext_resource type="Texture2D" uid="uid://fihqhnc4ghov" path="res://Sprites/images_games/order/Medium/ilustracion-pixel-art-miel-pixelada-miel-icono-miel-pixelado-pixel-art_1038602-219-removebg-preview.png" id="14_fecsg"]
+[ext_resource type="Texture2D" uid="uid://3retohdoa3jq" path="res://Sprites/images_games/order/Medium/sweet-pixel-icons-vintage-8-260nw-2403636237-removebg-preview.png" id="15_77f8u"]
+[ext_resource type="Texture2D" uid="uid://b6vwuxql0ah78" path="res://Sprites/images_games/order/Medium/icono-hombre-sonriente-fondo-blanco_1270124-12992-removebg-preview.png" id="16_26m0j"]
 [ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="16_f4pwe"]
 [ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="17_0wgu3"]
+[ext_resource type="Texture2D" uid="uid://rmupq1wuav1g" path="res://Sprites/images_games/order/Medium/papel-viejo-estilo-pixel-art_505135-75-removebg-preview.png" id="17_pve0m"]
 [ext_resource type="PackedScene" uid="uid://dj6ij2dh6vwpr" path="res://Piezas/Letter.tscn" id="18_ecqvq"]
 
 [sub_resource type="Animation" id="Animation_4b8yg"]
@@ -256,82 +258,82 @@ texture = ExtResource("6_0yi2d")
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.239, 339.125)
-scale = Vector2(0.2238, 0.2238)
-texture = ExtResource("7_2cg7t")
+scale = Vector2(0.509, 0.509)
+texture = ExtResource("7_8n7hv")
 
 [node name="Libro" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(647, 338.75)
-scale = Vector2(0.0486826, 0.0478974)
-texture = ExtResource("8_r5o6p")
+scale = Vector2(0.824, 0.807)
+texture = ExtResource("8_6d6r4")
 
 [node name="Mesa" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(649.5, 340)
-scale = Vector2(0.220695, 0.22271)
-texture = ExtResource("9_y3lkv")
+scale = Vector2(0.686, 0.692)
+texture = ExtResource("9_18px7")
 
 [node name="Tierra" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(642.5, 337.315)
-scale = Vector2(0.157407, 0.142741)
-texture = ExtResource("10_ud26b")
+scale = Vector2(0.032, 0.029)
+texture = ExtResource("10_54u1x")
 
 [node name="Playa" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.157, 334.501)
-scale = Vector2(0.0426934, 0.0426934)
-texture = ExtResource("11_hs2vc")
+scale = Vector2(0.698, 0.698)
+texture = ExtResource("11_v1dmq")
 
 [node name="Fuego" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(651.477, 336.8)
-scale = Vector2(0.367886, 0.367886)
-texture = ExtResource("12_quceq")
+scale = Vector2(1.123, 1.123)
+texture = ExtResource("12_30imc")
 
 [node name="Noche" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(646.034, 337.92)
-scale = Vector2(0.261786, 0.261786)
-texture = ExtResource("13_tsjm4")
+scale = Vector2(0.452, 0.452)
+texture = ExtResource("13_w1wwo")
 
 [node name="Miel" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.111, 336.788)
-scale = Vector2(0.0485389, 0.0485389)
-texture = ExtResource("14_ijnw4")
+scale = Vector2(0.614, 0.614)
+texture = ExtResource("14_fecsg")
 
 [node name="Dulce" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_lsxb5")
+scale = Vector2(1.203, 1.203)
+texture = ExtResource("15_77f8u")
 
 [node name="Feliz" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_lsxb5")
+scale = Vector2(0.828, 0.828)
+texture = ExtResource("16_26m0j")
 
 [node name="Mundo" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_lsxb5")
+scale = Vector2(0.028, 0.028)
+texture = ExtResource("10_54u1x")
 
 [node name="Papel" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_lsxb5")
+scale = Vector2(0.933, 0.933)
+texture = ExtResource("17_pve0m")
 
 [node name="Desordenada" type="Node2D" parent="."]
 

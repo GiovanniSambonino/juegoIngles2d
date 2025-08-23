@@ -90,8 +90,8 @@
 		  ["She sweeps", "the floor", "with force", "and broom"],
 		  ["She sweeps", "the floor", "living room", "and kitchen"]
 		],
-		"hard": [
-		  ["She sweeps", "the floor", "in house", "with broom", "very clean", "everywhere neat"],
+		"hard": [ 
+		  ["She sweeps", "the floor", "in house", "with broom", "very clean", "everywhere"],
 		  ["She starts", "in living", "room and", "cleans dining", "room after", "very tidy"]
 		]
 	  }
@@ -123,7 +123,7 @@
 		  ["They sing", "a song", "together happy", "in choir"]
 		],
 		"hard": [
-		  ["They sing", "a song", "at school", "in afternoon", "music fun", "everyone sings"],
+		  ["They sing", "a song", "at school", "in afternoon", "everyone", "sings along"],
 		  ["The music", "is great", "and happy", "they sing", "with joy", "all together"]
 		]
 	  }
@@ -155,8 +155,8 @@
 		  ["He works", "on computer", "in house", "and office"]
 		],
 		"hard": [
-		  ["He works", "on computer", "all day", "writing code", "big project", "with focus"],
-		  ["He writes", "new code", "and solves", "big problems", "works hard", "very skilled"]
+		  ["He works", "on computer", "all day", "writing code", "to complete", "big project"],
+		  ["He writes", "new code", "and solves", "big problems", "works hard", "very focused"]
 		]
 	  }
 	},
@@ -188,8 +188,8 @@
 		],
 		"hard": [
 		  ["You play", "golf with", "your friends", "in park", "on weekend", "have fun"],
-		  ["You practice", "your swings", "and compete", "with others", "on Saturday", "great time"]
-		]
+		  ["You", "practice", "your swings", "and compete", "with others", "on Saturday"]
+		] 
 	  }
 	},
 	{
@@ -251,8 +251,8 @@
 		  ["Mario teaches", "math daily", "to students", "with care"]
 		],
 		"hard": [
-		  ["Mario teaches", "math in", "big school", "to students", "every day", "helps them"],
-		  ["He explains", "hard problems", "very clearly", "students learn", "and enjoy", "his class"]
+		  ["Mario", "teaches", "math in", "big school", "to students", "every day"],
+		  ["He explains", "hard problems", "very clearly", "and students", "enjoy", "his class"]
 		]
 	  }
 	},
@@ -283,7 +283,7 @@
 		  ["Man walks", "his dog", "in park", "happy walks"]
 		],
 		"hard": [
-		  ["Man walks", "his dog", "in park", "every morning", "dog runs", "very happy"],
+		  ["Man walks", "his dog", "in park every", "morning", "dog runs", "very happy"],
 		  ["The dog", "is playful", "he barks", "and wags", "his tail", "great walk"]
 		]
 	  }
@@ -347,8 +347,8 @@
 		  ["Before bed,", "he", "enjoys", "a tale."]
 		],
 		"hard": [
-		  ["Every night,", "he", "reads", "a story", "before", "sleeping."],
-		  ["He", "immerses himself", "in", "a story", "each night", "before sleeping."]
+		  ["Every night", ", he", "reads", "a story", "before", "sleeping."],
+		  ["He", "immerses", "himself", "in a story", "each night", "before sleeping."]
 		]
 	  }
 	},
@@ -375,12 +375,12 @@
 		  ["She", "organizes", "her toys."]
 		],
 		"medium": [
-		  ["After playing,", "she", "gathers", "her toys."],
+		  ["After", "playing,", "she gathers", "her toys."],
 		  ["She collects", "her toys", "after", "playtime."]
 		],
-		"hard": [
-		  ["After playtime,", "she", "meticulously", "gathers", "her", "toys."],
-		  ["She", "carefully", "organizes", "her", "toys", "after playing."]
+		"hard": [ 
+		  ["After", "playtime,", "she", "meticulously", "gathers", "her toys."],
+		  ["She", "carefully", "organizes", "her", "toys", "after playing"]
 		]
 	  }
 	},
@@ -443,8 +443,8 @@
 		  ["In the garden,", "she", "waters", "plants."]
 		],
 		"hard": [
-		  ["Every morning,", "she", "waters", "the", "garden", "plants."],
-		  ["In the morning,", "she", "carefully", "waters", "the", "garden plants."]
+		  ["Every", "morning,", "she", "waters", "the garden", "plants."],
+		  ["In the", "morning,", "she", " waters", "the garden", "plants."]
 		]
 	  }
 	},
@@ -472,7 +472,7 @@
 		],
 		"medium": [
 		  ["He", "helps", "prepare", "breakfast."],
-		  ["He", "assists", "in", "breakfast-making."]
+		  ["He", "assists in", " breakfast", "making."]
 		],
 		"hard": [
 		  ["He", "helps", "prepare", "breakfast", "for", "his family."],
@@ -504,10 +504,10 @@
 		],
 		"medium": [
 		  ["She", "practices", "playing", "the guitar."],
-		  ["She", "works on", "her", "guitar skills."]
+		  ["She", "works on", "her guitar", "skills."]
 		],
 		"hard": [
-		  ["After school,", "she", "practices", "playing", "the", "guitar."],
+		  ["After", "school, she", "practices", "playing", "the", "guitar."],
 		  ["She", "rehearses", "on the", "guitar", "after", "classes."]
 		]
 	  }
@@ -536,11 +536,11 @@
 		],
 		"medium": [
 		  ["He", "tidies", "his", "backpack."],
-		  ["He", "puts items", "in", "his backpack."]
+		  ["He", "puts items", "in his", "backpack."]
 		],
 		"hard": [
-		  ["Before school,", "he", "organizes", "his", "backpack", "before leaving."],
-		  ["He", "carefully", "arranges", "his", "backpack", "before school."]
+		  ["Before ", "school, he", "organizes", "his backpack", "before", "leaving."],
+		  ["He", "carefully", "arranges", "his backpack", "before", "school."]
 		]
 	  }
 	},
@@ -572,7 +572,7 @@
 		],
 		"hard": [
 		  ["Using her", "art notebook,", "she draws", "and", "colors", "beautifully."],
-		  ["In her", "art notebook,", "she", "sketches", "and applies", "vibrant colors."]
+		  ["In her", "art notebook,", "she sketches", "and applies", "vibrant", "colors."]
 		]
 	  }
 	},
@@ -599,12 +599,12 @@
 		  ["He", "studies", "English terms."]
 		],
 		"medium": [
-		  ["He", "expands", "his", "English vocabulary."],
-		  ["He", "learns", "new", "English words."]
+		  ["He", "expands his", "English", "vocabulary."],
+		  ["He", "learns new", "English", "words."]
 		],
 		"hard": [
 		  ["With his", "teacher's", "help,", "he learns", "new English", "words."],
-		  ["He", "acquires", "new", "English", "words", "through guidance."]
+		  ["He", "acquires", "new English", "words", "through", "guidance."]
 		]
 	  }
 	},
@@ -636,7 +636,7 @@
 		],
 		"hard": [
 		  ["After class,", "she", "walks", "to the park", "with", "her dog."],
-		  ["Post classes,", "she", "strolls", "to the park", "with", "her dog."]
+		  ["After class,", "she", "strolls", "to the park", "with", "her dog."]
 		]
 	  }
 	},
@@ -663,13 +663,13 @@
 		  ["He", "pays attention", "to tales."]
 		],
 		"medium": [
-		  ["He", "listens to", "his grandfather's", "stories."],
-		  ["With interest,", "he", "hears", "his grandfather's tales."]
+		  ["He listens", " to his ", "grandfather's", "stories."],
+		  ["With interest,", "he hears his", "grandfather's", "tales."]
 		],
 		"hard": [
-		  ["He listens", "attentively", "to the", "stories", "his grandfather", "tells."],
-		  ["With careful attention,", "he", "absorbs", "his grandfather's", "narrated", "tales."]
-		]
+		  ["He listens", "attentively", "to the", "stories his", "grandfather", "tells."],
+		  ["With careful", "attention,", "he absorbs", "his", "grandfather's", "tales."]
+		] 
 	  }
 	},
 	{
@@ -699,7 +699,7 @@
 		  ["Using blocks,", "she", "raises", "towers."]
 		],
 		"hard": [
-		  ["She", "builds", "impressive", "towers", "with", "building blocks."],
+		  ["She", "builds", "impressive", "towers with", "building", "blocks."],
 		  ["With", "building", " blocks,", "she erects", "tall towers", "gracefully."]
 		]
 	  }
@@ -763,9 +763,9 @@
 		  ["She", "investigates", "the", "planets."]
 		],
 		"hard": [
-		  ["For her", " school project,", "she", "researches", "the planets", "diligently."],
+		  ["For her", "school", "project, she", "researches", "the planets", "diligently."],
 		  ["She", "gathers", "data", "on", "planets for", "her project."]
-		]
+		] 
 	  }
 	},
 	{

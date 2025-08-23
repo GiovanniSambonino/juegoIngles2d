@@ -22,12 +22,10 @@ var palabras = {
 	"Familia": "FAMILY", 
 	"Ventana": "WINDOW", 
 	"Jardín": "GARDEN", 
-	"Cocina": "KITCHEN",
 	"Animal": "ANIMAL", 
 	"Cantante": "SINGER", 
 	"Calle": "STREET", 
 	"Oficina": "OFFICE",
-	"Centro": "CENTER",
 	"Bosque": "FOREST",
 	"Ciudades": "CITIES",
 }

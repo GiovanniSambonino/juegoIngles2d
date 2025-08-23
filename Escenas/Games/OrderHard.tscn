@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bkdkp600xvmg"]
+[gd_scene load_steps=23 format=3 uid="uid://bkdkp600xvmg"]
 
 [ext_resource type="Script" uid="uid://cnlkooifm1obn" path="res://Scripts/Games/OrderHard.gd" id="1_5pc5a"]
 [ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_yivyy"]
@@ -6,17 +6,19 @@
 [ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_rkwnu"]
 [ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_451e0"]
 [ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="6_wr8kn"]
-[ext_resource type="Texture2D" uid="uid://8r4ho23wivj1" path="res://Sprites/images_games/order/Ave.png" id="7_cpnsa"]
-[ext_resource type="Texture2D" uid="uid://cjttlkm233dmy" path="res://Sprites/images_games/puzzle/cantan.png" id="8_bmjed"]
-[ext_resource type="Texture2D" uid="uid://bguh1fkcnrphy" path="res://Sprites/images_games/puzzle/futbol1.png" id="9_omox6"]
-[ext_resource type="Texture2D" uid="uid://fm5joy81l1fl" path="res://Sprites/images_games/match/easy/Gray-backed Hawk.png" id="10_hsp1p"]
-[ext_resource type="Texture2D" uid="uid://oroqqab8ssm2" path="res://Sprites/images_games/puzzle/pesca.png" id="11_hpoec"]
-[ext_resource type="Texture2D" uid="uid://cls84hicrs5v7" path="res://Sprites/images_games/puzzle/pasea.png" id="12_safu2"]
-[ext_resource type="Texture2D" uid="uid://cod86qaomvebo" path="res://Sprites/images_games/puzzle/leehoja.png" id="14_x26yj"]
-[ext_resource type="Texture2D" uid="uid://cj72j4fidywfr" path="res://Sprites/images_games/puzzle/juegaperro.png" id="15_8dkq8"]
+[ext_resource type="Texture2D" uid="uid://b087jojbt8tqu" path="res://Sprites/images_games/order/Hard/pixel-8-bits-icono-edificio-escuela-ilustracion-vectorial-activos-juego-e-iconos-web_614713-1266-removebg-preview.png" id="7_rkwnu"]
+[ext_resource type="Texture2D" uid="uid://b8v5jfgxc04wg" path="res://Sprites/images_games/order/Hard/retrato-pequena-familia-disfrutando-atardecer-pixel-art_1250486-2734.jpg" id="8_451e0"]
+[ext_resource type="Texture2D" uid="uid://cmqmohtldqhqe" path="res://Sprites/images_games/order/Hard/ventana-pixelada-escena-flores_603843-977.jpg" id="9_wr8kn"]
+[ext_resource type="Texture2D" uid="uid://r4im44fh4cks" path="res://Sprites/images_games/order/Hard/paisaje-jardin-pixelado_24640-16720-removebg-preview.png" id="10_cpnsa"]
+[ext_resource type="Texture2D" uid="uid://ybak6sy7mkjo" path="res://Sprites/images_games/order/Hard/pixel-art-kangaroo-ilustracion-diseno-animales-retro-medios-digitales-e-impresos_1292377-16180-removebg-preview.png" id="12_bmjed"]
+[ext_resource type="Texture2D" uid="uid://r3p3xwocn8ov" path="res://Sprites/images_games/order/Hard/pixel-art-singer-sosteniendo-microfono-estilo-retro-8-bits_1292377-12061-removebg-preview.png" id="13_omox6"]
+[ext_resource type="Texture2D" uid="uid://c51gicjanl1qt" path="res://Sprites/images_games/order/Hard/cartel-coche-bicicleta-ciudad-fondo_1307601-5798.jpg" id="14_hsp1p"]
+[ext_resource type="Texture2D" uid="uid://bh6dlodhe2snh" path="res://Sprites/images_games/order/Hard/ilustracion-vectorial-computadora-oficina-ilustracion-vectoria-computacion-oficina_912214-32500-removebg-preview.png" id="15_hpoec"]
 [ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="16_p70ma"]
 [ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="17_lcltp"]
+[ext_resource type="Texture2D" uid="uid://bodgnnxlsnle4" path="res://Sprites/images_games/order/Hard/escena-pixeles-graficos-8-bits-persona-paseando-perro-parque_23-2151120932.jpg" id="17_safu2"]
 [ext_resource type="PackedScene" uid="uid://dj6ij2dh6vwpr" path="res://Piezas/Letter.tscn" id="18_h5ne1"]
+[ext_resource type="Texture2D" uid="uid://bup32nl17kwpy" path="res://Sprites/images_games/order/Hard/dia-mundial-ciudades_1263326-73349-removebg-preview.png" id="18_splh0"]
 
 [sub_resource type="Animation" id="Animation_4b8yg"]
 resource_name = "Gana"
@@ -222,7 +224,7 @@ _data = {
 &"RESET": SubResource("Animation_kijen")
 }
 
-[node name="Node2D2" type="Node2D"]
+[node name="Node2D3" type="Node2D"]
 script = ExtResource("1_5pc5a")
 metadata/_edit_horizontal_guides_ = [-100.0]
 metadata/_edit_vertical_guides_ = [300.0, 637.0]
@@ -255,82 +257,68 @@ texture = ExtResource("6_wr8kn")
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.239, 339.125)
-scale = Vector2(0.2238, 0.2238)
-texture = ExtResource("7_cpnsa")
+scale = Vector2(0.659, 0.659)
+texture = ExtResource("7_rkwnu")
 
 [node name="Familia" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(647, 338.75)
-scale = Vector2(0.0486826, 0.0478974)
-texture = ExtResource("8_bmjed")
+scale = Vector2(0.239, 0.235)
+texture = ExtResource("8_451e0")
 
 [node name="Ventana" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(649.5, 340)
 scale = Vector2(0.220695, 0.22271)
-texture = ExtResource("9_omox6")
+texture = ExtResource("9_wr8kn")
 
 [node name="Jardín" type="Sprite2D" parent="Imagenes"]
 visible = false
 position = Vector2(642.5, 337.315)
-scale = Vector2(0.157407, 0.142741)
-texture = ExtResource("10_hsp1p")
-
-[node name="Cocina" type="Sprite2D" parent="Imagenes"]
-visible = false
-modulate = Color(0.901961, 1, 1, 1)
-position = Vector2(647.157, 334.501)
-scale = Vector2(0.0426934, 0.0426934)
-texture = ExtResource("11_hpoec")
+scale = Vector2(0.647, 0.589)
+texture = ExtResource("10_cpnsa")
 
 [node name="Animal" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(651.477, 336.8)
-scale = Vector2(0.367886, 0.367886)
-texture = ExtResource("12_safu2")
+scale = Vector2(0.543, 0.543)
+texture = ExtResource("12_bmjed")
 
 [node name="Cantante" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(647.111, 336.788)
-scale = Vector2(0.0485389, 0.0485389)
-texture = ExtResource("14_x26yj")
+scale = Vector2(0.594, 0.594)
+texture = ExtResource("13_omox6")
 
 [node name="Calle" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
-position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_8dkq8")
+position = Vector2(648.361, 341.014)
+scale = Vector2(0.388, 0.388)
+texture = ExtResource("14_hsp1p")
 
 [node name="Oficina" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_8dkq8")
-
-[node name="Centro" type="Sprite2D" parent="Imagenes"]
-visible = false
-modulate = Color(0.901961, 1, 1, 1)
-position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_8dkq8")
+scale = Vector2(0.903, 0.903)
+texture = ExtResource("15_hpoec")
 
 [node name="Bosque" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
 position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_8dkq8")
+scale = Vector2(0.363, 0.363)
+texture = ExtResource("17_safu2")
 
 [node name="Ciudades" type="Sprite2D" parent="Imagenes"]
 visible = false
 modulate = Color(0.901961, 1, 1, 1)
-position = Vector2(652.361, 341.014)
-scale = Vector2(0.368244, 0.368244)
-texture = ExtResource("15_8dkq8")
+position = Vector2(650.361, 341.014)
+scale = Vector2(0.528, 0.528)
+texture = ExtResource("18_splh0")
 
 [node name="Desordenada" type="Node2D" parent="."]
 
