@@ -215,7 +215,7 @@ texture = ExtResource("3_e7rir")
 
 [node name="AnimationImage" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_imyb0")
+&"": SubResource("AnimationLibrary_imyb0")
 }
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

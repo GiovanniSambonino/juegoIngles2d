@@ -26,6 +26,7 @@ BackgroundMusic="*res://Escenas/Global/background_music.tscn"
 Score="*res://Scripts/Global/Score.gd"
 BancoFrases="*res://Scripts/Global/BancoFrases.gd"
 Global="*res://Scripts/Global/Global.gd"
+DificultadRandom="*res://Scripts/DificultadRandom.gd"
 
 [display]
 

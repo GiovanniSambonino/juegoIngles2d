@@ -156,7 +156,7 @@ hframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_3t862")
+&"": SubResource("AnimationLibrary_3t862")
 }
 script = ExtResource("9_mok4k")
 
@@ -168,7 +168,7 @@ hframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D3"]
 libraries = {
-"": SubResource("AnimationLibrary_3t862")
+&"": SubResource("AnimationLibrary_3t862")
 }
 script = ExtResource("10_emjnk")
 

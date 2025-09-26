@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dehd8qdawkr3i"
-path="res://.godot/imported/Yeti Crab.png-2a972f30b5ae258279d3ec08f9866950.ctex"
+uid="uid://6ybw2e2sih5b"
+path="res://.godot/imported/Letrero_Random.png-b85d239e3589e3ed8df54be8f97d8b48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/images_games/match/hard/Yeti Crab.png"
-dest_files=["res://.godot/imported/Yeti Crab.png-2a972f30b5ae258279d3ec08f9866950.ctex"]
+source_file="res://Sprites/Letrero_Random.png"
+dest_files=["res://.godot/imported/Letrero_Random.png-b85d239e3589e3ed8df54be8f97d8b48.ctex"]
 
 [params]
 

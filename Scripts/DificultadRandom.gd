@@ -1,6 +1,5 @@
 extends Node
 
-# Señal que se emite para actualizar la escena, en este caso el menú principal.
 signal update_scene(path)
 
 # Diccionario con todas las rutas de niveles organizadas por juego y dificultad
@@ -22,34 +21,38 @@ var game_levels = {
 	}
 }
 
-# Función que se llama cuando el nodo entra en la escena por primera vez.
+# Cola de niveles aleatorios (ahora incluye todas las dificultades)
+var random_levels_queue: Array = []
+
 func _ready():
 	emit_signal("update_scene", "menu_principal")
 
-# Función para seleccionar un nivel aleatorio
-func load_random_level():
-	ButtonClick.button_click()
-	
-	# Obtener una lista de todos los juegos
-	var games = game_levels.keys()
-	var random_game = games[randi() % games.size()]
-	
-	# Obtener una lista de todas las dificultades del juego seleccionado
-	var difficulties = game_levels[random_game].keys()
-	var random_difficulty = difficulties[randi() % difficulties.size()]
-	
-	# Establecer la dificultad actual en el Score
-	Score.actualDifficult = Score.difficult[random_difficulty]
-	
-	# Obtener la ruta del nivel aleatorio
-	var level_path = game_levels[random_game][random_difficulty]
-	
-	# Cambiar a la escena
-	get_tree().change_scene_to_file(level_path)
+# Construye la cola con TODOS los niveles (easy, medium, hard) y mezcla
+func build_random_queue_all():
+	random_levels_queue.clear()
+	for game in game_levels.keys():
+		for difficulty in game_levels[game].keys():
+			random_levels_queue.append({
+				"path": game_levels[game][difficulty],
+				"difficulty": difficulty
+			})
+	random_levels_queue.shuffle()
 
-# Nueva función para el botón de nivel aleatorio
+# Cargar el siguiente nivel de la cola
+func load_next_random_level():
+	if random_levels_queue.is_empty():
+		build_random_queue_all()
+	if not random_levels_queue.is_empty():
+		var level_data = random_levels_queue.pop_front()
+		# Establecer dificultad en Score según el nivel seleccionado
+		Score.actualDifficult = Score.difficult[level_data["difficulty"]]
+		get_tree().change_scene_to_file(level_data["path"])
+
+# Función para el botón de modo random (ahora puede ser de cualquier dificultad)
 func _on_btn_random_pressed():
-	load_random_level()
+	ButtonClick.button_click()
+	build_random_queue_all()
+	load_next_random_level()
 
 # Funciones originales del selector de juegos
 func _on_btn_puzzle_pressed():

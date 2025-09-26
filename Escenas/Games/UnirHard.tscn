@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://08isbhoijbyg"]
+[gd_scene load_steps=20 format=3 uid="uid://08isbhoijbyg"]
 
 [ext_resource type="Script" uid="uid://dn0kl6q1bgeh5" path="res://Scripts/Games/UnirHard.gd" id="1_r5v1u"]
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_yn52r"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://7dxstkm5sj1g" path="res://Scripts/box_inside_game_ha.gd" id="4_wrjh8"]
 [ext_resource type="PackedScene" uid="uid://cgkovomtm6rsg" path="res://Escenas/instrucciones_unir.tscn" id="5_rk11i"]
 [ext_resource type="PackedScene" uid="uid://soivbvg68l7y" path="res://Piezas/box_imagen_match.tscn" id="6_t26k2"]
+[ext_resource type="Texture2D" uid="uid://dg5da2s24f61e" path="res://Sprites/images_games/match/hard/Capybara.png" id="7_cap74"]
 [ext_resource type="PackedScene" uid="uid://f8ju1ll5w53y" path="res://Piezas/box_texto_match.tscn" id="7_epfks"]
 [ext_resource type="Texture2D" uid="uid://b4dcgfxuhgvxa" path="res://Sprites/images_games/match/Correct.png" id="8_du652"]
 [ext_resource type="Texture2D" uid="uid://ngsyantlb00d" path="res://Sprites/images_games/match/Incorrect.png" id="9_587ye"]
@@ -225,30 +226,83 @@ offset_bottom = 8.0
 [node name="Box_imagen_match" parent="." instance=ExtResource("6_t26k2")]
 position = Vector2(451, 319)
 
+[node name="Fondo" parent="Box_imagen_match/Button" index="0"]
+scale = Vector2(0.231, 0.276)
+
+[node name="Fondo_clic" parent="Box_imagen_match/Button" index="1"]
+scale = Vector2(0.228, 0.763)
+
+[node name="imagen" parent="Box_imagen_match/Button" index="2"]
+position = Vector2(124, 67)
+scale = Vector2(0.185, 0.161)
+texture = ExtResource("7_cap74")
+
 [node name="Box_imagen_match2" parent="." instance=ExtResource("6_t26k2")]
 position = Vector2(451, 500)
+
+[node name="Fondo" parent="Box_imagen_match2/Button" index="0"]
+position = Vector2(124, 81)
+scale = Vector2(0.231, 0.276)
+
+[node name="Fondo_clic" parent="Box_imagen_match2/Button" index="1"]
+position = Vector2(124.5, 80.5)
+scale = Vector2(0.228, 0.763)
+
+[node name="imagen" parent="Box_imagen_match2/Button" index="2"]
+position = Vector2(124, 82)
+scale = Vector2(0.185, 0.161)
+texture = ExtResource("7_cap74")
 
 [node name="Box_imagen_match3" parent="." instance=ExtResource("6_t26k2")]
 position = Vector2(451, 682)
 
+[node name="Fondo" parent="Box_imagen_match3/Button" index="0"]
+position = Vector2(124, 99)
+scale = Vector2(0.231, 0.276)
+
+[node name="Fondo_clic" parent="Box_imagen_match3/Button" index="1"]
+position = Vector2(124.5, 98.5)
+scale = Vector2(0.228, 0.763)
+
+[node name="imagen" parent="Box_imagen_match3/Button" index="2"]
+position = Vector2(124, 99)
+scale = Vector2(0.185, 0.161)
+texture = ExtResource("7_cap74")
+
 [node name="Box_texto_match" parent="." instance=ExtResource("7_epfks")]
 position = Vector2(49, 0)
+
+[node name="Button" parent="Box_texto_match" index="0"]
+offset_left = 761.0
+offset_right = 1061.0
 
 [node name="Box_texto_match2" parent="." instance=ExtResource("7_epfks")]
 position = Vector2(49, 180)
 
+[node name="Button" parent="Box_texto_match2" index="0"]
+offset_left = 761.053
+offset_top = 300.039
+offset_right = 1061.05
+offset_bottom = 365.039
+
 [node name="Box_texto_match3" parent="." instance=ExtResource("7_epfks")]
 position = Vector2(49, 360)
 
+[node name="Button" parent="Box_texto_match3" index="0"]
+offset_left = 763.181
+offset_top = 315.082
+offset_right = 1063.18
+offset_bottom = 380.082
+
 [node name="Correct" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(690, 494)
+position = Vector2(690, 511)
 scale = Vector2(0.226744, 0.226744)
 texture = ExtResource("8_du652")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_k84qp")
+&"": SubResource("AnimationLibrary_k84qp")
 }
 
 [node name="Incorrect" type="Sprite2D" parent="."]
@@ -261,19 +315,19 @@ texture = ExtResource("9_587ye")
 
 [node name="Correct" type="Sprite2D" parent="Win"]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(682, 328)
+position = Vector2(695, 323.437)
 scale = Vector2(0.182776, 0.182776)
 texture = ExtResource("8_du652")
 
 [node name="Correct2" type="Sprite2D" parent="Win"]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(682, 511)
+position = Vector2(695, 511)
 scale = Vector2(0.182776, 0.182776)
 texture = ExtResource("8_du652")
 
 [node name="Correct3" type="Sprite2D" parent="Win"]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(682, 686)
+position = Vector2(699, 706)
 scale = Vector2(0.182776, 0.182776)
 texture = ExtResource("8_du652")
 
@@ -309,3 +363,10 @@ text = "3 Hints Remaining"
 horizontal_alignment = 1
 vertical_alignment = 1
 justification_flags = 162
+
+[editable path="Box_imagen_match"]
+[editable path="Box_imagen_match2"]
+[editable path="Box_imagen_match3"]
+[editable path="Box_texto_match"]
+[editable path="Box_texto_match2"]
+[editable path="Box_texto_match3"]
