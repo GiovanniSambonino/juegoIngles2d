@@ -383,6 +383,7 @@ func lose():
 
 #Se invoca cada vez que se gana una ronda
 func rondaWin():
+	$Box_inside_game.timer.stop()
 	$AnimationPlayer.play("Gana")
 	var pieza0 = get_node("Cadenas/Pieza0")
 	var pieza1 = get_node("Cadenas/Pieza1")
@@ -393,7 +394,8 @@ func rondaWin():
 	await pieza2._animacion_finalizado()
 	await pieza3._animacion_finalizado() 
 	await $AnimationPlayer.animation_finished
-	_reiniciar_componentes()
+	await _reiniciar_componentes()
+	$Box_inside_game.timer.start()
 	 
 #Botón para regresar al menú
 func _on_btn_go_back_pressed():

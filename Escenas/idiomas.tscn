@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cwcygk7ikgh65"]
 
-[ext_resource type="Script" path="res://Scripts/idiomas.gd" id="1_jl3e3"]
+[ext_resource type="Script" uid="uid://21q68qfsrhkc" path="res://Scripts/idiomas.gd" id="1_jl3e3"]
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="2_f464e"]
 [ext_resource type="Texture2D" uid="uid://dtfvr6dmjys6b" path="res://Sprites/mini_games/Tablero_minigame.png" id="3_lhmas"]
 [ext_resource type="Texture2D" uid="uid://375c0bkcyxql" path="res://Sprites/buttons/btnIngles.png" id="6_m75w3"]

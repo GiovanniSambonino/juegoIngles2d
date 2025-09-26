@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://cu0dpyjickxqh"]
 
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="1_mnt6j"]
-[ext_resource type="Script" path="res://Scripts/Global/PantallaPuntajes.gd" id="1_rtl8m"]
+[ext_resource type="Script" uid="uid://dk7ut6kx3uukb" path="res://Scripts/Global/PantallaPuntajes.gd" id="1_rtl8m"]
 [ext_resource type="Texture2D" uid="uid://bqk1d4psul3o6" path="res://Sprites/global/Fondo_mesa_juego.png" id="2_cnaa0"]
 [ext_resource type="Theme" uid="uid://s5bs26vdrwjc" path="res://styles/UnirFacil1_Style_Words.tres" id="3_313r5"]
 [ext_resource type="FontFile" uid="uid://bl1il7t5684pv" path="res://Fonts/Minecraft.ttf" id="4_an7tm"]

@@ -1,0 +1,420 @@
+[gd_scene load_steps=23 format=3 uid="uid://bkdkp600xvmg"]
+
+[ext_resource type="Script" uid="uid://cnlkooifm1obn" path="res://Scripts/Games/OrderHard.gd" id="1_5pc5a"]
+[ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_yivyy"]
+[ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_h2img"]
+[ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_rkwnu"]
+[ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_451e0"]
+[ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="6_wr8kn"]
+[ext_resource type="Texture2D" uid="uid://b087jojbt8tqu" path="res://Sprites/images_games/order/Hard/pixel-8-bits-icono-edificio-escuela-ilustracion-vectorial-activos-juego-e-iconos-web_614713-1266-removebg-preview.png" id="7_rkwnu"]
+[ext_resource type="Texture2D" uid="uid://b8v5jfgxc04wg" path="res://Sprites/images_games/order/Hard/retrato-pequena-familia-disfrutando-atardecer-pixel-art_1250486-2734.jpg" id="8_451e0"]
+[ext_resource type="Texture2D" uid="uid://cmqmohtldqhqe" path="res://Sprites/images_games/order/Hard/ventana-pixelada-escena-flores_603843-977.jpg" id="9_wr8kn"]
+[ext_resource type="Texture2D" uid="uid://r4im44fh4cks" path="res://Sprites/images_games/order/Hard/paisaje-jardin-pixelado_24640-16720-removebg-preview.png" id="10_cpnsa"]
+[ext_resource type="Texture2D" uid="uid://ybak6sy7mkjo" path="res://Sprites/images_games/order/Hard/pixel-art-kangaroo-ilustracion-diseno-animales-retro-medios-digitales-e-impresos_1292377-16180-removebg-preview.png" id="12_bmjed"]
+[ext_resource type="Texture2D" uid="uid://r3p3xwocn8ov" path="res://Sprites/images_games/order/Hard/pixel-art-singer-sosteniendo-microfono-estilo-retro-8-bits_1292377-12061-removebg-preview.png" id="13_omox6"]
+[ext_resource type="Texture2D" uid="uid://c51gicjanl1qt" path="res://Sprites/images_games/order/Hard/cartel-coche-bicicleta-ciudad-fondo_1307601-5798.jpg" id="14_hsp1p"]
+[ext_resource type="Texture2D" uid="uid://bh6dlodhe2snh" path="res://Sprites/images_games/order/Hard/ilustracion-vectorial-computadora-oficina-ilustracion-vectoria-computacion-oficina_912214-32500-removebg-preview.png" id="15_hpoec"]
+[ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="16_p70ma"]
+[ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="17_lcltp"]
+[ext_resource type="Texture2D" uid="uid://bodgnnxlsnle4" path="res://Sprites/images_games/order/Hard/escena-pixeles-graficos-8-bits-persona-paseando-perro-parque_23-2151120932.jpg" id="17_safu2"]
+[ext_resource type="PackedScene" uid="uid://dj6ij2dh6vwpr" path="res://Piezas/Letter.tscn" id="18_h5ne1"]
+[ext_resource type="Texture2D" uid="uid://bup32nl17kwpy" path="res://Sprites/images_games/order/Hard/dia-mundial-ciudades_1263326-73349-removebg-preview.png" id="18_splh0"]
+
+[sub_resource type="Animation" id="Animation_4b8yg"]
+resource_name = "Gana"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ordenada/Letterbox5:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ordenada/Letterbox6:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ordenada/Letterbox7:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ordenada/Letterbox8:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ordenada/Letterbox5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ordenada/Letterbox6:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ordenada/Letterbox7:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ordenada/Letterbox8:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_kijen"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ordenada/Letterbox5:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ordenada/Letterbox6:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ordenada/Letterbox7:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ordenada/Letterbox8:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ordenada/Letterbox8:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ordenada/Letterbox7:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ordenada/Letterbox6:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ordenada/Letterbox5:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_batyl"]
+_data = {
+&"Gana": SubResource("Animation_4b8yg"),
+&"RESET": SubResource("Animation_kijen")
+}
+
+[node name="Node2D3" type="Node2D"]
+script = ExtResource("1_5pc5a")
+metadata/_edit_horizontal_guides_ = [-100.0]
+metadata/_edit_vertical_guides_ = [300.0, 637.0]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="InstruccionesPalabra" parent="CanvasLayer2" instance=ExtResource("2_yivyy")]
+metadata/_edit_vertical_guides_ = [672.0, 1276.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(636.987, 454.85)
+scale = Vector2(0.211671, 0.211671)
+texture = ExtResource("3_h2img")
+
+[node name="Box_inside_game" parent="." instance=ExtResource("4_rkwnu")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_451e0")
+
+[node name="ImagenJuegoVacio" type="Sprite2D" parent="."]
+position = Vector2(648.072, 337.75)
+scale = Vector2(0.2236, 0.2236)
+texture = ExtResource("6_wr8kn")
+
+[node name="Imagenes" type="Node2D" parent="."]
+
+[node name="Escuela" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(647.239, 339.125)
+scale = Vector2(0.659, 0.659)
+texture = ExtResource("7_rkwnu")
+
+[node name="Familia" type="Sprite2D" parent="Imagenes"]
+visible = false
+position = Vector2(647, 338.75)
+scale = Vector2(0.239, 0.235)
+texture = ExtResource("8_451e0")
+
+[node name="Ventana" type="Sprite2D" parent="Imagenes"]
+visible = false
+position = Vector2(649.5, 340)
+scale = Vector2(0.220695, 0.22271)
+texture = ExtResource("9_wr8kn")
+
+[node name="Jardín" type="Sprite2D" parent="Imagenes"]
+visible = false
+position = Vector2(642.5, 337.315)
+scale = Vector2(0.647, 0.589)
+texture = ExtResource("10_cpnsa")
+
+[node name="Animal" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(651.477, 336.8)
+scale = Vector2(0.543, 0.543)
+texture = ExtResource("12_bmjed")
+
+[node name="Cantante" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(647.111, 336.788)
+scale = Vector2(0.594, 0.594)
+texture = ExtResource("13_omox6")
+
+[node name="Calle" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(648.361, 341.014)
+scale = Vector2(0.388, 0.388)
+texture = ExtResource("14_hsp1p")
+
+[node name="Oficina" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.903, 0.903)
+texture = ExtResource("15_hpoec")
+
+[node name="Bosque" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.363, 0.363)
+texture = ExtResource("17_safu2")
+
+[node name="Ciudades" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(650.361, 341.014)
+scale = Vector2(0.528, 0.528)
+texture = ExtResource("18_splh0")
+
+[node name="Desordenada" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Desordenada"]
+position = Vector2(147, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_p70ma")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Desordenada"]
+position = Vector2(350, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_p70ma")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Desordenada"]
+position = Vector2(553, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_p70ma")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Desordenada"]
+position = Vector2(756, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_p70ma")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Desordenada"]
+position = Vector2(1162, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_p70ma")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Desordenada"]
+position = Vector2(959, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_p70ma")
+
+[node name="Ordenada" type="Node2D" parent="."]
+
+[node name="Letterbox5" parent="Ordenada" instance=ExtResource("17_lcltp")]
+position = Vector2(147, 785)
+scale = Vector2(0.25, 0.25)
+letter = "B"
+
+[node name="Letterbox6" parent="Ordenada" instance=ExtResource("17_lcltp")]
+position = Vector2(350, 785)
+scale = Vector2(0.25, 0.25)
+letter = "I"
+
+[node name="Letterbox7" parent="Ordenada" instance=ExtResource("17_lcltp")]
+position = Vector2(553, 785)
+scale = Vector2(0.25, 0.25)
+letter = "R"
+
+[node name="Letterbox8" parent="Ordenada" instance=ExtResource("17_lcltp")]
+position = Vector2(756, 785)
+scale = Vector2(0.25, 0.25)
+letter = "D"
+
+[node name="Letterbox9" parent="Ordenada" instance=ExtResource("17_lcltp")]
+position = Vector2(959, 785)
+scale = Vector2(0.25, 0.25)
+letter = "D"
+
+[node name="Letterbox10" parent="Ordenada" instance=ExtResource("17_lcltp")]
+position = Vector2(1162, 785)
+scale = Vector2(0.25, 0.25)
+letter = "D"
+
+[node name="Letras" type="Node2D" parent="."]
+
+[node name="Letter" parent="Letras" instance=ExtResource("18_h5ne1")]
+position = Vector2(147, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter2" parent="Letras" instance=ExtResource("18_h5ne1")]
+position = Vector2(350, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter4" parent="Letras" instance=ExtResource("18_h5ne1")]
+position = Vector2(959, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter3" parent="Letras" instance=ExtResource("18_h5ne1")]
+position = Vector2(553, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter5" parent="Letras" instance=ExtResource("18_h5ne1")]
+position = Vector2(1162, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter6" parent="Letras" instance=ExtResource("18_h5ne1")]
+position = Vector2(756, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_batyl")
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1269.0
+offset_bottom = 94.0

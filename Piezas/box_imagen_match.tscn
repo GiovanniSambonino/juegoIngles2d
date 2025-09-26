@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://soivbvg68l7y"]
 
-[ext_resource type="Script" path="res://Piezas/box_imagen_match.gd" id="1_8lgex"]
+[ext_resource type="Script" uid="uid://yby6if748ly1" path="res://Piezas/box_imagen_match.gd" id="1_8lgex"]
 [ext_resource type="Texture2D" uid="uid://bas6u4uhmiosh" path="res://Sprites/images_games/match/background_image.png" id="1_j4ife"]
 [ext_resource type="Theme" uid="uid://dbj5vbxx0tl3i" path="res://styles/style_buttons_match.tres" id="2_cyfnn"]
 [ext_resource type="Texture2D" uid="uid://dtuf41hstb0wb" path="res://Sprites/images_games/match/backgroung_middle_clic.png" id="2_wwj7w"]
@@ -179,10 +179,10 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_imyb0"]
 _data = {
-"Match": SubResource("Animation_gdnrn"),
-"No_match": SubResource("Animation_rnf3s"),
-"Pista": SubResource("Animation_k01e5"),
-"RESET": SubResource("Animation_5bj66")
+&"Match": SubResource("Animation_gdnrn"),
+&"No_match": SubResource("Animation_rnf3s"),
+&"Pista": SubResource("Animation_k01e5"),
+&"RESET": SubResource("Animation_5bj66")
 }
 
 [node name="Box_imagen_match" type="Node2D"]
@@ -215,7 +215,7 @@ texture = ExtResource("3_e7rir")
 
 [node name="AnimationImage" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_imyb0")
+&"": SubResource("AnimationLibrary_imyb0")
 }
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

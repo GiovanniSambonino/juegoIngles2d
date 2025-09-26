@@ -9,6 +9,7 @@ func _ready():
 	verificar_progreso(Global.rutaArchivos+"/Progress/progressMinigames.dat")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+@warning_ignore("unused_parameter")
 func _process(delta):
 	pass
 	
@@ -104,8 +105,6 @@ func _on_texture_button_2_pressed():
 	Score.actualDifficult = Score.difficult["medium"]
 	get_tree().change_scene_to_file("res://Escenas/Games/FrasesNivel2.tscn")    
 	
-
- 
 func _on_texture_button_3_pressed():
 	ButtonClick.button_click()
 	Score.actualDifficult = Score.difficult["hard"]

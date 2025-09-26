@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cabrkyy8b8c4v"]
 
-[ext_resource type="Script" path="res://Escenas/Global/buttonClick.gd" id="1_vnre5"]
+[ext_resource type="Script" uid="uid://bovo2yy7pn4ca" path="res://Escenas/Global/buttonClick.gd" id="1_vnre5"]
 [ext_resource type="AudioStream" uid="uid://b1f88sl70rgrl" path="res://Sonido/ui-click-43196.mp3" id="2_br0l1"]
 
 [node name="ButtonClick" type="Control"]

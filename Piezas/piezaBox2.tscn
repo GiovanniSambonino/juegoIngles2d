@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dx37iwurtxyud"]
 
-[ext_resource type="Script" path="res://Piezas/piezaBox.gd" id="1_tsstv"]
+[ext_resource type="Script" uid="uid://cnqjsu7sbejon" path="res://Piezas/piezaBox.gd" id="1_tsstv"]
 [ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="2_6fl3p"]
 
 [sub_resource type="Animation" id="Animation_th3fk"]
@@ -36,8 +36,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fxwwt"]
 _data = {
-"Pista": SubResource("Animation_th3fk"),
-"RESET": SubResource("Animation_8ghs2")
+&"Pista": SubResource("Animation_th3fk"),
+&"RESET": SubResource("Animation_8ghs2")
 }
 
 [node name="piezaBox" type="Node2D"]

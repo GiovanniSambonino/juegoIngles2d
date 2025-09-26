@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://d0vkmiy6wlxfy"]
 
-[ext_resource type="Script" path="res://Scripts/Games/OrderEasy.gd" id="1_okcbb"]
+[ext_resource type="Script" uid="uid://cgtytxml8hc5s" path="res://Scripts/Games/OrderEasy.gd" id="1_okcbb"]
 [ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="2_atc5h"]
 [ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="2_jjcnm"]
 [ext_resource type="PackedScene" uid="uid://tbbkdsxy01pi" path="res://Escenas/Global/box_inside_game.tscn" id="4_ltwvj"]
@@ -210,8 +210,8 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_batyl"]
 _data = {
-"Gana": SubResource("Animation_4b8yg"),
-"RESET": SubResource("Animation_kijen")
+&"Gana": SubResource("Animation_4b8yg"),
+&"RESET": SubResource("Animation_kijen")
 }
 
 [node name="Node2D" type="Node2D"]
@@ -306,7 +306,7 @@ scale = Vector2(0.27, 0.27)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_batyl")
+&"": SubResource("AnimationLibrary_batyl")
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://1fgrvi3d8xdc"]
 
-[ext_resource type="Script" path="res://Piezas/piezaPuzzle.gd" id="1_y2obs"]
+[ext_resource type="Script" uid="uid://xkdr0m06lyty" path="res://Piezas/piezaPuzzle.gd" id="1_y2obs"]
 [ext_resource type="Texture2D" uid="uid://be1024ohrfg16" path="res://Sprites/mini_games/pieza2.png" id="2_h6p50"]
 [ext_resource type="FontFile" uid="uid://by6docfjh045t" path="res://Fonts/Retropix-Regular.ttf" id="3_wuleg"]
 
@@ -158,12 +158,12 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r3xoe"]
 _data = {
-"Correcto": SubResource("Animation_d5m34"),
-"Final": SubResource("Animation_s776g"),
-"Incorrecto": SubResource("Animation_hcf3e"),
-"Pista": SubResource("Animation_s0v8n"),
-"RESET": SubResource("Animation_n2m34"),
-"Retorno": SubResource("Animation_tkeuy")
+&"Correcto": SubResource("Animation_d5m34"),
+&"Final": SubResource("Animation_s776g"),
+&"Incorrecto": SubResource("Animation_hcf3e"),
+&"Pista": SubResource("Animation_s0v8n"),
+&"RESET": SubResource("Animation_n2m34"),
+&"Retorno": SubResource("Animation_tkeuy")
 }
 
 [node name="Pieza" type="Node2D"]

@@ -279,8 +279,10 @@ func reset_compoments():
 func ronda_win():
 	# Disable hint functionality during animation
 	$Box_inside_game/btns_inside_box_game/btn_instructions.disabled = true
+	$Box_inside_game.timer.stop()
 	await animation_win()
-	cargar_ronda()
+	await cargar_ronda()
+	$Box_inside_game.timer.start()
 	# Disable hint functionality during animation
 	$Box_inside_game/btns_inside_box_game/btn_instructions.disabled = false
 # Método para dar una pista en el juego de manera aleatoria.

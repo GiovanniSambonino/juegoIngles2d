@@ -1,0 +1,199 @@
+[gd_scene load_steps=15 format=3 uid="uid://c2h1elq76bl5a"]
+
+[ext_resource type="Script" uid="uid://bptt2c4tidr7h" path="res://Scripts/box_inside_game_o.gd" id="1_n538i"]
+[ext_resource type="Texture2D" uid="uid://bqk1d4psul3o6" path="res://Sprites/global/Fondo_mesa_juego.png" id="2_wx1m4"]
+[ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="3_qm7l6"]
+[ext_resource type="Theme" uid="uid://lcgg2qybthjn" path="res://styles/box_inside_game_text.tres" id="4_efd4d"]
+[ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="5_vks2e"]
+[ext_resource type="Texture2D" uid="uid://cfhe2tmg4745g" path="res://Sprites/mini_games/TableroInfo.png" id="6_wrgun"]
+[ext_resource type="FontFile" uid="uid://by6docfjh045t" path="res://Fonts/Retropix-Regular.ttf" id="7_t41vl"]
+[ext_resource type="Texture2D" uid="uid://cbsgw3yum2qos" path="res://Sprites/buttons/Boton_Salir.png" id="8_lkogp"]
+[ext_resource type="Texture2D" uid="uid://b4fkf3jss7us" path="res://Sprites/buttons/btn_salir_hover.png" id="9_kohdt"]
+[ext_resource type="Texture2D" uid="uid://c1brivjy218qn" path="res://Sprites/buttons/Boton_Ayuda.png" id="10_n6w3y"]
+[ext_resource type="Texture2D" uid="uid://ddjtd8r6fmliv" path="res://Sprites/buttons/Boton_pregunta_hover.png" id="11_yqk0i"]
+[ext_resource type="Texture2D" uid="uid://b0ngeledb26bf" path="res://Sprites/buttons/Boton_Opciones.png" id="12_f3duk"]
+[ext_resource type="Texture2D" uid="uid://bnak4eajterau" path="res://Sprites/buttons/Boton_Opcioens_hover.png" id="13_qfipd"]
+[ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="14_x8jx6"]
+
+[node name="Box_inside_game" type="Node2D"]
+position = Vector2(944, 48)
+script = ExtResource("1_n538i")
+
+[node name="Fondo_mesa_juego" type="Sprite2D" parent="."]
+position = Vector2(-290, 407)
+scale = Vector2(0.214403, 0.21336)
+texture = ExtResource("2_wx1m4")
+
+[node name="Cronometro" type="Sprite2D" parent="."]
+position = Vector2(-300.935, 97.45)
+scale = Vector2(0.223445, 0.256048)
+texture = ExtResource("3_qm7l6")
+
+[node name="Temporizador" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -448.0
+offset_top = 64.0
+offset_right = -152.0
+offset_bottom = 144.0
+grow_horizontal = 2
+theme = ExtResource("4_efd4d")
+theme_override_font_sizes/font_size = 59
+text = "120"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_direction = 1
+
+[node name="Timer" type="Timer" parent="Temporizador"]
+autostart = true
+
+[node name="image" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-299.935, 295.45)
+scale = Vector2(0.22485, 0.22485)
+texture = ExtResource("5_vks2e")
+
+[node name="TableroInfo" type="Sprite2D" parent="."]
+position = Vector2(-750.286, 161)
+scale = Vector2(0.315228, 0.358)
+texture = ExtResource("6_wrgun")
+
+[node name="Title" type="Label" parent="."]
+clip_contents = true
+offset_left = -848.0
+offset_top = 36.0
+offset_right = -656.0
+offset_bottom = 98.0
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+theme = ExtResource("4_efd4d")
+text = "Order it"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+text_direction = 1
+
+[node name="Difficulty_value" type="Label" parent="."]
+clip_contents = true
+offset_left = -846.0
+offset_top = 130.0
+offset_right = -652.0
+offset_bottom = 192.0
+size_flags_stretch_ratio = 0.0
+theme = ExtResource("4_efd4d")
+text = "Easy"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+text_direction = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+offset_left = -845.0
+offset_top = 222.0
+offset_right = -654.0
+offset_bottom = 280.0
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="Level" type="Label" parent="HBoxContainer2"]
+clip_contents = true
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = ExtResource("4_efd4d")
+text = "Level:"
+vertical_alignment = 1
+uppercase = true
+text_direction = 1
+
+[node name="Level_value" type="Label" parent="HBoxContainer2"]
+clip_contents = true
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = ExtResource("4_efd4d")
+text = "1"
+vertical_alignment = 1
+text_direction = 1
+
+[node name="word" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-296.935, 496.45)
+scale = Vector2(0.223, 0.256)
+texture = ExtResource("3_qm7l6")
+
+[node name="Sentense" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-304, 496.45)
+scale = Vector2(0.502498, 0.256)
+texture = ExtResource("3_qm7l6")
+
+[node name="phrase_text" type="Label" parent="."]
+visible = false
+clip_contents = true
+offset_left = -640.0
+offset_top = 464.0
+offset_right = 32.0
+offset_bottom = 528.0
+size_flags_stretch_ratio = 0.0
+theme = ExtResource("4_efd4d")
+theme_override_constants/line_spacing = -7
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("7_t41vl")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_direction = 1
+
+[node name="btns_inside_box_game" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 539.0
+offset_right = 268.0
+offset_bottom = 579.0
+
+[node name="btn_home" type="TextureButton" parent="btns_inside_box_game"]
+layout_mode = 0
+offset_left = 188.0
+offset_top = -507.0
+offset_right = 484.0
+offset_bottom = -236.0
+scale = Vector2(0.22, 0.22)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_lkogp")
+texture_hover = ExtResource("9_kohdt")
+
+[node name="btn_instructions" type="TextureButton" parent="btns_inside_box_game"]
+layout_mode = 0
+offset_left = 188.0
+offset_top = -347.0
+offset_right = 484.0
+offset_bottom = -76.0
+scale = Vector2(0.22, 0.22)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("10_n6w3y")
+texture_hover = ExtResource("11_yqk0i")
+
+[node name="btn_levels" type="TextureButton" parent="btns_inside_box_game"]
+layout_mode = 0
+offset_left = 188.0
+offset_top = -267.0
+offset_right = 484.0
+offset_bottom = 4.0
+scale = Vector2(0.22, 0.22)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_f3duk")
+texture_hover = ExtResource("13_qfipd")
+
+[node name="btn_sound" parent="btns_inside_box_game" instance=ExtResource("14_x8jx6")]
+layout_mode = 1
+offset_left = 188.0
+offset_top = -427.0
+offset_right = 242.824
+offset_bottom = -373.76
+mouse_default_cursor_shape = 2
+
+[connection signal="timeout" from="Temporizador/Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="btns_inside_box_game/btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="btns_inside_box_game/btn_instructions" to="." method="_on_btn_instructions_pressed"]
+[connection signal="pressed" from="btns_inside_box_game/btn_levels" to="." method="_on_btn_levels_pressed"]

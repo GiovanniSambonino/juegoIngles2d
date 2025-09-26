@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://0svvh0kcy8vw"]
 
-[ext_resource type="Script" path="res://Scripts/DificultadOracion.gd" id="1_aqfyo"]
+[ext_resource type="Script" uid="uid://bawing3mvr0vv" path="res://Scripts/DificultadOracion.gd" id="1_aqfyo"]
 [ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="2_7jbap"]
 [ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="3_jpkp6"]
 [ext_resource type="Texture2D" uid="uid://b63gw1pfqwq50" path="res://Sprites/buttons/Boton_easy.png" id="4_4wf2h"]
@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://cducf1nb8ngtb" path="res://Sprites/buttons/boton_medium_hover.png" id="7_y8dnh"]
 [ext_resource type="Texture2D" uid="uid://cpgtso7quhpj8" path="res://Sprites/pngtree-padlocks-or-lock-open-and-closed-icons-isolated-transparant-png-image_5213443.png" id="8_be7nf"]
 [ext_resource type="Texture2D" uid="uid://bmskod04qg6fv" path="res://Sprites/buttons/Boton_difficult_hover.png" id="9_m672e"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer1.gd" id="9_mok4k"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer.gd" id="10_emjnk"]
+[ext_resource type="Script" uid="uid://ch1elwjjyojaw" path="res://Scripts/AnimationPlayer1.gd" id="9_mok4k"]
+[ext_resource type="Script" uid="uid://csfyjf2bny35e" path="res://Scripts/AnimationPlayer.gd" id="10_emjnk"]
 [ext_resource type="PackedScene" uid="uid://wid5vqcftmu4" path="res://Escenas/Global/parallax_background_difficult_puzzle.tscn" id="11_nw8vl"]
 
 [sub_resource type="Animation" id="Animation_aggsv"]
@@ -94,8 +94,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3t862"]
 _data = {
-"RESET": SubResource("Animation_aggsv"),
-"Unlock": SubResource("Animation_lrwm3")
+&"RESET": SubResource("Animation_aggsv"),
+&"Unlock": SubResource("Animation_lrwm3")
 }
 
 [node name="Node2D" type="Node2D"]
@@ -156,7 +156,7 @@ hframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_3t862")
+&"": SubResource("AnimationLibrary_3t862")
 }
 script = ExtResource("9_mok4k")
 
@@ -168,7 +168,7 @@ hframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D3"]
 libraries = {
-"": SubResource("AnimationLibrary_3t862")
+&"": SubResource("AnimationLibrary_3t862")
 }
 script = ExtResource("10_emjnk")
 

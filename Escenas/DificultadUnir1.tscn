@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://ss04y7ph35hj"]
 
-[ext_resource type="Script" path="res://Scripts/DificultadUnir1.tres.gd" id="1_27khe"]
+[ext_resource type="Script" uid="uid://ciqcytmum8h1b" path="res://Scripts/DificultadUnir1.tres.gd" id="1_27khe"]
 [ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="2_ciqgj"]
 [ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="3_01rqh"]
 [ext_resource type="Texture2D" uid="uid://b63gw1pfqwq50" path="res://Sprites/buttons/Boton_easy.png" id="4_fsai1"]
@@ -9,9 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://c3ulja3u3g3nj" path="res://Sprites/buttons/Boton_difficult.png" id="7_2yayv"]
 [ext_resource type="Texture2D" uid="uid://cducf1nb8ngtb" path="res://Sprites/buttons/boton_medium_hover.png" id="7_hgay4"]
 [ext_resource type="Texture2D" uid="uid://cpgtso7quhpj8" path="res://Sprites/pngtree-padlocks-or-lock-open-and-closed-icons-isolated-transparant-png-image_5213443.png" id="8_u01sl"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer1.gd" id="9_7tsse"]
+[ext_resource type="Script" uid="uid://ch1elwjjyojaw" path="res://Scripts/AnimationPlayer1.gd" id="9_7tsse"]
 [ext_resource type="Texture2D" uid="uid://bmskod04qg6fv" path="res://Sprites/buttons/Boton_difficult_hover.png" id="9_uyenx"]
-[ext_resource type="Script" path="res://Scripts/AnimationPlayer.gd" id="10_u2ch7"]
+[ext_resource type="Script" uid="uid://csfyjf2bny35e" path="res://Scripts/AnimationPlayer.gd" id="10_u2ch7"]
 [ext_resource type="PackedScene" uid="uid://c1drlxu7mn1l7" path="res://Escenas/Global/parallax_background_difficult_match.tscn" id="11_d1vv5"]
 
 [sub_resource type="Animation" id="Animation_aggsv"]
@@ -94,8 +94,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3t862"]
 _data = {
-"RESET": SubResource("Animation_aggsv"),
-"Unlock": SubResource("Animation_lrwm3")
+&"RESET": SubResource("Animation_aggsv"),
+&"Unlock": SubResource("Animation_lrwm3")
 }
 
 [node name="Node2D" type="Node2D"]

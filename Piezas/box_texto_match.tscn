@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://f8ju1ll5w53y"]
 
-[ext_resource type="Script" path="res://Piezas/box_texto_match.gd" id="1_lfryq"]
+[ext_resource type="Script" uid="uid://6biyroh8c25a" path="res://Piezas/box_texto_match.gd" id="1_lfryq"]
 [ext_resource type="Texture2D" uid="uid://dmiccrmd0y8jt" path="res://Sprites/global/Tabla.png" id="1_nfdb7"]
 [ext_resource type="Theme" uid="uid://dbj5vbxx0tl3i" path="res://styles/style_buttons_match.tres" id="2_jcky5"]
 [ext_resource type="Texture2D" uid="uid://dtuf41hstb0wb" path="res://Sprites/images_games/match/backgroung_middle_clic.png" id="2_o6jti"]
@@ -215,10 +215,10 @@ tracks/5/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0vcc6"]
 _data = {
-"Pista": SubResource("Animation_60cxl"),
-"RESET": SubResource("Animation_t5gja"),
-"match": SubResource("Animation_olkvq"),
-"no_match": SubResource("Animation_dcv8p")
+&"Pista": SubResource("Animation_60cxl"),
+&"RESET": SubResource("Animation_t5gja"),
+&"match": SubResource("Animation_olkvq"),
+&"no_match": SubResource("Animation_dcv8p")
 }
 
 [node name="Box_texto_match" type="Node2D"]

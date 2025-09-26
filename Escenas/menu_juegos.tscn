@@ -1,7 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://cu1nuxh8st3ux"]
+[gd_scene load_steps=19 format=3 uid="uid://cu1nuxh8st3ux"]
 
+[ext_resource type="Script" uid="uid://cxc5bgurkkjxn" path="res://Scripts/menu_juegos1.gd" id="1_8om4q"]
 [ext_resource type="PackedScene" uid="uid://c183geb74nt45" path="res://Escenas/Global/parallax_background.tscn" id="1_ae3ik"]
-[ext_resource type="Script" path="res://Scripts/menu_juegos.gd" id="1_wwi27"]
 [ext_resource type="Texture2D" uid="uid://dtfvr6dmjys6b" path="res://Sprites/mini_games/Tablero_minigame.png" id="3_prnin"]
 [ext_resource type="Texture2D" uid="uid://b6i60n65brh3n" path="res://Sprites/mini_games/Letrero_minigame.png" id="4_41r5y"]
 [ext_resource type="Texture2D" uid="uid://cufijlsaxqdx8" path="res://Sprites/mini_games/Dibujo puzzles.png" id="5_1oynu"]
@@ -11,7 +11,94 @@
 [ext_resource type="Texture2D" uid="uid://cdlq28w1l3pmc" path="res://Sprites/mini_games/Dibujo Order it.png" id="9_yvfam"]
 [ext_resource type="Texture2D" uid="uid://dytluhvtfl6pu" path="res://Sprites/mini_games/Boton Order it.png" id="10_yd6ht"]
 [ext_resource type="PackedScene" uid="uid://xwnqhcqrd6mc" path="res://Escenas/Global/btn_sounds.tscn" id="11_13b7x"]
+[ext_resource type="Texture2D" uid="uid://0rxgucjtppx7" path="res://Sprites/mini_games/Letrero_Random.png" id="11_ov08e"]
 [ext_resource type="PackedScene" uid="uid://875h5ifgqt53" path="res://Escenas/Global/btn_go_back.tscn" id="11_qllet"]
+[ext_resource type="Texture2D" uid="uid://cpgtso7quhpj8" path="res://Sprites/pngtree-padlocks-or-lock-open-and-closed-icons-isolated-transparant-png-image_5213443.png" id="14_ov08e"]
+[ext_resource type="Script" uid="uid://ch1elwjjyojaw" path="res://Scripts/AnimationPlayer1.gd" id="15_1jjh1"]
+
+[sub_resource type="Animation" id="Animation_aggsv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lrwm3"]
+resource_name = "Unlock"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(0, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(28, 0), Vector2(28, -55.19)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.0313726)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3t862"]
+_data = {
+&"RESET": SubResource("Animation_aggsv"),
+&"Unlock": SubResource("Animation_lrwm3")
+}
 
 [node name="Menu_Juegos" type="Control"]
 layout_mode = 3
@@ -20,7 +107,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_wwi27")
+script = ExtResource("1_8om4q")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_ae3ik")]
 
@@ -79,6 +166,21 @@ texture_normal = ExtResource("9_yvfam")
 position = Vector2(592.652, 1339.13)
 texture = ExtResource("10_yd6ht")
 
+[node name="btn_random" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 514.0
+offset_top = 733.0
+offset_right = 703.0
+offset_bottom = 815.0
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+mouse_default_cursor_shape = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="btn_random"]
+position = Vector2(107, 41)
+scale = Vector2(0.163003, 0.18)
+texture = ExtResource("11_ov08e")
+
 [node name="btn_sound" parent="." instance=ExtResource("11_13b7x")]
 layout_mode = 1
 offset_left = 1175.0
@@ -90,6 +192,19 @@ offset_bottom = 42.32
 offset_top = 58.0
 offset_bottom = 98.0
 
+[node name="candado" type="Sprite2D" parent="."]
+position = Vector2(601, 752)
+scale = Vector2(0.678863, 0.678863)
+texture = ExtResource("14_ov08e")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="candado"]
+libraries = {
+&"": SubResource("AnimationLibrary_3t862")
+}
+script = ExtResource("15_1jjh1")
+
 [connection signal="pressed" from="Hbox_botones_juegos/btn_puzzle" to="." method="_on_btn_puzzle_pressed"]
 [connection signal="pressed" from="Hbox_botones_juegos/btn_match" to="." method="_on_btn_match_pressed"]
 [connection signal="pressed" from="Hbox_botones_juegos/btn_order" to="." method="_on_btn_order_pressed"]
+[connection signal="pressed" from="btn_random" to="." method="_on_btn_random_pressed"]

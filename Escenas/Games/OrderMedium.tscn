@@ -1,0 +1,421 @@
+[gd_scene load_steps=24 format=3 uid="uid://cmlaodufhypvh"]
+
+[ext_resource type="Script" uid="uid://cemomyyqgmmvt" path="res://Scripts/Games/OrderMedium.gd" id="1_w8jnx"]
+[ext_resource type="PackedScene" uid="uid://b86ewj2wptytq" path="res://Escenas/instrucciones_palabra.tscn" id="2_v3j2o"]
+[ext_resource type="Texture2D" uid="uid://dfqhr1lcxhukc" path="res://Sprites/global/Background_game.png" id="3_qfako"]
+[ext_resource type="PackedScene" uid="uid://fn2nouhmyv6s" path="res://Escenas/Global/box_inside_game_o.tscn" id="4_rifbn"]
+[ext_resource type="AudioStream" uid="uid://dcc8bp4mt3gek" path="res://Sonido/kids-saying-yay-sound-effect_3.mp3" id="5_ettkf"]
+[ext_resource type="Texture2D" uid="uid://ddyoiesqe5ai1" path="res://Sprites/global/Imagen_juego_vacio.png" id="6_0yi2d"]
+[ext_resource type="Texture2D" uid="uid://bd53hua6ht04p" path="res://Sprites/images_games/order/Medium/barrio-edificios-arquitectura-forma-casa-png_53876-801494-removebg-preview.png" id="7_8n7hv"]
+[ext_resource type="Texture2D" uid="uid://dmqdy8qtkbkhs" path="res://Sprites/images_games/order/Medium/collaborepix-no-aplica-medicamentos-origen-animal-ni-productos-origen-animal_1038602-1077-removebg-preview.png" id="8_6d6r4"]
+[ext_resource type="Texture2D" uid="uid://cyogsughqw6mo" path="res://Sprites/images_games/order/Medium/ChatGPT_Image_15_ago_2025__10_38_09-removebg-preview.png" id="9_18px7"]
+[ext_resource type="Texture2D" uid="uid://b83cttrvw4lj8" path="res://Sprites/images_games/order/Medium/GST JOS 468-22.jpg" id="10_54u1x"]
+[ext_resource type="Texture2D" uid="uid://dme4sg1mq6fub" path="res://Sprites/images_games/order/Medium/7246619-removebg-preview.png" id="11_v1dmq"]
+[ext_resource type="Texture2D" uid="uid://o332hi7dm355" path="res://Sprites/images_games/order/Medium/1601.m00.i104.n024.S.c12.286495379_Flame_with_smoke_animation_frames_in_pixel_art_style-removebg-preview.png" id="12_30imc"]
+[ext_resource type="Texture2D" uid="uid://b67m1054r3iey" path="res://Sprites/images_games/order/Medium/ilustracion-paisaje-fluvial-estilo-pixel-art_23-2151793114.jpg" id="13_w1wwo"]
+[ext_resource type="Texture2D" uid="uid://fihqhnc4ghov" path="res://Sprites/images_games/order/Medium/ilustracion-pixel-art-miel-pixelada-miel-icono-miel-pixelado-pixel-art_1038602-219-removebg-preview.png" id="14_fecsg"]
+[ext_resource type="Texture2D" uid="uid://3retohdoa3jq" path="res://Sprites/images_games/order/Medium/sweet-pixel-icons-vintage-8-260nw-2403636237-removebg-preview.png" id="15_77f8u"]
+[ext_resource type="Texture2D" uid="uid://b6vwuxql0ah78" path="res://Sprites/images_games/order/Medium/icono-hombre-sonriente-fondo-blanco_1270124-12992-removebg-preview.png" id="16_26m0j"]
+[ext_resource type="Texture2D" uid="uid://b6y57hjy58jvc" path="res://Sprites/images_games/order/Fondo de letra.png" id="16_f4pwe"]
+[ext_resource type="PackedScene" uid="uid://ci1b1c7km51ni" path="res://Piezas/Letterbox.tscn" id="17_0wgu3"]
+[ext_resource type="Texture2D" uid="uid://rmupq1wuav1g" path="res://Sprites/images_games/order/Medium/papel-viejo-estilo-pixel-art_505135-75-removebg-preview.png" id="17_pve0m"]
+[ext_resource type="PackedScene" uid="uid://dj6ij2dh6vwpr" path="res://Piezas/Letter.tscn" id="18_ecqvq"]
+
+[sub_resource type="Animation" id="Animation_4b8yg"]
+resource_name = "Gana"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ordenada/Letterbox5:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ordenada/Letterbox6:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ordenada/Letterbox7:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ordenada/Letterbox8:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(0.5, 0.5), Vector2(0.25, 0.25)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ordenada/Letterbox5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ordenada/Letterbox6:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ordenada/Letterbox7:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ordenada/Letterbox8:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_kijen"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ordenada/Letterbox5:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ordenada/Letterbox6:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ordenada/Letterbox7:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ordenada/Letterbox8:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.25, 0.25)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ordenada/Letterbox8:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ordenada/Letterbox7:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ordenada/Letterbox6:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ordenada/Letterbox5:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_batyl"]
+_data = {
+&"Gana": SubResource("Animation_4b8yg"),
+&"RESET": SubResource("Animation_kijen")
+}
+
+[node name="Node2D2" type="Node2D"]
+script = ExtResource("1_w8jnx")
+metadata/_edit_horizontal_guides_ = [-100.0]
+metadata/_edit_vertical_guides_ = [300.0, 637.0]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="InstruccionesPalabra" parent="CanvasLayer2" instance=ExtResource("2_v3j2o")]
+metadata/_edit_vertical_guides_ = [672.0, 1276.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(636.987, 454.85)
+scale = Vector2(0.211671, 0.211671)
+texture = ExtResource("3_qfako")
+
+[node name="Box_inside_game" parent="." instance=ExtResource("4_rifbn")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ettkf")
+
+[node name="ImagenJuegoVacio" type="Sprite2D" parent="."]
+position = Vector2(648.072, 337.75)
+scale = Vector2(0.2236, 0.2236)
+texture = ExtResource("6_0yi2d")
+
+[node name="Imagenes" type="Node2D" parent="."]
+
+[node name="Casa" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(647.239, 339.125)
+scale = Vector2(0.509, 0.509)
+texture = ExtResource("7_8n7hv")
+
+[node name="Libro" type="Sprite2D" parent="Imagenes"]
+visible = false
+position = Vector2(647, 338.75)
+scale = Vector2(0.824, 0.807)
+texture = ExtResource("8_6d6r4")
+
+[node name="Mesa" type="Sprite2D" parent="Imagenes"]
+visible = false
+position = Vector2(649.5, 340)
+scale = Vector2(0.686, 0.692)
+texture = ExtResource("9_18px7")
+
+[node name="Tierra" type="Sprite2D" parent="Imagenes"]
+visible = false
+position = Vector2(642.5, 337.315)
+scale = Vector2(0.032, 0.029)
+texture = ExtResource("10_54u1x")
+
+[node name="Playa" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(647.157, 334.501)
+scale = Vector2(0.698, 0.698)
+texture = ExtResource("11_v1dmq")
+
+[node name="Fuego" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(651.477, 336.8)
+scale = Vector2(1.123, 1.123)
+texture = ExtResource("12_30imc")
+
+[node name="Noche" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(646.034, 337.92)
+scale = Vector2(0.452, 0.452)
+texture = ExtResource("13_w1wwo")
+
+[node name="Miel" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(647.111, 336.788)
+scale = Vector2(0.614, 0.614)
+texture = ExtResource("14_fecsg")
+
+[node name="Dulce" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(1.203, 1.203)
+texture = ExtResource("15_77f8u")
+
+[node name="Feliz" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.828, 0.828)
+texture = ExtResource("16_26m0j")
+
+[node name="Mundo" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.028, 0.028)
+texture = ExtResource("10_54u1x")
+
+[node name="Papel" type="Sprite2D" parent="Imagenes"]
+visible = false
+modulate = Color(0.901961, 1, 1, 1)
+position = Vector2(652.361, 341.014)
+scale = Vector2(0.933, 0.933)
+texture = ExtResource("17_pve0m")
+
+[node name="Desordenada" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Desordenada"]
+position = Vector2(258, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_f4pwe")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Desordenada"]
+position = Vector2(458, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_f4pwe")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Desordenada"]
+position = Vector2(658, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_f4pwe")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Desordenada"]
+position = Vector2(858, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_f4pwe")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Desordenada"]
+position = Vector2(1058, 650)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_f4pwe")
+
+[node name="Ordenada" type="Node2D" parent="."]
+
+[node name="Letterbox5" parent="Ordenada" instance=ExtResource("17_0wgu3")]
+position = Vector2(258, 785)
+scale = Vector2(0.25, 0.25)
+letter = "B"
+
+[node name="Letterbox6" parent="Ordenada" instance=ExtResource("17_0wgu3")]
+position = Vector2(458, 785)
+scale = Vector2(0.25, 0.25)
+letter = "I"
+
+[node name="Letterbox7" parent="Ordenada" instance=ExtResource("17_0wgu3")]
+position = Vector2(658, 785)
+scale = Vector2(0.25, 0.25)
+letter = "R"
+
+[node name="Letterbox8" parent="Ordenada" instance=ExtResource("17_0wgu3")]
+position = Vector2(858, 785)
+scale = Vector2(0.25, 0.25)
+letter = "D"
+
+[node name="Letterbox9" parent="Ordenada" instance=ExtResource("17_0wgu3")]
+position = Vector2(1058, 785)
+scale = Vector2(0.25, 0.25)
+letter = "D"
+
+[node name="Letras" type="Node2D" parent="."]
+
+[node name="Letter" parent="Letras" instance=ExtResource("18_ecqvq")]
+position = Vector2(258, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter2" parent="Letras" instance=ExtResource("18_ecqvq")]
+position = Vector2(458, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter4" parent="Letras" instance=ExtResource("18_ecqvq")]
+position = Vector2(658, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter3" parent="Letras" instance=ExtResource("18_ecqvq")]
+position = Vector2(858, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="Letter5" parent="Letras" instance=ExtResource("18_ecqvq")]
+position = Vector2(1058, 650)
+scale = Vector2(0.27, 0.27)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_batyl")
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1269.0
+offset_bottom = 94.0

@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://boe72vq15t1ax"]
 
-[ext_resource type="Shader" path="res://styles/juego_finalizado_menu.gdshader" id="1_2dibt"]
+[ext_resource type="Shader" uid="uid://cv05qht6xtjuy" path="res://styles/juego_finalizado_menu.gdshader" id="1_2dibt"]
 [ext_resource type="Texture2D" uid="uid://cgm5o64704hn7" path="res://Sprites/popup_finalizado.png" id="1_aypwb"]
-[ext_resource type="Script" path="res://Scripts/juego_finalizado_menu.gd" id="1_tkstu"]
+[ext_resource type="Script" uid="uid://dn5wq411kyat6" path="res://Scripts/juego_finalizado_menu.gd" id="1_tkstu"]
 [ext_resource type="Texture2D" uid="uid://bju0g0cpqmolh" path="res://Sprites/btn_niveles_volver.png" id="2_hf6n0"]
 [ext_resource type="Texture2D" uid="uid://dpqj7ykadj7cg" path="res://Sprites/btn_siguiente_nivel.png" id="3_rei3d"]
 [ext_resource type="Texture2D" uid="uid://jqa4jsua5h38" path="res://Sprites/btn_categorias_volver.png" id="4_m4ke8"]
@@ -68,8 +68,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_keplm"]
 _data = {
-"RESET": SubResource("Animation_wb7g0"),
-"blur": SubResource("Animation_61gi4")
+&"RESET": SubResource("Animation_wb7g0"),
+&"blur": SubResource("Animation_61gi4")
 }
 
 [node name="JuegoFinalizadoMenu" type="Control"]
